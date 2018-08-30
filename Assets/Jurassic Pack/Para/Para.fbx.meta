@@ -1,0 +1,4719 @@
+fileFormatVersion: 2
+guid: 1a14440a3bf51a844902f73ce6c863aa
+timeCreated: 1445149350
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: head
+    100002: jaw0
+    100004: jaw1
+    100006: jaw1_end
+    100008: left arm0
+    100010: left arm1
+    100012: left eye
+    100014: left eye_end
+    100016: left finger1
+    100018: left finger1_end
+    100020: left fingers0
+    100022: left foot
+    100024: left hand
+    100026: left hips
+    100028: left leg
+    100030: left toes0
+    100032: left toes1
+    100034: left toes1_end
+    100036: neck0
+    100038: neck1
+    100040: neck2
+    100042: neck3
+    100044: //RootNode
+    100046: Para
+    100048: para
+    100050: pelvis
+    100052: right arm0
+    100054: right arm1
+    100056: right eye
+    100058: right eye_end
+    100060: right fingers0
+    100062: right fingers1
+    100064: right fingers1_end
+    100066: right foot
+    100068: right hand
+    100070: right hips
+    100072: right leg
+    100074: Right toes0
+    100076: right toes1
+    100078: right toes1_end
+    100080: root
+    100082: spine0
+    100084: spine1
+    100086: spine2
+    100088: spine3
+    100090: spine4
+    100092: tail0
+    100094: tail1
+    100096: tail2
+    100098: tail3
+    100100: tail4
+    100102: tail5
+    100104: tail6
+    100106: tail7
+    100108: tail8
+    100110: tail8_end
+    100112: tongue0
+    100114: tongue1
+    100116: tongue2
+    100118: tongue2_end
+    100120: para_LOD_0
+    100122: para_LOD_1
+    100124: para_LOD_2
+    100126: right toes0
+    400000: head
+    400002: jaw0
+    400004: jaw1
+    400006: jaw1_end
+    400008: left arm0
+    400010: left arm1
+    400012: left eye
+    400014: left eye_end
+    400016: left finger1
+    400018: left finger1_end
+    400020: left fingers0
+    400022: left foot
+    400024: left hand
+    400026: left hips
+    400028: left leg
+    400030: left toes0
+    400032: left toes1
+    400034: left toes1_end
+    400036: neck0
+    400038: neck1
+    400040: neck2
+    400042: neck3
+    400044: Para
+    400046: //RootNode
+    400048: para
+    400050: pelvis
+    400052: right arm0
+    400054: right arm1
+    400056: right eye
+    400058: right eye_end
+    400060: right fingers0
+    400062: right fingers1
+    400064: right fingers1_end
+    400066: right foot
+    400068: right hand
+    400070: right hips
+    400072: right leg
+    400074: Right toes0
+    400076: right toes1
+    400078: right toes1_end
+    400080: root
+    400082: spine0
+    400084: spine1
+    400086: spine2
+    400088: spine3
+    400090: spine4
+    400092: tail0
+    400094: tail1
+    400096: tail2
+    400098: tail3
+    400100: tail4
+    400102: tail5
+    400104: tail6
+    400106: tail7
+    400108: tail8
+    400110: tail8_end
+    400112: tongue0
+    400114: tongue1
+    400116: tongue2
+    400118: tongue2_end
+    400120: para_LOD_0
+    400122: para_LOD_1
+    400124: para_LOD_2
+    400126: right toes0
+    4300000: para
+    4300002: para_LOD_1
+    4300004: para_LOD_2
+    4300006: para_LOD_0
+    7400000: Para|Die1
+    7400002: Para|Die2
+    7400004: Para|EatA
+    7400006: Para|EatB
+    7400008: Para|EatC
+    7400010: Para|Para
+    7400012: Para|Rise1
+    7400014: Para|Rise1Growl
+    7400016: Para|Rise1Stand
+    7400018: Para|Rise1Step
+    7400020: Para|Rise2
+    7400022: Para|Rise2Growl
+    7400024: Para|Rise2Stand
+    7400026: Para|Rise2Step
+    7400028: Para|Run
+    7400030: Para|RunGrowl
+    7400032: Para|SitGrowl
+    7400034: Para|SitLoop
+    7400036: Para|Sitting
+    7400038: Para|SleepLoop
+    7400040: Para|Stand1A
+    7400042: Para|Stand1B
+    7400044: Para|Stand2A
+    7400046: Para|Stand2B
+    7400048: Para|Step1
+    7400050: Para|Step2
+    7400052: Para|Strafe1
+    7400054: Para|Strafe2
+    7400056: Para|Walk
+    7400058: Para|WalkGrowl
+    7400060: Para|Stand1C
+    7400062: Para|Stand1D
+    7400064: Para|Stand2C
+    9500000: //RootNode
+    13700000: para
+    13700002: para_LOD_0
+    13700004: para_LOD_1
+    13700006: para_LOD_2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Para|Die1
+      takeName: Para|Die1
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Die2
+      takeName: Para|Die2
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|EatA
+      takeName: Para|EatA
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|EatB
+      takeName: Para|EatB
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|EatC
+      takeName: Para|EatC
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Rise1
+      takeName: Para|Rise1
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Rise1Growl
+      takeName: Para|Rise1Growl
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Rise1Stand
+      takeName: Para|Rise1Stand
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Rise1Step
+      takeName: Para|Rise1Step
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Rise2
+      takeName: Para|Rise2
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Rise2Growl
+      takeName: Para|Rise2Growl
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Rise2Stand
+      takeName: Para|Rise2Stand
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Rise2Step
+      takeName: Para|Rise2Step
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Run
+      takeName: Para|Run
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|RunGrowl
+      takeName: Para|RunGrowl
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|SitGrowl
+      takeName: Para|SitGrowl
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|SitLoop
+      takeName: Para|SitLoop
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Sitting
+      takeName: Para|Sitting
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|SleepLoop
+      takeName: Para|SleepLoop
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Stand1A
+      takeName: Para|Stand1A
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Stand1B
+      takeName: Para|Stand1B
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Stand1C
+      takeName: Para|Stand1C
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Stand1D
+      takeName: Para|Stand1D
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Stand2A
+      takeName: Para|Stand2A
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Stand2B
+      takeName: Para|Stand2B
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Stand2C
+      takeName: Para|Stand2C
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Step1
+      takeName: Para|Step1
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Step2
+      takeName: Para|Step2
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Strafe1
+      takeName: Para|Strafe1
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Strafe2
+      takeName: Para|Strafe2
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|Walk
+      takeName: Para|Walk
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Para|WalkGrowl
+      takeName: Para|WalkGrowl
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Para
+        weight: 1
+      - path: Para/root
+        weight: 1
+      - path: Para/root/pelvis
+        weight: 1
+      - path: Para/root/pelvis/left hips
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Para/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Para/root/pelvis/right hips
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Para/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Para/root/pelvis/tail0
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Para/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Para/root/spine0
+        weight: 1
+      - path: Para/root/spine0/spine1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Para/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: para_LOD_0
+        weight: 1
+      - path: para_LOD_1
+        weight: 1
+      - path: para_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

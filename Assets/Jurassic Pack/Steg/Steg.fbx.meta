@@ -1,0 +1,4300 @@
+fileFormatVersion: 2
+guid: 929b7692659c2004c9f8046973a993b7
+timeCreated: 1439715485
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: head
+    100002: jaw0
+    100004: jaw1
+    100006: jaw1_end
+    100008: left arm0
+    100010: left arm1
+    100012: left eye
+    100014: left eye_end
+    100016: left finger1
+    100018: left finger1_end
+    100020: left fingers0
+    100022: left foot
+    100024: left hand
+    100026: left hips
+    100028: left leg
+    100030: left toes0
+    100032: left toes1
+    100034: left toes1_end
+    100036: neck0
+    100038: neck1
+    100040: neck2
+    100042: neck3
+    100044: pelvis
+    100046: right arm0
+    100048: right arm1
+    100050: right eye
+    100052: right eye_end
+    100054: right fingers0
+    100056: right fingers1
+    100058: right fingers1_end
+    100060: right foot
+    100062: right hand
+    100064: right hips
+    100066: right leg
+    100068: Right toes0
+    100070: right toes1
+    100072: right toes1_end
+    100074: root
+    100076: spine0
+    100078: spine1
+    100080: spine2
+    100082: spine3
+    100084: spine4
+    100086: Steg
+    100088: //RootNode
+    100090: steg
+    100092: tail0
+    100094: tail1
+    100096: tail2
+    100098: tail3
+    100100: tail4
+    100102: tail5
+    100104: tail6
+    100106: tail7
+    100108: tail8
+    100110: tail8_end
+    100112: tongue0
+    100114: tongue1
+    100116: tongue2
+    100118: tongue2_end
+    100120: right toes0
+    100122: steg_LOD_0
+    100124: steg_LOD_1
+    100126: steg_LOD_2
+    400000: head
+    400002: jaw0
+    400004: jaw1
+    400006: jaw1_end
+    400008: left arm0
+    400010: left arm1
+    400012: left eye
+    400014: left eye_end
+    400016: left finger1
+    400018: left finger1_end
+    400020: left fingers0
+    400022: left foot
+    400024: left hand
+    400026: left hips
+    400028: left leg
+    400030: left toes0
+    400032: left toes1
+    400034: left toes1_end
+    400036: neck0
+    400038: neck1
+    400040: neck2
+    400042: neck3
+    400044: pelvis
+    400046: right arm0
+    400048: right arm1
+    400050: right eye
+    400052: right eye_end
+    400054: right fingers0
+    400056: right fingers1
+    400058: right fingers1_end
+    400060: right foot
+    400062: right hand
+    400064: right hips
+    400066: right leg
+    400068: Right toes0
+    400070: right toes1
+    400072: right toes1_end
+    400074: root
+    400076: spine0
+    400078: spine1
+    400080: spine2
+    400082: spine3
+    400084: spine4
+    400086: Steg
+    400088: //RootNode
+    400090: steg
+    400092: tail0
+    400094: tail1
+    400096: tail2
+    400098: tail3
+    400100: tail4
+    400102: tail5
+    400104: tail6
+    400106: tail7
+    400108: tail8
+    400110: tail8_end
+    400112: tongue0
+    400114: tongue1
+    400116: tongue2
+    400118: tongue2_end
+    400120: right toes0
+    400122: steg_LOD_0
+    400124: steg_LOD_1
+    400126: steg_LOD_2
+    4300000: steg
+    4300002: steg_LOD_1
+    4300004: steg_LOD_0
+    4300006: steg_LOD_2
+    7400000: Steg|Die1
+    7400002: Steg|Die2
+    7400004: Steg|EatA
+    7400006: Steg|EatB
+    7400008: Steg|EatC
+    7400010: Steg|Run
+    7400012: Steg|RunGrowl
+    7400014: Steg|SitGrowl
+    7400016: Steg|SitLoop
+    7400018: Steg|Sitting
+    7400020: Steg|SleepLoop
+    7400022: Steg|Stand1A
+    7400024: Steg|Stand1B
+    7400026: Steg|Stand2A
+    7400028: Steg|Stand2B
+    7400030: Steg|Steg
+    7400032: Steg|Step1
+    7400034: Steg|Step2
+    7400036: Steg|Strafe1
+    7400038: Steg|Strafe2
+    7400040: Steg|Walk
+    7400042: Steg|WalkGrowl
+    7400044: Steg|AttackA
+    7400046: Steg|AttackAToStand2
+    7400048: Steg|AttackLoopA
+    7400050: Steg|Stand1ToAttackA
+    7400052: Steg|Stand1ToAttackB
+    7400054: Steg|AttackLoop
+    7400056: Steg|AttackC
+    7400058: Steg|AttackToStand2
+    7400060: Steg|AttackLoopGrowl
+    7400062: Steg|Stand1C
+    7400064: Steg|Stand2C
+    7400066: Steg|Attack
+    9500000: //RootNode
+    13700000: steg
+    13700002: steg_LOD_0
+    13700004: steg_LOD_1
+    13700006: steg_LOD_2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Steg|AttackC
+      takeName: Steg|AttackC
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|AttackLoop
+      takeName: Steg|AttackLoop
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|AttackLoopGrowl
+      takeName: Steg|AttackLoopGrowl
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|AttackToStand2
+      takeName: Steg|AttackToStand2
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|Die1
+      takeName: Steg|Die1
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|Die2
+      takeName: Steg|Die2
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|EatA
+      takeName: Steg|EatA
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|EatB
+      takeName: Steg|EatB
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|EatC
+      takeName: Steg|EatC
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|Run
+      takeName: Steg|Run
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|RunGrowl
+      takeName: Steg|RunGrowl
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|SitGrowl
+      takeName: Steg|SitGrowl
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|SitLoop
+      takeName: Steg|SitLoop
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|Sitting
+      takeName: Steg|Sitting
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|SleepLoop
+      takeName: Steg|SleepLoop
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|Stand1A
+      takeName: Steg|Stand1A
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|Stand1B
+      takeName: Steg|Stand1B
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|Stand1C
+      takeName: Steg|Stand1C
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|Stand1ToAttackA
+      takeName: Steg|Stand1ToAttackA
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|Stand1ToAttackB
+      takeName: Steg|Stand1ToAttackB
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|Stand2A
+      takeName: Steg|Stand2A
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|Stand2B
+      takeName: Steg|Stand2B
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|Stand2C
+      takeName: Steg|Stand2C
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|Step1
+      takeName: Steg|Step1
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|Step2
+      takeName: Steg|Step2
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|Strafe1
+      takeName: Steg|Strafe1
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|Strafe2
+      takeName: Steg|Strafe2
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|Walk
+      takeName: Steg|Walk
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Steg|WalkGrowl
+      takeName: Steg|WalkGrowl
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Steg
+        weight: 1
+      - path: Steg/root
+        weight: 1
+      - path: Steg/root/pelvis
+        weight: 1
+      - path: Steg/root/pelvis/left hips
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Steg/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Steg/root/pelvis/right hips
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Steg/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Steg/root/pelvis/tail0
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Steg/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Steg/root/spine0
+        weight: 1
+      - path: Steg/root/spine0/spine1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Steg/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: steg_LOD_0
+        weight: 1
+      - path: steg_LOD_1
+        weight: 1
+      - path: steg_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

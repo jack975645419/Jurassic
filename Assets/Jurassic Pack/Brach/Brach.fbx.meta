@@ -1,0 +1,2957 @@
+fileFormatVersion: 2
+guid: ab253c2670aa579429dbd9429b6b5505
+timeCreated: 1436263324
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Brach
+    100002: brach
+    100004: //RootNode
+    100006: eyes
+    100008: head
+    100010: jaw0
+    100012: jaw1
+    100014: jaw1_end
+    100016: left arm0
+    100018: left arm1
+    100020: left eye
+    100022: left eye_end
+    100024: left finger1
+    100026: left finger1_end
+    100028: left fingers0
+    100030: left foot
+    100032: left hand
+    100034: left hips
+    100036: left leg
+    100038: left toes0
+    100040: left toes1
+    100042: left toes1_end
+    100044: neck0
+    100046: neck1
+    100048: neck10
+    100050: neck11
+    100052: neck12
+    100054: neck13
+    100056: neck14
+    100058: neck15
+    100060: neck16
+    100062: neck2
+    100064: neck3
+    100066: neck4
+    100068: neck5
+    100070: neck6
+    100072: neck7
+    100074: neck8
+    100076: neck9
+    100078: pelvis
+    100080: right arm0
+    100082: right arm1
+    100084: right eye
+    100086: right eye_end
+    100088: right fingers0
+    100090: right fingers1
+    100092: right fingers1_end
+    100094: right foot
+    100096: right hand
+    100098: right hips
+    100100: right leg
+    100102: Right toes0
+    100104: right toes1
+    100106: right toes1_end
+    100108: root
+    100110: spine0
+    100112: spine1
+    100114: spine2
+    100116: spine3
+    100118: spine4
+    100120: tail0
+    100122: tail1
+    100124: tail2
+    100126: tail3
+    100128: tail4
+    100130: tail5
+    100132: tail6
+    100134: tail7
+    100136: tail8
+    100138: tail8_end
+    100140: tongue0
+    100142: tongue1
+    100144: tongue2
+    100146: tongue2_end
+    100148: brach_LOD_0
+    100150: brach_LOD_1
+    100152: brach_LOD_2
+    400000: Brach
+    400002: //RootNode
+    400004: brach
+    400006: eyes
+    400008: head
+    400010: jaw0
+    400012: jaw1
+    400014: jaw1_end
+    400016: left arm0
+    400018: left arm1
+    400020: left eye
+    400022: left eye_end
+    400024: left finger1
+    400026: left finger1_end
+    400028: left fingers0
+    400030: left foot
+    400032: left hand
+    400034: left hips
+    400036: left leg
+    400038: left toes0
+    400040: left toes1
+    400042: left toes1_end
+    400044: neck0
+    400046: neck1
+    400048: neck10
+    400050: neck11
+    400052: neck12
+    400054: neck13
+    400056: neck14
+    400058: neck15
+    400060: neck16
+    400062: neck2
+    400064: neck3
+    400066: neck4
+    400068: neck5
+    400070: neck6
+    400072: neck7
+    400074: neck8
+    400076: neck9
+    400078: pelvis
+    400080: right arm0
+    400082: right arm1
+    400084: right eye
+    400086: right eye_end
+    400088: right fingers0
+    400090: right fingers1
+    400092: right fingers1_end
+    400094: right foot
+    400096: right hand
+    400098: right hips
+    400100: right leg
+    400102: Right toes0
+    400104: right toes1
+    400106: right toes1_end
+    400108: root
+    400110: spine0
+    400112: spine1
+    400114: spine2
+    400116: spine3
+    400118: spine4
+    400120: tail0
+    400122: tail1
+    400124: tail2
+    400126: tail3
+    400128: tail4
+    400130: tail5
+    400132: tail6
+    400134: tail7
+    400136: tail8
+    400138: tail8_end
+    400140: tongue0
+    400142: tongue1
+    400144: tongue2
+    400146: tongue2_end
+    400148: brach_LOD_0
+    400150: brach_LOD_1
+    400152: brach_LOD_2
+    4300000: brach
+    4300002: brach_LOD_1
+    4300004: brach_LOD_0
+    4300006: brach_LOD_2
+    7400000: Brach|brach.ms3d.act
+    7400002: Brach|brach
+    7400004: Brach|walk
+    7400006: Brach|Stand1A
+    7400008: Brach|Walk
+    7400010: Brach|StandA
+    7400012: Brach|Strafe
+    7400014: Brach|eatA
+    7400016: Brach|EatA
+    7400018: Brach|EatB
+    7400020: Brach|Rise
+    7400022: Brach|RiseGrowl
+    7400024: Brach|RiseStand
+    7400026: Brach|SitA
+    7400028: Brach|SitB
+    7400030: Brach|Sitting
+    7400032: Brach|Sleep
+    7400034: Brach|StandB
+    7400036: Brach|WalkGrowl
+    7400038: Brach|Die
+    7400040: Brach|EatC
+    9500000: //RootNode
+    13700000: brach
+    13700002: brach_LOD_0
+    13700004: brach_LOD_1
+    13700006: brach_LOD_2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Brach|Die
+      takeName: Brach|Die
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Brach
+        weight: 1
+      - path: Brach/root
+        weight: 1
+      - path: Brach/root/pelvis
+        weight: 1
+      - path: Brach/root/pelvis/left hips
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Brach/root/pelvis/right hips
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0/right
+          toes1
+        weight: 1
+      - path: Brach/root/pelvis/tail0
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Brach/root/spine0
+        weight: 1
+      - path: Brach/root/spine0/spine1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/left
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/right
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/jaw1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: brach_LOD_0
+        weight: 1
+      - path: brach_LOD_1
+        weight: 1
+      - path: brach_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Brach|EatA
+      takeName: Brach|EatA
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Brach
+        weight: 1
+      - path: Brach/root
+        weight: 1
+      - path: Brach/root/pelvis
+        weight: 1
+      - path: Brach/root/pelvis/left hips
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Brach/root/pelvis/right hips
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0/right
+          toes1
+        weight: 1
+      - path: Brach/root/pelvis/tail0
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Brach/root/spine0
+        weight: 1
+      - path: Brach/root/spine0/spine1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/left
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/right
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/jaw1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: brach_LOD_0
+        weight: 1
+      - path: brach_LOD_1
+        weight: 1
+      - path: brach_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Brach|EatB
+      takeName: Brach|EatB
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Brach
+        weight: 1
+      - path: Brach/root
+        weight: 1
+      - path: Brach/root/pelvis
+        weight: 1
+      - path: Brach/root/pelvis/left hips
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Brach/root/pelvis/right hips
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0/right
+          toes1
+        weight: 1
+      - path: Brach/root/pelvis/tail0
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Brach/root/spine0
+        weight: 1
+      - path: Brach/root/spine0/spine1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/left
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/right
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/jaw1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: brach_LOD_0
+        weight: 1
+      - path: brach_LOD_1
+        weight: 1
+      - path: brach_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Brach|EatC
+      takeName: Brach|EatC
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Brach
+        weight: 1
+      - path: Brach/root
+        weight: 1
+      - path: Brach/root/pelvis
+        weight: 1
+      - path: Brach/root/pelvis/left hips
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Brach/root/pelvis/right hips
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0/right
+          toes1
+        weight: 1
+      - path: Brach/root/pelvis/tail0
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Brach/root/spine0
+        weight: 1
+      - path: Brach/root/spine0/spine1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/left
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/right
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/jaw1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: brach_LOD_0
+        weight: 1
+      - path: brach_LOD_1
+        weight: 1
+      - path: brach_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Brach|Rise
+      takeName: Brach|Rise
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Brach
+        weight: 1
+      - path: Brach/root
+        weight: 1
+      - path: Brach/root/pelvis
+        weight: 1
+      - path: Brach/root/pelvis/left hips
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Brach/root/pelvis/right hips
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0/right
+          toes1
+        weight: 1
+      - path: Brach/root/pelvis/tail0
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Brach/root/spine0
+        weight: 1
+      - path: Brach/root/spine0/spine1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/left
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/right
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/jaw1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: brach_LOD_0
+        weight: 1
+      - path: brach_LOD_1
+        weight: 1
+      - path: brach_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Brach|RiseGrowl
+      takeName: Brach|RiseGrowl
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Brach
+        weight: 1
+      - path: Brach/root
+        weight: 1
+      - path: Brach/root/pelvis
+        weight: 1
+      - path: Brach/root/pelvis/left hips
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Brach/root/pelvis/right hips
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0/right
+          toes1
+        weight: 1
+      - path: Brach/root/pelvis/tail0
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Brach/root/spine0
+        weight: 1
+      - path: Brach/root/spine0/spine1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/left
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/right
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/jaw1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: brach_LOD_0
+        weight: 1
+      - path: brach_LOD_1
+        weight: 1
+      - path: brach_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Brach|RiseStand
+      takeName: Brach|RiseStand
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Brach
+        weight: 1
+      - path: Brach/root
+        weight: 1
+      - path: Brach/root/pelvis
+        weight: 1
+      - path: Brach/root/pelvis/left hips
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Brach/root/pelvis/right hips
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0/right
+          toes1
+        weight: 1
+      - path: Brach/root/pelvis/tail0
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Brach/root/spine0
+        weight: 1
+      - path: Brach/root/spine0/spine1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/left
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/right
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/jaw1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: brach_LOD_0
+        weight: 1
+      - path: brach_LOD_1
+        weight: 1
+      - path: brach_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Brach|SitA
+      takeName: Brach|SitA
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Brach
+        weight: 1
+      - path: Brach/root
+        weight: 1
+      - path: Brach/root/pelvis
+        weight: 1
+      - path: Brach/root/pelvis/left hips
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Brach/root/pelvis/right hips
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0/right
+          toes1
+        weight: 1
+      - path: Brach/root/pelvis/tail0
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Brach/root/spine0
+        weight: 1
+      - path: Brach/root/spine0/spine1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/left
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/right
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/jaw1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: brach_LOD_0
+        weight: 1
+      - path: brach_LOD_1
+        weight: 1
+      - path: brach_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Brach|SitB
+      takeName: Brach|SitB
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Brach
+        weight: 1
+      - path: Brach/root
+        weight: 1
+      - path: Brach/root/pelvis
+        weight: 1
+      - path: Brach/root/pelvis/left hips
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Brach/root/pelvis/right hips
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0/right
+          toes1
+        weight: 1
+      - path: Brach/root/pelvis/tail0
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Brach/root/spine0
+        weight: 1
+      - path: Brach/root/spine0/spine1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/left
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/right
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/jaw1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: brach_LOD_0
+        weight: 1
+      - path: brach_LOD_1
+        weight: 1
+      - path: brach_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Brach|Sitting
+      takeName: Brach|Sitting
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Brach
+        weight: 1
+      - path: Brach/root
+        weight: 1
+      - path: Brach/root/pelvis
+        weight: 1
+      - path: Brach/root/pelvis/left hips
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Brach/root/pelvis/right hips
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0/right
+          toes1
+        weight: 1
+      - path: Brach/root/pelvis/tail0
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Brach/root/spine0
+        weight: 1
+      - path: Brach/root/spine0/spine1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/left
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/right
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/jaw1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: brach_LOD_0
+        weight: 1
+      - path: brach_LOD_1
+        weight: 1
+      - path: brach_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Brach|Sleep
+      takeName: Brach|Sleep
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Brach
+        weight: 1
+      - path: Brach/root
+        weight: 1
+      - path: Brach/root/pelvis
+        weight: 1
+      - path: Brach/root/pelvis/left hips
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Brach/root/pelvis/right hips
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0/right
+          toes1
+        weight: 1
+      - path: Brach/root/pelvis/tail0
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Brach/root/spine0
+        weight: 1
+      - path: Brach/root/spine0/spine1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/left
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/right
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/jaw1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: brach_LOD_0
+        weight: 1
+      - path: brach_LOD_1
+        weight: 1
+      - path: brach_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Brach|StandA
+      takeName: Brach|StandA
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Brach
+        weight: 1
+      - path: Brach/root
+        weight: 1
+      - path: Brach/root/pelvis
+        weight: 1
+      - path: Brach/root/pelvis/left hips
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Brach/root/pelvis/right hips
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0/right
+          toes1
+        weight: 1
+      - path: Brach/root/pelvis/tail0
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Brach/root/spine0
+        weight: 1
+      - path: Brach/root/spine0/spine1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/left
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/right
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/jaw1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: brach_LOD_0
+        weight: 1
+      - path: brach_LOD_1
+        weight: 1
+      - path: brach_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Brach|StandB
+      takeName: Brach|StandB
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Brach
+        weight: 1
+      - path: Brach/root
+        weight: 1
+      - path: Brach/root/pelvis
+        weight: 1
+      - path: Brach/root/pelvis/left hips
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Brach/root/pelvis/right hips
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0/right
+          toes1
+        weight: 1
+      - path: Brach/root/pelvis/tail0
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Brach/root/spine0
+        weight: 1
+      - path: Brach/root/spine0/spine1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/left
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/right
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/jaw1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: brach_LOD_0
+        weight: 1
+      - path: brach_LOD_1
+        weight: 1
+      - path: brach_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Brach|Strafe
+      takeName: Brach|Strafe
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Brach
+        weight: 1
+      - path: Brach/root
+        weight: 1
+      - path: Brach/root/pelvis
+        weight: 1
+      - path: Brach/root/pelvis/left hips
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Brach/root/pelvis/right hips
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0/right
+          toes1
+        weight: 1
+      - path: Brach/root/pelvis/tail0
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Brach/root/spine0
+        weight: 1
+      - path: Brach/root/spine0/spine1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/left
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/right
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/jaw1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: brach_LOD_0
+        weight: 1
+      - path: brach_LOD_1
+        weight: 1
+      - path: brach_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Brach|Walk
+      takeName: Brach|Walk
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Brach
+        weight: 1
+      - path: Brach/root
+        weight: 1
+      - path: Brach/root/pelvis
+        weight: 1
+      - path: Brach/root/pelvis/left hips
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Brach/root/pelvis/right hips
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0/right
+          toes1
+        weight: 1
+      - path: Brach/root/pelvis/tail0
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Brach/root/spine0
+        weight: 1
+      - path: Brach/root/spine0/spine1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/left
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/right
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/jaw1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: brach_LOD_0
+        weight: 1
+      - path: brach_LOD_1
+        weight: 1
+      - path: brach_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Brach|WalkGrowl
+      takeName: Brach|WalkGrowl
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Brach
+        weight: 1
+      - path: Brach/root
+        weight: 1
+      - path: Brach/root/pelvis
+        weight: 1
+      - path: Brach/root/pelvis/left hips
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Brach/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Brach/root/pelvis/right hips
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0
+        weight: 1
+      - path: Brach/root/pelvis/right hips/right leg/right foot/Right toes0/right
+          toes1
+        weight: 1
+      - path: Brach/root/pelvis/tail0
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: Brach/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail7/tail8
+        weight: 1
+      - path: Brach/root/spine0
+        weight: 1
+      - path: Brach/root/spine0/spine1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/left
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/eyes/right
+          eye
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/jaw1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/neck4/neck5/neck6/neck7/neck8/neck9/neck10/neck11/neck12/neck13/neck14/neck15/neck16/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Brach/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: brach_LOD_0
+        weight: 1
+      - path: brach_LOD_1
+        weight: 1
+      - path: brach_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 75
+    secondaryUVAreaDistortion: 75
+    secondaryUVHardAngle: 180
+    secondaryUVPackMargin: 64
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,4198 @@
+fileFormatVersion: 2
+guid: c3633ed157ad70b4daba0326c9e5d0da
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Anky
+    100004: anky
+    100006: head
+    100008: jaw0
+    100010: jaw1
+    100012: jaw1_end
+    100014: left arm0
+    100016: left arm1
+    100018: left eye
+    100020: left eye_end
+    100022: left finger1
+    100024: left finger1_end
+    100026: left fingers0
+    100028: left foot
+    100030: left hand
+    100032: left hips
+    100034: left leg
+    100036: left toes0
+    100038: left toes1
+    100040: left toes1_end
+    100042: neck0
+    100044: neck1
+    100046: neck2
+    100048: neck3
+    100050: pelvis
+    100052: right arm0
+    100054: right arm1
+    100056: right eye
+    100058: right eye_end
+    100060: right fingers0
+    100062: right fingers1
+    100064: right fingers1_end
+    100066: right foot
+    100068: right hand
+    100070: right hips
+    100072: right leg
+    100074: Right toes0
+    100076: right toes1
+    100078: right toes1_end
+    100080: root
+    100082: spine0
+    100084: spine1
+    100086: spine2
+    100088: spine3
+    100090: spine4
+    100092: tail0
+    100094: tail1
+    100096: tail2
+    100098: tail3
+    100100: tail4
+    100102: tail5
+    100104: tail5_end
+    100106: tongue0
+    100108: tongue1
+    100110: tongue2
+    100112: tongue2_end
+    100114: anky_LOD_0
+    100116: anky_LOD_1
+    100118: anky_LOD_2
+    100120: right toes0
+    400000: Anky
+    400002: //RootNode
+    400004: anky
+    400006: head
+    400008: jaw0
+    400010: jaw1
+    400012: jaw1_end
+    400014: left arm0
+    400016: left arm1
+    400018: left eye
+    400020: left eye_end
+    400022: left finger1
+    400024: left finger1_end
+    400026: left fingers0
+    400028: left foot
+    400030: left hand
+    400032: left hips
+    400034: left leg
+    400036: left toes0
+    400038: left toes1
+    400040: left toes1_end
+    400042: neck0
+    400044: neck1
+    400046: neck2
+    400048: neck3
+    400050: pelvis
+    400052: right arm0
+    400054: right arm1
+    400056: right eye
+    400058: right eye_end
+    400060: right fingers0
+    400062: right fingers1
+    400064: right fingers1_end
+    400066: right foot
+    400068: right hand
+    400070: right hips
+    400072: right leg
+    400074: Right toes0
+    400076: right toes1
+    400078: right toes1_end
+    400080: root
+    400082: spine0
+    400084: spine1
+    400086: spine2
+    400088: spine3
+    400090: spine4
+    400092: tail0
+    400094: tail1
+    400096: tail2
+    400098: tail3
+    400100: tail4
+    400102: tail5
+    400104: tail5_end
+    400106: tongue0
+    400108: tongue1
+    400110: tongue2
+    400112: tongue2_end
+    400114: anky_LOD_0
+    400116: anky_LOD_1
+    400118: anky_LOD_2
+    400120: right toes0
+    4300000: anky
+    4300002: anky_LOD_2
+    4300004: anky_LOD_1
+    4300006: anky_LOD_0
+    7400000: Anky|Anky
+    7400002: Anky|AttackC
+    7400004: Anky|AttackLoop
+    7400006: Anky|AttackLoopGrowl
+    7400008: Anky|AttackToStand2
+    7400010: Anky|Die1
+    7400012: Anky|Die2
+    7400014: Anky|EatA
+    7400016: Anky|EatB
+    7400018: Anky|EatC
+    7400020: Anky|Run
+    7400022: Anky|RunGrowl
+    7400024: Anky|SitGrowl
+    7400026: Anky|SitLoop
+    7400028: Anky|Sitting
+    7400030: Anky|SleepLoop
+    7400032: Anky|Stand1A
+    7400034: Anky|Stand1B
+    7400036: Anky|Stand1C
+    7400038: Anky|Stand1ToAttackA
+    7400040: Anky|Stand1ToAttackB
+    7400042: Anky|Stand2A
+    7400044: Anky|Stand2B
+    7400046: Anky|Stand2C
+    7400048: Anky|Step1
+    7400050: Anky|Step2
+    7400052: Anky|Strafe1
+    7400054: Anky|Strafe2
+    7400056: Anky|Walk
+    7400058: Anky|WalkGrowl
+    9500000: //RootNode
+    13700000: anky
+    13700002: anky_LOD_0
+    13700004: anky_LOD_1
+    13700006: anky_LOD_2
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: anky
+    second: {fileID: 2100000, guid: 106c9e7a9dbdcab4dbac50b946c357c2, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Anky|AttackC
+      takeName: Anky|AttackC
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|AttackLoop
+      takeName: Anky|AttackLoop
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|AttackLoopGrowl
+      takeName: Anky|AttackLoopGrowl
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|AttackToStand2
+      takeName: Anky|AttackToStand2
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|Die1
+      takeName: Anky|Die1
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|Die2
+      takeName: Anky|Die2
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|EatA
+      takeName: Anky|EatA
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|EatB
+      takeName: Anky|EatB
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|EatC
+      takeName: Anky|EatC
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|Run
+      takeName: Anky|Run
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|RunGrowl
+      takeName: Anky|RunGrowl
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|SitGrowl
+      takeName: Anky|SitGrowl
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|SitLoop
+      takeName: Anky|SitLoop
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|Sitting
+      takeName: Anky|Sitting
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|SleepLoop
+      takeName: Anky|SleepLoop
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|Stand1A
+      takeName: Anky|Stand1A
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|Stand1B
+      takeName: Anky|Stand1B
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|Stand1C
+      takeName: Anky|Stand1C
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|Stand1ToAttackA
+      takeName: Anky|Stand1ToAttackA
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|Stand1ToAttackB
+      takeName: Anky|Stand1ToAttackB
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|Stand2A
+      takeName: Anky|Stand2A
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|Stand2B
+      takeName: Anky|Stand2B
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|Stand2C
+      takeName: Anky|Stand2C
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|Step1
+      takeName: Anky|Step1
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|Step2
+      takeName: Anky|Step2
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|Strafe1
+      takeName: Anky|Strafe1
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|Strafe2
+      takeName: Anky|Strafe2
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|Walk
+      takeName: Anky|Walk
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anky|WalkGrowl
+      takeName: Anky|WalkGrowl
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anky
+        weight: 1
+      - path: Anky/root
+        weight: 1
+      - path: Anky/root/pelvis
+        weight: 1
+      - path: Anky/root/pelvis/left hips
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0
+        weight: 1
+      - path: Anky/root/pelvis/left hips/left leg/left foot/left toes0/left toes1
+        weight: 1
+      - path: Anky/root/pelvis/right hips
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0
+        weight: 1
+      - path: Anky/root/pelvis/right hips/right leg/right foot/right toes0/right toes1
+        weight: 1
+      - path: Anky/root/pelvis/tail0
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Anky/root/pelvis/tail0/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Anky/root/spine0
+        weight: 1
+      - path: Anky/root/spine0/spine1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/left arm0/left arm1/left
+          hand/left fingers0/left finger1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/jaw1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/jaw0/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/left
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/neck0/neck1/neck2/neck3/head/right
+          eye
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0
+        weight: 1
+      - path: Anky/root/spine0/spine1/spine2/spine3/spine4/right arm0/right arm1/right
+          hand/right fingers0/right fingers1
+        weight: 1
+      - path: anky_LOD_0
+        weight: 1
+      - path: anky_LOD_1
+        weight: 1
+      - path: anky_LOD_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
