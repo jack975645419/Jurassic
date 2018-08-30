@@ -281,7 +281,7 @@ public class AnimalAI : MonoBehaviour {
         {
             return AINodeState.AINS_Finish;
         }
-        else if (localPosition.z > 0 && localPosition.z / localPosition.x < 0.2f)
+        else if (localPosition.z > 0 && localPosition.z / localPosition.x < 0.3f)
         {
             return AINodeState.AINS_Finish;
         }
