@@ -41,7 +41,6 @@ GameObject:
   - component: {fileID: 75887244228279120}
   - component: {fileID: 205901218602729296}
   - component: {fileID: 114945546887704110}
-  - component: {fileID: 114727390051297590}
   m_Layer: 0
   m_Name: Anky
   m_TagString: Untagged
@@ -1625,17 +1624,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114727390051297590
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1023160628735232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95685f939069b9d42860e385d7d31734, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114945546887704110
 MonoBehaviour:
   m_ObjectHideFlags: 1

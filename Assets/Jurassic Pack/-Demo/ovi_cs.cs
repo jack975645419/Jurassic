@@ -11,7 +11,7 @@ public class ovi_cs : MonoBehaviour {
 	int lodselect=0, skinselect =0;
 	string infos;
 	Animator anim;
-	AudioSource source;
+	//AudioSource source;
 	LODGroup lods;
 	SkinnedMeshRenderer[] rend;
 	public Texture[] skin;
@@ -48,7 +48,7 @@ public class ovi_cs : MonoBehaviour {
 		Head   = this.transform.Find ("Ovi/root/spine0/spine1/spine2/spine3/spine4/spine5/neck0/neck1/neck2/neck3/head");
 		Jaw    = this.transform.Find ("Ovi/root/spine0/spine1/spine2/spine3/spine4/spine5/neck0/neck1/neck2/neck3/head/jaw0");
 	
-		source = GetComponent<AudioSource>();
+		//source = GetComponent<AudioSource>();
 		anim = GetComponent<Animator>();
 		lods = GetComponent<LODGroup>();
 		rend = GetComponentsInChildren <SkinnedMeshRenderer>();
@@ -303,399 +303,7 @@ public class ovi_cs : MonoBehaviour {
 					balance = 0.0F; 
 			}
 		}
-
-
-		//***************************************************************************************
-		//Sound Fx code
-		
-		//Get current animation point
-		animcount = (anim.GetCurrentAnimatorStateInfo (0).normalizedTime) % 1.0F;
-		if(anim.GetAnimatorTransitionInfo(0).normalizedTime!=0.0F) animcount=0.0F;
-		animcount = Mathf.Round(animcount * 30);
-
-		if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|SleepLoop") ||
-			anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|SleepLoop"))
-		{
-			if(soundplayed==false && animcount==10)
-			{
-				source.pitch=Random.Range(1.5F, 1.6F);
-				source.PlayOneShot(Idlecarn,Random.Range(0.4F, 0.6F));
-				soundplayed=true;
-			}
-			else if(animcount!=10) soundplayed=false;
-		}
-
-
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|StandC") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|StandC"))
-		{
-			if(soundplayed==false && animcount==4)
-			{
-				source.pitch=Random.Range(0.9F, 1.1F);
-				source.PlayOneShot(Ovi_Roar1,Random.Range(0.5F, 1.0F));
-				soundplayed=true;
-			}
-			else if(animcount!=4) soundplayed=false;
-		}
-
-
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|StandD") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|StandD"))
-		{
-			if(soundplayed==false &&(animcount==1 || animcount==8 || animcount==16))
-			{
-				source.pitch=Random.Range(0.9F, 1.1F);
-				source.PlayOneShot(Ovi_Bark,Random.Range(0.5F, 0.75F));
-				soundplayed=true;
-			}
-			else if(animcount!=1 && animcount!=8 && animcount!=16) soundplayed=false;
-		}
-
-
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|StandE") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|StandE"))
-		{
-			if(soundplayed==false &&(animcount==6 || animcount==12 || animcount==18))
-			{
-				source.pitch=Random.Range(0.9F, 1.1F);
-				source.PlayOneShot(Bite,Random.Range(0.5F, 0.75F));
-				soundplayed=true;
-			}
-			else if(animcount!=6 && animcount!=12 && animcount!=18) soundplayed=false;
-		}
-
-
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|EatA") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|EatA"))
-		{
-
-			if(soundplayed==false && animcount==6)
-			{
-				source.pitch=Random.Range(1.5F, 2.0F);
-				source.PlayOneShot(Bite,Random.Range(0.1F, 0.2F));
-				source.PlayOneShot(Idlecarn,Random.Range(0.4F, 0.6F));
-				soundplayed=true;
-			}
-			else if(animcount!=6) soundplayed=false;
-		}
-
-
-
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|AttackA") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|AttackA")||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|AttackB") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|AttackB"))
-		{
-			if(soundplayed==false &&(animcount==2))
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Ovi_Attack1,Random.Range(0.5F, 0.75F));
-				soundplayed=true;
-			}
-			else if(soundplayed==false &&(animcount==12))
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Bite,Random.Range(0.5F, 0.75F));
-				soundplayed=true;
-			}
-			else if(animcount!=2 && animcount!=12) soundplayed=false;
-		}
-
-
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|RunAttackA") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|RunAttackA"))
-		{
-			if(soundplayed==false &&(animcount==2))
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Ovi_Attack2,Random.Range(0.5F, 0.75F));
-				soundplayed=true;
-			}
-			else if(soundplayed==false &&(animcount==15))
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Bite,Random.Range(0.5F, 0.75F));
-				soundplayed=true;
-			}
-			else if(animcount!=2 && animcount!=15) soundplayed=false;
-		}
-
-
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|RunAttackB") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|RunAttackB"))
-		{
-			if(soundplayed==false &&(animcount==3))
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Ovi_Attack1,Random.Range(0.5F, 0.75F));
-				soundplayed=true;
-			}
-			else if(soundplayed==false &&(animcount==15))
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Bite,Random.Range(0.5F, 0.75F));
-				soundplayed=true;
-			}
-			else if(animcount!=3 && animcount!=15) soundplayed=false;
-		}
-
-
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|JumpLoopAttack") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|JumpLoopAttack"))
-		{
-			if(soundplayed==false &&(animcount==15))
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Bite,Random.Range(0.5F, 0.75F));
-				soundplayed=true;
-			}
-			else if(animcount!=15) soundplayed=false;
-		}
-
-
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|JumpAttack") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|JumpAttack"))
-		{
-			if(soundplayed==false &&(animcount==3))
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Ovi_Attack3,Random.Range(0.5F, 0.75F));
-				soundplayed=true;
-			}
-			else if(animcount!=3) soundplayed=false;
-		}
-
-
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|GroundAttack") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|GroundAttack"))
-		{
-			if(soundplayed==false &&(animcount==3))
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Ovi_Attack1,Random.Range(0.5F, 0.75F));
-				soundplayed=true;
-			}
-			else if(soundplayed==false &&(animcount==5))
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Bite,Random.Range(0.5F, 0.75F));
-				soundplayed=true;
-			}
-			else if(animcount!=3 && animcount!=5) soundplayed=false;
-
-		}
-
-
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|Walk") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|Walk") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|WalkGrowl") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|WalkGrowl"))
-		{
-
-			if(soundplayed==false && animcount==2 && (
-			   anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|WalkGrowl") ||
-			   anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|WalkGrowl")))
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Ovi_Roar2,Random.Range(0.75F, 1.00F));
-				soundplayed=true;
-			}
-
-
-			if(soundplayed==false && (animcount==10 || animcount==25))
-			{
-				source.pitch=Random.Range(1.1F, 1.25F);
-				source.PlayOneShot(Smallstep,Random.Range(0.4F, 0.5F));
-				soundplayed=true;
-			}
-			else if(animcount!=2 && animcount!=10 && animcount!=25) soundplayed=false;
-		}
-
-
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|WalkToStand") ||
-				 anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|WalkToStand") ||
-				 anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|StandToWalk") ||
-				 anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|StandToWalk") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|RunToStand") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|RunToStand"))
-		{
-			if(soundplayed==false && (animcount==15 || animcount==25))
-			{
-				source.pitch=Random.Range(1.1F, 1.25F);
-				source.PlayOneShot(Smallstep,Random.Range(0.4F, 0.5F));
-				soundplayed=true;
-			}
-			else if(animcount!=15 && animcount!=25) soundplayed=false;
-
-		}
-
-
-		else if ( anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|Steps-") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|Steps-"))
-		{
-			if(soundplayed==false && (animcount==12 || animcount==26))
-			{
-				source.pitch=Random.Range(1.1F, 1.25F);
-				source.PlayOneShot(Smallstep,Random.Range(0.4F, 0.5F));
-				soundplayed=true;
-			}
-			else if(animcount!=12 && animcount!=26) soundplayed=false;
-			
-		}
-
-
-		else if ( anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|Steps+") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|Steps+"))
-		{
-			if(soundplayed==false && (animcount==5 || animcount==20))
-			{
-				source.pitch=Random.Range(1.1F, 1.25F);
-				source.PlayOneShot(Smallstep,Random.Range(0.4F, 0.5F));
-				soundplayed=true;
-			}
-			else if(animcount!=2 && animcount!=5 && animcount!=20) soundplayed=false;
-			
-		}
-
-
-		else if ( anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|Strafe-") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|Strafe-") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|Strafe+") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|Strafe+"))
-		{
-			if(soundplayed==false && (animcount==12 || animcount==26))
-			{
-				source.pitch=Random.Range(1.1F, 1.25F);
-				source.PlayOneShot(Smallstep,Random.Range(0.4F, 0.5F));
-				soundplayed=true;
-			}
-			else if(animcount!=12 && animcount!=26) soundplayed=false;
-			
-		}
-
-
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|StepsGrowl+") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|StepsGrowl+") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|StepsGrowl-") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|StepsGrowl-"))
-		{
-			if(soundplayed==false && animcount==4)
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Ovi_Roar1,Random.Range(0.75F, 1.00F));
-				soundplayed=true;
-			}
-			else if(animcount!=4) soundplayed=false;
-			
-		}
-
-
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|Run") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|Run") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|RunGrowl") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|RunGrowl"))
-		{
-			
-			if(soundplayed==false && animcount==2 && (
-				anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|RunGrowl") ||
-				anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|RunGrowl")))
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Ovi_Roar2,Random.Range(0.75F, 1.00F));
-				soundplayed=true;
-			} 
-	
-			if(soundplayed==false && (animcount==10 || animcount==25))
-			{
-				source.pitch=Random.Range(1.1F, 1.25F);
-				source.PlayOneShot(Smallstep,Random.Range(0.4F, 0.5F));
-				soundplayed=true;
-			}
-			else if(animcount!=2 && animcount!=10 && animcount!=25) soundplayed=false;
-		}
-
-
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|StandJumpUp") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|StandJumpUp") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|RunJumpUp") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|RunJumpUp"))
-		{
-			if(soundplayed==false && animcount==4)
-			{
-				source.pitch=Random.Range(1.5F, 2.0F);
-				source.PlayOneShot(Ovi_Attack3,Random.Range(0.5F, 0.75F));
-				soundplayed=true;
-			}
-			else if(animcount!=4 ) soundplayed=false;
-			
-		}
-
-
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|StandJumpDown") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|StandJumpDown") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|RunJumpDown") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|RunJumpDown"))
-		{
-			if(soundplayed==false && animcount==4)
-			{
-				source.pitch=Random.Range(0.75F, 1.0F);
-				source.PlayOneShot(Smallstep,Random.Range(0.4F, 0.5F));
-				soundplayed=true;
-			}
-			else if(animcount!=4 ) soundplayed=false;
-			
-		}
-
-
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|JumpLoop") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|JumpLoop"))
-		{
-			if(soundplayed==false && (animcount==6 || animcount==16))
-			{
-				source.pitch=Random.Range(0.5F, 0.5F);
-				source.PlayOneShot(Smallstep,Random.Range(0.4F, 0.5F));
-				soundplayed=true;
-			}
-			else if(animcount!=6 && animcount!=16 ) soundplayed=false;
-			
-		}
-
-
-		else if (!isdead && ( anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|Die") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|Die")))
-		{
-			if(soundplayed==false && animcount==4)
-			{
-				source.pitch=Random.Range(0.75F, 1.0F);
-				source.PlayOneShot(Ovi_Roar2,Random.Range(0.5F, 1.0F));
-				soundplayed=true;
-			}
-			if(soundplayed==false && animcount==20)
-			{
-				source.PlayOneShot(Smallstep,Random.Range(0.5F, 1.0F));
-				soundplayed=true;
-			}
-			else if(animcount!=4 && animcount!=20  ) soundplayed=false;
-
-			if(animcount>20) isdead=true;
-		}
-
-
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|Rise") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|Rise"))
-		{
-			isdead=false;
-
-			if(soundplayed==false && animcount==1)
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Ovi_Attack2,Random.Range(0.5F, 1.0F));
-				soundplayed=true;
-			}
-
-			else if(animcount!=1) soundplayed=false;
-		}
-
+        //sound
 
 
 	}
@@ -1133,3 +741,396 @@ void FixedUpdate ()
 
 
 
+/*
+
+		//***************************************************************************************
+		//Sound Fx code
+		
+		//Get current animation point
+		animcount = (anim.GetCurrentAnimatorStateInfo (0).normalizedTime) % 1.0F;
+		if(anim.GetAnimatorTransitionInfo(0).normalizedTime!=0.0F) animcount=0.0F;
+		animcount = Mathf.Round(animcount * 30);
+
+		if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|SleepLoop") ||
+			anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|SleepLoop"))
+		{
+			if(soundplayed==false && animcount==10)
+			{
+				source.pitch=Random.Range(1.5F, 1.6F);
+				source.PlayOneShot(Idlecarn,Random.Range(0.4F, 0.6F));
+				soundplayed=true;
+			}
+			else if(animcount!=10) soundplayed=false;
+		}
+
+
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|StandC") ||
+		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|StandC"))
+		{
+			if(soundplayed==false && animcount==4)
+			{
+				source.pitch=Random.Range(0.9F, 1.1F);
+				source.PlayOneShot(Ovi_Roar1,Random.Range(0.5F, 1.0F));
+				soundplayed=true;
+			}
+			else if(animcount!=4) soundplayed=false;
+		}
+
+
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|StandD") ||
+		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|StandD"))
+		{
+			if(soundplayed==false &&(animcount==1 || animcount==8 || animcount==16))
+			{
+				source.pitch=Random.Range(0.9F, 1.1F);
+				source.PlayOneShot(Ovi_Bark,Random.Range(0.5F, 0.75F));
+				soundplayed=true;
+			}
+			else if(animcount!=1 && animcount!=8 && animcount!=16) soundplayed=false;
+		}
+
+
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|StandE") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|StandE"))
+		{
+			if(soundplayed==false &&(animcount==6 || animcount==12 || animcount==18))
+			{
+				source.pitch=Random.Range(0.9F, 1.1F);
+				source.PlayOneShot(Bite,Random.Range(0.5F, 0.75F));
+				soundplayed=true;
+			}
+			else if(animcount!=6 && animcount!=12 && animcount!=18) soundplayed=false;
+		}
+
+
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|EatA") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|EatA"))
+		{
+
+			if(soundplayed==false && animcount==6)
+			{
+				source.pitch=Random.Range(1.5F, 2.0F);
+				source.PlayOneShot(Bite,Random.Range(0.1F, 0.2F));
+				source.PlayOneShot(Idlecarn,Random.Range(0.4F, 0.6F));
+				soundplayed=true;
+			}
+			else if(animcount!=6) soundplayed=false;
+		}
+
+
+
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|AttackA") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|AttackA")||
+		         anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|AttackB") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|AttackB"))
+		{
+			if(soundplayed==false &&(animcount==2))
+			{
+				source.pitch=Random.Range(1.0F, 1.25F);
+				source.PlayOneShot(Ovi_Attack1,Random.Range(0.5F, 0.75F));
+				soundplayed=true;
+			}
+			else if(soundplayed==false &&(animcount==12))
+			{
+				source.pitch=Random.Range(1.0F, 1.25F);
+				source.PlayOneShot(Bite,Random.Range(0.5F, 0.75F));
+				soundplayed=true;
+			}
+			else if(animcount!=2 && animcount!=12) soundplayed=false;
+		}
+
+
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|RunAttackA") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|RunAttackA"))
+		{
+			if(soundplayed==false &&(animcount==2))
+			{
+				source.pitch=Random.Range(1.0F, 1.25F);
+				source.PlayOneShot(Ovi_Attack2,Random.Range(0.5F, 0.75F));
+				soundplayed=true;
+			}
+			else if(soundplayed==false &&(animcount==15))
+			{
+				source.pitch=Random.Range(1.0F, 1.25F);
+				source.PlayOneShot(Bite,Random.Range(0.5F, 0.75F));
+				soundplayed=true;
+			}
+			else if(animcount!=2 && animcount!=15) soundplayed=false;
+		}
+
+
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|RunAttackB") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|RunAttackB"))
+		{
+			if(soundplayed==false &&(animcount==3))
+			{
+				source.pitch=Random.Range(1.0F, 1.25F);
+				source.PlayOneShot(Ovi_Attack1,Random.Range(0.5F, 0.75F));
+				soundplayed=true;
+			}
+			else if(soundplayed==false &&(animcount==15))
+			{
+				source.pitch=Random.Range(1.0F, 1.25F);
+				source.PlayOneShot(Bite,Random.Range(0.5F, 0.75F));
+				soundplayed=true;
+			}
+			else if(animcount!=3 && animcount!=15) soundplayed=false;
+		}
+
+
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|JumpLoopAttack") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|JumpLoopAttack"))
+		{
+			if(soundplayed==false &&(animcount==15))
+			{
+				source.pitch=Random.Range(1.0F, 1.25F);
+				source.PlayOneShot(Bite,Random.Range(0.5F, 0.75F));
+				soundplayed=true;
+			}
+			else if(animcount!=15) soundplayed=false;
+		}
+
+
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|JumpAttack") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|JumpAttack"))
+		{
+			if(soundplayed==false &&(animcount==3))
+			{
+				source.pitch=Random.Range(1.0F, 1.25F);
+				source.PlayOneShot(Ovi_Attack3,Random.Range(0.5F, 0.75F));
+				soundplayed=true;
+			}
+			else if(animcount!=3) soundplayed=false;
+		}
+
+
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|GroundAttack") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|GroundAttack"))
+		{
+			if(soundplayed==false &&(animcount==3))
+			{
+				source.pitch=Random.Range(1.0F, 1.25F);
+				source.PlayOneShot(Ovi_Attack1,Random.Range(0.5F, 0.75F));
+				soundplayed=true;
+			}
+			else if(soundplayed==false &&(animcount==5))
+			{
+				source.pitch=Random.Range(1.0F, 1.25F);
+				source.PlayOneShot(Bite,Random.Range(0.5F, 0.75F));
+				soundplayed=true;
+			}
+			else if(animcount!=3 && animcount!=5) soundplayed=false;
+
+		}
+
+
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|Walk") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|Walk") ||
+		         anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|WalkGrowl") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|WalkGrowl"))
+		{
+
+			if(soundplayed==false && animcount==2 && (
+			   anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|WalkGrowl") ||
+			   anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|WalkGrowl")))
+			{
+				source.pitch=Random.Range(1.0F, 1.25F);
+				source.PlayOneShot(Ovi_Roar2,Random.Range(0.75F, 1.00F));
+				soundplayed=true;
+			}
+
+
+			if(soundplayed==false && (animcount==10 || animcount==25))
+			{
+				source.pitch=Random.Range(1.1F, 1.25F);
+				source.PlayOneShot(Smallstep,Random.Range(0.4F, 0.5F));
+				soundplayed=true;
+			}
+			else if(animcount!=2 && animcount!=10 && animcount!=25) soundplayed=false;
+		}
+
+
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|WalkToStand") ||
+				 anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|WalkToStand") ||
+				 anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|StandToWalk") ||
+				 anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|StandToWalk") ||
+		         anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|RunToStand") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|RunToStand"))
+		{
+			if(soundplayed==false && (animcount==15 || animcount==25))
+			{
+				source.pitch=Random.Range(1.1F, 1.25F);
+				source.PlayOneShot(Smallstep,Random.Range(0.4F, 0.5F));
+				soundplayed=true;
+			}
+			else if(animcount!=15 && animcount!=25) soundplayed=false;
+
+		}
+
+
+		else if ( anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|Steps-") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|Steps-"))
+		{
+			if(soundplayed==false && (animcount==12 || animcount==26))
+			{
+				source.pitch=Random.Range(1.1F, 1.25F);
+				source.PlayOneShot(Smallstep,Random.Range(0.4F, 0.5F));
+				soundplayed=true;
+			}
+			else if(animcount!=12 && animcount!=26) soundplayed=false;
+			
+		}
+
+
+		else if ( anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|Steps+") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|Steps+"))
+		{
+			if(soundplayed==false && (animcount==5 || animcount==20))
+			{
+				source.pitch=Random.Range(1.1F, 1.25F);
+				source.PlayOneShot(Smallstep,Random.Range(0.4F, 0.5F));
+				soundplayed=true;
+			}
+			else if(animcount!=2 && animcount!=5 && animcount!=20) soundplayed=false;
+			
+		}
+
+
+		else if ( anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|Strafe-") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|Strafe-") ||
+		         anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|Strafe+") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|Strafe+"))
+		{
+			if(soundplayed==false && (animcount==12 || animcount==26))
+			{
+				source.pitch=Random.Range(1.1F, 1.25F);
+				source.PlayOneShot(Smallstep,Random.Range(0.4F, 0.5F));
+				soundplayed=true;
+			}
+			else if(animcount!=12 && animcount!=26) soundplayed=false;
+			
+		}
+
+
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|StepsGrowl+") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|StepsGrowl+") ||
+		         anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|StepsGrowl-") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|StepsGrowl-"))
+		{
+			if(soundplayed==false && animcount==4)
+			{
+				source.pitch=Random.Range(1.0F, 1.25F);
+				source.PlayOneShot(Ovi_Roar1,Random.Range(0.75F, 1.00F));
+				soundplayed=true;
+			}
+			else if(animcount!=4) soundplayed=false;
+			
+		}
+
+
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|Run") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|Run") ||
+		         anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|RunGrowl") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|RunGrowl"))
+		{
+			
+			if(soundplayed==false && animcount==2 && (
+				anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|RunGrowl") ||
+				anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|RunGrowl")))
+			{
+				source.pitch=Random.Range(1.0F, 1.25F);
+				source.PlayOneShot(Ovi_Roar2,Random.Range(0.75F, 1.00F));
+				soundplayed=true;
+			} 
+	
+			if(soundplayed==false && (animcount==10 || animcount==25))
+			{
+				source.pitch=Random.Range(1.1F, 1.25F);
+				source.PlayOneShot(Smallstep,Random.Range(0.4F, 0.5F));
+				soundplayed=true;
+			}
+			else if(animcount!=2 && animcount!=10 && animcount!=25) soundplayed=false;
+		}
+
+
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|StandJumpUp") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|StandJumpUp") ||
+		         anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|RunJumpUp") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|RunJumpUp"))
+		{
+			if(soundplayed==false && animcount==4)
+			{
+				source.pitch=Random.Range(1.5F, 2.0F);
+				source.PlayOneShot(Ovi_Attack3,Random.Range(0.5F, 0.75F));
+				soundplayed=true;
+			}
+			else if(animcount!=4 ) soundplayed=false;
+			
+		}
+
+
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|StandJumpDown") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|StandJumpDown") ||
+		         anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|RunJumpDown") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|RunJumpDown"))
+		{
+			if(soundplayed==false && animcount==4)
+			{
+				source.pitch=Random.Range(0.75F, 1.0F);
+				source.PlayOneShot(Smallstep,Random.Range(0.4F, 0.5F));
+				soundplayed=true;
+			}
+			else if(animcount!=4 ) soundplayed=false;
+			
+		}
+
+
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|JumpLoop") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|JumpLoop"))
+		{
+			if(soundplayed==false && (animcount==6 || animcount==16))
+			{
+				source.pitch=Random.Range(0.5F, 0.5F);
+				source.PlayOneShot(Smallstep,Random.Range(0.4F, 0.5F));
+				soundplayed=true;
+			}
+			else if(animcount!=6 && animcount!=16 ) soundplayed=false;
+			
+		}
+
+
+		else if (!isdead && ( anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|Die") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|Die")))
+		{
+			if(soundplayed==false && animcount==4)
+			{
+				source.pitch=Random.Range(0.75F, 1.0F);
+				source.PlayOneShot(Ovi_Roar2,Random.Range(0.5F, 1.0F));
+				soundplayed=true;
+			}
+			if(soundplayed==false && animcount==20)
+			{
+				source.PlayOneShot(Smallstep,Random.Range(0.5F, 1.0F));
+				soundplayed=true;
+			}
+			else if(animcount!=4 && animcount!=20  ) soundplayed=false;
+
+			if(animcount>20) isdead=true;
+		}
+
+
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ovi|Rise") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ovi|Rise"))
+		{
+			isdead=false;
+
+			if(soundplayed==false && animcount==1)
+			{
+				source.pitch=Random.Range(1.0F, 1.25F);
+				source.PlayOneShot(Ovi_Attack2,Random.Range(0.5F, 1.0F));
+				soundplayed=true;
+			}
+
+			else if(animcount!=1) soundplayed=false;
+		}
+*/

@@ -71,9 +71,7 @@ public class PawnSensor : MonoBehaviour {
                 PawnsSensed.Add(c.gameObject);
                 continue;
             }
-
-            Debug.Log("localposition" + _localPosition + " "  + c.gameObject.name);
-
+            
             if (_localPosition.z>0 
                 && _localPosition.z<m_VisionRange 
                 && Mathf.Tan(m_VisionAngle/2.0f * Mathf.Deg2Rad)>Mathf.Abs(_localPosition.x/_localPosition.z))

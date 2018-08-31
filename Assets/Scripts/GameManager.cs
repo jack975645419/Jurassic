@@ -41,6 +41,8 @@ public class BasicTools
 public class GameManager : Singleton<GameManager> {
     public GameObject Player = null;
     public GameObject Ground = null;
+    public GameObject[] GOs = new GameObject[10];
+
     public override void Start()
     {
         base.Start();

@@ -16,6 +16,7 @@ public class anky_cs : MonoBehaviour
 	public Texture[] skin;
 	public AudioClip Medstep,Idleherb,Anky_Roar1,Anky_Roar2,Anky_Call1,Anky_Call2,Sniff1,Chew,Largestep;
 
+    public PseudoInput m_PseudoInput = new PseudoInput();
 
 	void Awake ()
 	{
@@ -47,6 +48,7 @@ public class anky_cs : MonoBehaviour
 
 	void OnGUI ()
 	{
+        return;
 		switch (skinselect)
 		{
 		case 0:
@@ -134,9 +136,167 @@ public class anky_cs : MonoBehaviour
 	}
 
 
+    private void Start()
+    {
+        
+    }
 
-	void Update ()
+    private void Update()
+    {
+
+
+        //***************************************************************************************
+        //Moves animation controller
+        if (m_PseudoInput.W && m_PseudoInput.Space) anim.SetInteger("State", 2); //Steps forward
+        else if ( m_PseudoInput.LeftShift && m_PseudoInput.W ) anim.SetInteger("State", 3); //Run
+        else if ( m_PseudoInput.W ) anim.SetInteger("State", 1); //Walk
+        else if ( m_PseudoInput.Space && m_PseudoInput.S ) anim.SetInteger("State", -2); //Steps backward
+        else if (m_PseudoInput.S) anim.SetInteger("State", -1); //Walk backward
+        else if (m_PseudoInput.A) anim.SetInteger("State", 10); //Strafe+
+        else if (m_PseudoInput.D) anim.SetInteger("State", -10); //Strafe-
+        else if (m_PseudoInput.Space) anim.SetInteger("State", 100); //Steps
+        else if (m_PseudoInput.LeftCtrl) anim.SetInteger("State", -100); //Attack  pose
+        else anim.SetInteger("State", 0); //back to loop
+
+
+        //Attack animation controller
+        if (m_PseudoInput.LeftClick)
+            anim.SetBool("Attack", true);
+        else
+            anim.SetBool("Attack", false);
+
+
+        //Growl animation controller
+        if (Input.GetKey(KeyCode.E))
+            anim.SetBool("Growl", true);
+        else
+            anim.SetBool("Growl", false);
+
+
+        //Idles animation controller
+        if (m_PseudoInput.AlphaX == 1)
+            anim.SetInteger("Idle", 1); //Idle 1
+        else if (m_PseudoInput.AlphaX == 2)
+            anim.SetInteger("Idle", 2); //Idle 2
+        else if (m_PseudoInput.AlphaX == 3)
+            anim.SetInteger("Idle", 3); //Eat
+        else if (m_PseudoInput.AlphaX == 4)
+            anim.SetInteger("Idle", 4); //Drink
+        else if (m_PseudoInput.AlphaX == 5)
+            anim.SetInteger("Idle", 5); //Sleep
+        else if (m_PseudoInput.AlphaX == 6)
+            anim.SetInteger("Idle", 6); //Die
+        else
+            anim.SetInteger("Idle", 0);
+
+
+        //***************************************************************************************
+        //Spine control
+        turn = m_PseudoInput.RightPad.x;
+        pitch = m_PseudoInput.RightPad.y;
+/*
+
+        if (m_PseudoInput.righ && reset == false)
+        {
+            turn += Input.GetAxis("Mouse X") * 1.0F;
+            pitch += Input.GetAxis("Mouse Y") * 1.0F;
+        }
+        else if (turn != 0.0F || pitch != 0.0F)
+        {
+            if (turn < 0.0F)
+            {
+                if (turn < -0.25F)
+                    turn += 0.25F;
+                else
+                    turn = 0.0F;
+            }
+            else if (turn > 0.0F)
+            {
+                if (turn > 0.25F)
+                    turn -= 0.25F;
+                else
+                    turn = 0.0F;
+            }
+            if (pitch < 0.0F)
+            {
+                if (pitch < -0.5F)
+                    pitch += 0.5F;
+                else
+                {
+                    pitch = 0.0F;
+                    reset = false;
+                }
+            }
+            else if (pitch > 0.0F)
+            {
+                if (pitch > 0.5F)
+                    pitch -= 0.5F;
+                else
+                {
+                    pitch = 0.0F;
+                    reset = false;
+                }
+            }
+        }*/
+
+
+        //Jaw control
+        if (m_PseudoInput.LeftClick &&
+            (reset == false) &&
+            (!anim.GetCurrentAnimatorStateInfo(0).IsName("Anky|Stand1A")) &&
+            (!anim.GetCurrentAnimatorStateInfo(0).IsName("Anky|Stand2A")) &&
+            (!anim.GetCurrentAnimatorStateInfo(0).IsName("Anky|Stand1B")) &&
+            (!anim.GetCurrentAnimatorStateInfo(0).IsName("Anky|Stand2C")) &&
+            (!anim.GetCurrentAnimatorStateInfo(0).IsName("Anky|Stand1Attack")) &&
+            (!anim.GetCurrentAnimatorStateInfo(0).IsName("Anky|Stand2Attack")) &&
+            (!anim.GetCurrentAnimatorStateInfo(0).IsName("Anky|Step1Attack")) &&
+            (!anim.GetCurrentAnimatorStateInfo(0).IsName("Anky|Step2Attack")) &&
+            (!anim.GetCurrentAnimatorStateInfo(0).IsName("Anky|WalkGrowl")) &&
+            (!anim.GetCurrentAnimatorStateInfo(0).IsName("Anky|RunGrowl")) &&
+            (!anim.GetCurrentAnimatorStateInfo(0).IsName("Anky|RunAttackA")) &&
+            (!anim.GetCurrentAnimatorStateInfo(0).IsName("Anky|RunAttackB")) &&
+            (!anim.GetCurrentAnimatorStateInfo(0).IsName("Anky|WalkShake"))
+            )
+            open -= 4.0F;
+        else
+            open += 1.0F;
+
+
+        //Reset spine position during specific animation
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Anky|EatC"))
+            reset = true;
+        else reset = false;
+
+
+        //Reset tail and spine position
+        if (((anim.GetInteger("State") != 1) || (anim.GetInteger("State") != 3)) && (balance != 0.0F))
+        {
+            if (balance < 0.0F)
+            {
+                if (balance < -0.1F)
+                    balance += 0.1F;
+                else
+                    balance = 0.0F;
+            }
+            else if (balance > 0.0F)
+            {
+                if (balance > 0.1F)
+                    balance -= 0.1F;
+                else
+                    balance = 0.0F;
+            }
+        }
+
+        //soundfx
+
+    }
+
+
+    void Update1 ()
 	{
+
+
+
 		//***************************************************************************************
 		//Moves animation controller
 		if (Input.GetKey (KeyCode.Space) && Input.GetKey (KeyCode.W)) anim.SetInteger ("State", 2); //Steps forward
@@ -267,8 +427,296 @@ public class anky_cs : MonoBehaviour
 			}
 		}
 	
+        //soundfx
 
+	}
+
+	//***************************************************************************************
+	//Clamp and set bone rotations
+	void LateUpdate()
+	{
+		
+		balance = Mathf.Clamp(balance, -8.0F, 8.0F);
+		open = Mathf.Clamp(open, -20.0F, 0.0F);
+		turn = Mathf.Clamp (turn, -30.0F, 30.0F);
+		pitch = Mathf.Clamp(pitch, -15.0F, 10.0F);
+		temp = turn;
+		temp -= balance;
+		temp = Mathf.Clamp(temp, -30.0F, 30.0F);
+		
+		//Neck and head
+		Neck0.transform.localRotation *= Quaternion.Euler (new Vector3 (-pitch, 0, -temp));
+		Neck1.transform.localRotation *= Quaternion.Euler (new Vector3 (-pitch, 0, -temp));
+		Neck2.transform.localRotation *= Quaternion.Euler (new Vector3 (-pitch, 0, -temp));
+		Neck3.transform.localRotation *= Quaternion.Euler (new Vector3 (-pitch, 0, -temp));
+		Head.transform.localRotation *= Quaternion.Euler (new Vector3 (-pitch, 0, -temp));
+		
+		//Spine and tail
+		Spine0.transform.localRotation *= Quaternion.Euler (new Vector3 (0, 0, balance));
+		Spine1.transform.localRotation *= Quaternion.Euler (new Vector3 (0, 0, balance));
+		Spine2.transform.localRotation *= Quaternion.Euler (new Vector3 (0, 0, balance));
+		Tail0.transform.localRotation *= Quaternion.Euler (new Vector3 (0, 0, -balance));
+		Tail1.transform.localRotation *= Quaternion.Euler (new Vector3 (0, 0, -balance));
+		Tail2.transform.localRotation *= Quaternion.Euler (new Vector3 (0, 0, -balance));
+		Tail3.transform.localRotation *= Quaternion.Euler (new Vector3 (0, 0, -balance));
+		Tail4.transform.localRotation *= Quaternion.Euler (new Vector3 (0, 0, -balance));
+		Tail5.transform.localRotation *= Quaternion.Euler (new Vector3 (0, 0, -balance));
+
+		//Jaw
+		Jaw.transform.localRotation *= Quaternion.Euler (new Vector3 (open, 0, 0));
+
+	}
+
+
+	void FixedUpdate ()
+	{
 		//***************************************************************************************
+		//Model translations and rotations
+
+		Scale = this.transform.localScale.x; //adjust speed to the model's scale
+
+		//Walking
+		if (anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step1") ||
+		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step1") ||
+		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step2") ||
+		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2") ||
+		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step2ToWalk") ||
+		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2ToWalk") ||
+		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Walk") ||
+		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Walk") ||
+		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|WalkGrowl") ||
+		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|WalkGrowl") ||
+		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step2ToEat") ||
+		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2ToEat"))
+		{
+
+			if( anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step1") ||
+			    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2"))
+			{
+				if (Input.GetKey (KeyCode.A)) //turning
+				{
+					if (anim.GetCurrentAnimatorStateInfo (0).normalizedTime < 0.8)
+					{
+						this.transform.localRotation *= Quaternion.AngleAxis (0.4F, new Vector3 (0, -1, 0));
+					}
+					balance += 0.2F;
+				} 
+				else if (Input.GetKey (KeyCode.D))
+				{
+					if (anim.GetCurrentAnimatorStateInfo (0).normalizedTime < 0.8)
+					{
+						this.transform.localRotation *= Quaternion.AngleAxis (0.4F, new Vector3 (0, 1, 0));
+					}
+					balance -= 0.2F;
+				} 
+			}
+			else
+			{
+				if (Input.GetKey (KeyCode.A))
+				{
+					this.transform.localRotation *= Quaternion.AngleAxis (0.4F, new Vector3 (0, -1, 0));
+					balance += 0.2F;
+				}
+				else if (Input.GetKey (KeyCode.D))
+				{
+					this.transform.localRotation *= Quaternion.AngleAxis (0.4F, new Vector3 (0, 1, 0));
+					balance -= 0.2F;
+				}
+			}
+
+			if (velocity < 0.06F)
+			{
+				velocity = velocity + (Time.deltaTime * 0.5F); //acceleration
+			}
+
+			else if (velocity > 0.14F) //deceleration
+			{
+				velocity = velocity - (Time.deltaTime * 2.0F);
+			}
+
+		
+			if (anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Stand1A") ||
+			    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Stand2A"))
+			{
+				velocity = velocity - (Time.deltaTime * 0.6F);
+			}
+
+			this.transform.Translate (0, 0, velocity*Scale);
+		}
+
+
+		//Backward walk
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step1-") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step1-") ||
+		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step2-") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2-") ||
+		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step1ToWalk-") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step1ToWalk-") ||
+		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Walk-") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Walk-") ||
+				 anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step2-ToSit") ||
+				 anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2-ToSit"))
+		{
+
+			if( anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step1-") ||
+			   anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2-"))
+			{
+				if (Input.GetKey (KeyCode.A)) //turning
+				{
+					if (anim.GetCurrentAnimatorStateInfo (0).normalizedTime < 0.8)
+					{
+						this.transform.localRotation *= Quaternion.AngleAxis (0.4F, new Vector3 (0, 1, 0));
+					}
+					balance += 0.25F;
+				}
+				else if (Input.GetKey (KeyCode.D))
+				{
+					if (anim.GetCurrentAnimatorStateInfo (0).normalizedTime < 0.8)
+					{
+						this.transform.localRotation *= Quaternion.AngleAxis (0.4F, new Vector3 (0, -1, 0));
+					}
+					balance -= 0.25F;
+				}
+			}
+			else
+			{
+				if (Input.GetKey (KeyCode.A)) //turning
+				{
+					this.transform.localRotation *= Quaternion.AngleAxis (0.4F, new Vector3 (0, 1, 0));
+					balance += 0.25F;
+				}
+				else if (Input.GetKey (KeyCode.D))
+				{
+					this.transform.localRotation *= Quaternion.AngleAxis (0.2F, new Vector3 (0, -1, 0));
+					balance -= 0.25F;
+				}
+			}
+			
+			if (velocity > -0.06F)
+			{
+				velocity = velocity - (Time.deltaTime * 0.5F); //acceleration
+			}
+
+			if (anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Stand1A") ||
+			    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Stand2A"))
+			{
+				velocity = velocity + (Time.deltaTime * 0.6F); //deceleration
+			}
+			
+			this.transform.Translate (0, 0, velocity*Scale);
+		}
+
+
+		//Strafe-
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Strafe1+") ||
+				 anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Strafe1+") ||
+		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Strafe2-") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Strafe2-")
+		         )
+		{
+			if (Input.GetKey (KeyCode.Mouse1)) //turning
+			{
+				this.transform.localRotation *= Quaternion.AngleAxis (turn /32, new Vector3 (0, 1, 0));
+				if (turn < 0) balance += 0.1F;
+				else balance -= 0.1F;
+			}
+
+			if (velocity < 0.025F)
+			{
+				velocity = velocity + (Time.deltaTime * 0.5F); //acceleration
+			}
+
+			this.transform.Translate (-velocity*Scale,0,0);
+		}
+
+
+		//Strafe+
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Strafe1-") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Strafe1-")||
+		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Strafe2+") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Strafe2+"))
+		{
+			if (Input.GetKey (KeyCode.Mouse1)) //turning
+			{
+				this.transform.localRotation *= Quaternion.AngleAxis (turn /32, new Vector3 (0, 1, 0));
+				if (turn < 0) balance += 0.1F;
+				else balance -= 0.1F;
+			}
+
+			if (velocity < 0.025F)
+			{
+				velocity = velocity + (Time.deltaTime * 0.5F); //acceleration
+			}
+			
+			this.transform.Translate (velocity*Scale,0,0);
+		}
+
+
+		//Running
+		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Run") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Run") ||
+		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step2ToRun") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2ToRun") ||
+		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|RunGrowl") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|RunGrowl"))
+		{
+			if (Input.GetKey (KeyCode.A)) //turning
+			{
+				this.transform.localRotation *= Quaternion.AngleAxis (1.0F, new Vector3 (0, -1, 0));
+				balance += 0.25F;
+			}
+			else if (Input.GetKey (KeyCode.D))
+			{
+				this.transform.localRotation *= Quaternion.AngleAxis (1.0F, new Vector3 (0, 1, 0));
+				balance -= 0.25F;
+			}
+
+			if (velocity < 0.4F)
+			{
+				velocity = velocity + (Time.deltaTime * 1.5F); //acceleration
+			}
+			
+			this.transform.Translate (0, 0, velocity*Scale);
+		}
+
+
+		//Attack
+		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1ToAttackA") ||
+		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Stand1ToAttackA") ||
+		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1ToAttackB") ||
+		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Stand1ToAttackB"))
+		{
+			if (anim.GetCurrentAnimatorStateInfo (0).normalizedTime < 0.8)
+			{
+			velocity = velocity + (Time.deltaTime * 0.3F);
+			this.transform.localRotation *= Quaternion.AngleAxis (4.0F, new Vector3 (0, -1, 0));
+			}
+			else velocity = 0.0F;
+			this.transform.Translate (0, 0, velocity*Scale);
+		}
+
+
+		//Stop
+		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1A") ||
+		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Stand2A") ||
+		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|AttackLoop"))
+		{
+			velocity =0.0F;
+			
+			this.transform.Translate (0, 0, velocity*Scale);
+		}
+	
+	}
+
+}
+
+
+
+
+
+/*
+
+		// ***************************************************************************************
 		//Sound Fx code
 		
 		//Get current animation point
@@ -588,290 +1036,155 @@ public class anky_cs : MonoBehaviour
 			isdead=false;
 		}
 
+*/
 
 
 
-	}
-
-	//***************************************************************************************
-	//Clamp and set bone rotations
-	void LateUpdate()
-	{
-		
-		balance = Mathf.Clamp(balance, -8.0F, 8.0F);
-		open = Mathf.Clamp(open, -20.0F, 0.0F);
-		turn = Mathf.Clamp (turn, -30.0F, 30.0F);
-		pitch = Mathf.Clamp(pitch, -15.0F, 10.0F);
-		temp = turn;
-		temp -= balance;
-		temp = Mathf.Clamp(temp, -30.0F, 30.0F);
-		
-		//Neck and head
-		Neck0.transform.localRotation *= Quaternion.Euler (new Vector3 (-pitch, 0, -temp));
-		Neck1.transform.localRotation *= Quaternion.Euler (new Vector3 (-pitch, 0, -temp));
-		Neck2.transform.localRotation *= Quaternion.Euler (new Vector3 (-pitch, 0, -temp));
-		Neck3.transform.localRotation *= Quaternion.Euler (new Vector3 (-pitch, 0, -temp));
-		Head.transform.localRotation *= Quaternion.Euler (new Vector3 (-pitch, 0, -temp));
-		
-		//Spine and tail
-		Spine0.transform.localRotation *= Quaternion.Euler (new Vector3 (0, 0, balance));
-		Spine1.transform.localRotation *= Quaternion.Euler (new Vector3 (0, 0, balance));
-		Spine2.transform.localRotation *= Quaternion.Euler (new Vector3 (0, 0, balance));
-		Tail0.transform.localRotation *= Quaternion.Euler (new Vector3 (0, 0, -balance));
-		Tail1.transform.localRotation *= Quaternion.Euler (new Vector3 (0, 0, -balance));
-		Tail2.transform.localRotation *= Quaternion.Euler (new Vector3 (0, 0, -balance));
-		Tail3.transform.localRotation *= Quaternion.Euler (new Vector3 (0, 0, -balance));
-		Tail4.transform.localRotation *= Quaternion.Euler (new Vector3 (0, 0, -balance));
-		Tail5.transform.localRotation *= Quaternion.Euler (new Vector3 (0, 0, -balance));
-
-		//Jaw
-		Jaw.transform.localRotation *= Quaternion.Euler (new Vector3 (open, 0, 0));
-
-	}
 
 
-	void FixedUpdate ()
-	{
-		//***************************************************************************************
-		//Model translations and rotations
-
-		Scale = this.transform.localScale.x; //adjust speed to the model's scale
-
-		//Walking
-		if (anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step1") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step1") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step2") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step2ToWalk") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2ToWalk") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Walk") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Walk") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|WalkGrowl") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|WalkGrowl") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step2ToEat") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2ToEat"))
-		{
-
-			if( anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step1") ||
-			    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2"))
-			{
-				if (Input.GetKey (KeyCode.A)) //turning
-				{
-					if (anim.GetCurrentAnimatorStateInfo (0).normalizedTime < 0.8)
-					{
-						this.transform.localRotation *= Quaternion.AngleAxis (0.4F, new Vector3 (0, -1, 0));
-					}
-					balance += 0.2F;
-				} 
-				else if (Input.GetKey (KeyCode.D))
-				{
-					if (anim.GetCurrentAnimatorStateInfo (0).normalizedTime < 0.8)
-					{
-						this.transform.localRotation *= Quaternion.AngleAxis (0.4F, new Vector3 (0, 1, 0));
-					}
-					balance -= 0.2F;
-				} 
-			}
-			else
-			{
-				if (Input.GetKey (KeyCode.A))
-				{
-					this.transform.localRotation *= Quaternion.AngleAxis (0.4F, new Vector3 (0, -1, 0));
-					balance += 0.2F;
-				}
-				else if (Input.GetKey (KeyCode.D))
-				{
-					this.transform.localRotation *= Quaternion.AngleAxis (0.4F, new Vector3 (0, 1, 0));
-					balance -= 0.2F;
-				}
-			}
-
-			if (velocity < 0.06F)
-			{
-				velocity = velocity + (Time.deltaTime * 0.5F); //acceleration
-			}
-
-			else if (velocity > 0.14F) //deceleration
-			{
-				velocity = velocity - (Time.deltaTime * 2.0F);
-			}
-
-		
-			if (anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Stand1A") ||
-			    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Stand2A"))
-			{
-				velocity = velocity - (Time.deltaTime * 0.6F);
-			}
-
-			this.transform.Translate (0, 0, velocity*Scale);
-		}
 
 
-		//Backward walk
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step1-") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step1-") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step2-") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2-") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step1ToWalk-") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step1ToWalk-") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Walk-") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Walk-") ||
-				 anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step2-ToSit") ||
-				 anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2-ToSit"))
-		{
-
-			if( anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step1-") ||
-			   anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2-"))
-			{
-				if (Input.GetKey (KeyCode.A)) //turning
-				{
-					if (anim.GetCurrentAnimatorStateInfo (0).normalizedTime < 0.8)
-					{
-						this.transform.localRotation *= Quaternion.AngleAxis (0.4F, new Vector3 (0, 1, 0));
-					}
-					balance += 0.25F;
-				}
-				else if (Input.GetKey (KeyCode.D))
-				{
-					if (anim.GetCurrentAnimatorStateInfo (0).normalizedTime < 0.8)
-					{
-						this.transform.localRotation *= Quaternion.AngleAxis (0.4F, new Vector3 (0, -1, 0));
-					}
-					balance -= 0.25F;
-				}
-			}
-			else
-			{
-				if (Input.GetKey (KeyCode.A)) //turning
-				{
-					this.transform.localRotation *= Quaternion.AngleAxis (0.4F, new Vector3 (0, 1, 0));
-					balance += 0.25F;
-				}
-				else if (Input.GetKey (KeyCode.D))
-				{
-					this.transform.localRotation *= Quaternion.AngleAxis (0.2F, new Vector3 (0, -1, 0));
-					balance -= 0.25F;
-				}
-			}
-			
-			if (velocity > -0.06F)
-			{
-				velocity = velocity - (Time.deltaTime * 0.5F); //acceleration
-			}
-
-			if (anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Stand1A") ||
-			    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Stand2A"))
-			{
-				velocity = velocity + (Time.deltaTime * 0.6F); //deceleration
-			}
-			
-			this.transform.Translate (0, 0, velocity*Scale);
-		}
 
 
-		//Strafe-
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Strafe1+") ||
-				 anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Strafe1+") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Strafe2-") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Strafe2-")
-		         )
-		{
-			if (Input.GetKey (KeyCode.Mouse1)) //turning
-			{
-				this.transform.localRotation *= Quaternion.AngleAxis (turn /32, new Vector3 (0, 1, 0));
-				if (turn < 0) balance += 0.1F;
-				else balance -= 0.1F;
-			}
 
-			if (velocity < 0.025F)
-			{
-				velocity = velocity + (Time.deltaTime * 0.5F); //acceleration
-			}
-
-			this.transform.Translate (-velocity*Scale,0,0);
-		}
+/*备份
+ * 	void Update ()
+{
 
 
-		//Strafe+
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Strafe1-") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Strafe1-")||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Strafe2+") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Strafe2+"))
-		{
-			if (Input.GetKey (KeyCode.Mouse1)) //turning
-			{
-				this.transform.localRotation *= Quaternion.AngleAxis (turn /32, new Vector3 (0, 1, 0));
-				if (turn < 0) balance += 0.1F;
-				else balance -= 0.1F;
-			}
 
-			if (velocity < 0.025F)
-			{
-				velocity = velocity + (Time.deltaTime * 0.5F); //acceleration
-			}
-			
-			this.transform.Translate (velocity*Scale,0,0);
-		}
+    //***************************************************************************************
+    //Moves animation controller
+    if (Input.GetKey (KeyCode.Space) && Input.GetKey (KeyCode.W)) anim.SetInteger ("State", 2); //Steps forward
+    else if (Input.GetKey (KeyCode.LeftShift) && Input.GetKey (KeyCode.W)) anim.SetInteger ("State", 3); //Run
+    else if (Input.GetKey (KeyCode.W))anim.SetInteger ("State", 1); //Walk
+    else if (Input.GetKey (KeyCode.Space) && Input.GetKey (KeyCode.S)) anim.SetInteger ("State", -2); //Steps backward
+    else if (Input.GetKey (KeyCode.S)) anim.SetInteger ("State", -1); //Walk backward
+    else if (Input.GetKey (KeyCode.A)) anim.SetInteger ("State", 10); //Strafe+
+    else if (Input.GetKey (KeyCode.D)) anim.SetInteger ("State", -10); //Strafe-
+    else if (Input.GetKey (KeyCode.Space)) anim.SetInteger ("State", 100); //Steps
+    else if (Input.GetKey (KeyCode.LeftControl)) anim.SetInteger ("State", -100); //Attack  pose
+    else anim.SetInteger ("State", 0); //back to loop
 
 
-		//Running
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Run") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Run") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step2ToRun") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2ToRun") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|RunGrowl") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|RunGrowl"))
-		{
-			if (Input.GetKey (KeyCode.A)) //turning
-			{
-				this.transform.localRotation *= Quaternion.AngleAxis (1.0F, new Vector3 (0, -1, 0));
-				balance += 0.25F;
-			}
-			else if (Input.GetKey (KeyCode.D))
-			{
-				this.transform.localRotation *= Quaternion.AngleAxis (1.0F, new Vector3 (0, 1, 0));
-				balance -= 0.25F;
-			}
-
-			if (velocity < 0.4F)
-			{
-				velocity = velocity + (Time.deltaTime * 1.5F); //acceleration
-			}
-			
-			this.transform.Translate (0, 0, velocity*Scale);
-		}
+    //Attack animation controller
+    if (Input.GetKey (KeyCode.Mouse0))
+        anim.SetBool ("Attack", true);
+    else
+        anim.SetBool ("Attack", false);
 
 
-		//Attack
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1ToAttackA") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Stand1ToAttackA") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1ToAttackB") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Stand1ToAttackB"))
-		{
-			if (anim.GetCurrentAnimatorStateInfo (0).normalizedTime < 0.8)
-			{
-			velocity = velocity + (Time.deltaTime * 0.3F);
-			this.transform.localRotation *= Quaternion.AngleAxis (4.0F, new Vector3 (0, -1, 0));
-			}
-			else velocity = 0.0F;
-			this.transform.Translate (0, 0, velocity*Scale);
-		}
+    //Growl animation controller
+    if (Input.GetKey (KeyCode.E))
+        anim.SetBool ("Growl", true);
+    else
+        anim.SetBool ("Growl", false);
 
 
-		//Stop
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1A") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Stand2A") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|AttackLoop"))
-		{
-			velocity =0.0F;
-			
-			this.transform.Translate (0, 0, velocity*Scale);
-		}
-	
-	}
+    //Idles animation controller
+    if (Input.GetKey (KeyCode.Alpha1))
+        anim.SetInteger ("Idle", 1); //Idle 1
+    else if (Input.GetKey (KeyCode.Alpha2))
+        anim.SetInteger ("Idle", 2); //Idle 2
+    else if (Input.GetKey (KeyCode.Alpha3))
+        anim.SetInteger ("Idle", 3); //Eat
+    else if (Input.GetKey (KeyCode.Alpha4))
+        anim.SetInteger ("Idle", 4); //Drink
+    else if (Input.GetKey (KeyCode.Alpha5))
+        anim.SetInteger ("Idle", 5); //Sleep
+    else if (Input.GetKey (KeyCode.Alpha6))
+        anim.SetInteger ("Idle", 6); //Die
+    else
+        anim.SetInteger ("Idle", 0);
+
+
+    //***************************************************************************************
+    //Spine control
+    if (Input.GetKey (KeyCode.Mouse1) && reset == false) {
+        turn += Input.GetAxis ("Mouse X") * 1.0F;
+        pitch += Input.GetAxis ("Mouse Y") * 1.0F;
+    } else if (turn != 0.0F || pitch != 0.0F) {
+        if (turn < 0.0F) {
+            if (turn < -0.25F)
+                turn += 0.25F;
+            else
+                turn = 0.0F; 
+        } else if (turn > 0.0F) {
+            if (turn > 0.25F)
+                turn -= 0.25F;
+            else
+                turn = 0.0F; 
+        }
+        if (pitch < 0.0F)
+        {
+            if (pitch < -0.5F)
+                pitch += 0.5F;
+            else
+            {
+                pitch = 0.0F;
+                reset = false;
+            }
+        }
+        else if (pitch > 0.0F)
+        {
+            if (pitch > 0.5F)
+                pitch -= 0.5F;
+            else {
+                pitch = 0.0F;
+                reset = false;
+            }
+        }
+    }
+
+
+    //Jaw control
+    if ((Input.GetKey (KeyCode.Mouse0)) &&
+        (reset == false) &&
+        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1A")) &&
+        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand2A")) &&
+        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1B")) &&
+        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand2C")) &&
+        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1Attack")) &&
+        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand2Attack")) &&
+        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step1Attack")) &&
+        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2Attack")) &&
+        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|WalkGrowl")) &&
+        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|RunGrowl")) &&
+        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|RunAttackA")) &&
+        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|RunAttackB")) &&
+        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|WalkShake"))
+        )
+        open -= 4.0F;
+    else
+        open += 1.0F;
+
+
+    //Reset spine position during specific animation
+    if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|EatC"))
+        reset = true; else reset = false;
+
+
+    //Reset tail and spine position
+    if (((anim.GetInteger ("State") != 1) || (anim.GetInteger ("State") != 3)) && (balance != 0.0F))
+    {
+        if (balance < 0.0F)
+        {
+            if (balance < -0.1F)
+                balance += 0.1F;
+            else
+                balance = 0.0F; 
+        }
+        else if (balance > 0.0F)
+        {
+            if (balance > 0.1F)
+                balance -= 0.1F;
+            else
+                balance = 0.0F; 
+        }
+    }
+
+    //soundfx
 
 }
-
-
-
+*/
 

@@ -35,6 +35,116 @@ public enum AINodeResultType
     AIResult_ConditionUnsatisfied,
 }*/
 
+
+/// <summary>
+/// 伪输入
+/// </summary>
+public class PseudoInput
+{
+    public void Init()
+    {
+        Space = false;
+        LeftPad = Vector2.zero;
+        RightPad = Vector2.zero;
+        LeftCtrl = false;
+        LeftClick = false;
+        EForGrowl = false;
+        AlphaX = 0;
+        
+    }
+
+    public bool Space = false;
+    public Vector2 LeftPad;
+    public Vector2 RightPad;
+    public bool LeftShift
+    {
+        get
+        {
+            return  LeftPad.y > 0 && LeftPad.magnitude>0.7;
+        }
+    }
+    public bool LeftCtrl = false;
+    public bool LeftClick = false;//攻击
+    public bool EForGrowl = false;
+    public int AlphaX = 0;//数字键输入
+
+    public bool W
+    {
+        set
+        {
+            if (value)
+            {
+                LeftPad = new Vector2(0, 1);
+            }
+            else
+            {
+                LeftPad = Vector2.zero;
+            }
+        }
+        get
+        {
+            return LeftPad.y > 0 && Mathf.Abs(LeftPad.y) > Mathf.Abs(LeftPad.x);
+        }
+    }
+    public bool S
+    {
+        set
+        {
+            if (value)
+            {
+                LeftPad = new Vector2(0, -1);
+            }
+            else
+            {
+                LeftPad = Vector2.zero;
+            }
+        }
+        get
+        {
+            return LeftPad.y < 0 && Mathf.Abs(LeftPad.y) > Mathf.Abs(LeftPad.x);
+        }
+    }
+    public bool A
+    {
+        set
+        {
+            if (value)
+            {
+                LeftPad = new Vector2(-1, 0);
+            }
+            else
+            {
+                LeftPad = Vector2.zero;
+            }
+        }
+        get
+        {
+            return LeftPad.x < 0 && Mathf.Abs(LeftPad.y) < Mathf.Abs(LeftPad.x);
+        }
+    }
+    public bool D
+    {
+        set
+        {
+            if(value)
+            {
+                LeftPad = new Vector2(1, 0);
+            }
+            else
+            {
+                LeftPad = Vector2.zero;
+            }
+        }
+        get
+        {
+            return LeftPad.x > 0 && Mathf.Abs(LeftPad.y) < Mathf.Abs(LeftPad.x);
+        }
+
+    }
+
+}
+
+
 //节点态：要求在Finish时将所有子节点的节点态设置为Finish
 public enum AINodeState
 {
@@ -142,6 +252,8 @@ public class AnimalAI : MonoBehaviour {
     public Vector2 m_RightPadInput = Vector2.zero;
     public GameObject m_Attacker = null;
 
+    public anky_cs m_AnimCtrl = null;
+
     //变量自动延时关闭的实现方式
     public bool IsAlert
     {
@@ -167,6 +279,7 @@ public class AnimalAI : MonoBehaviour {
     public Vector3 m_PositionToAlert = Vector3.zero;
     public float m_TimeToWait = 0;
     public Vector3 m_TargetLocation = Vector3.zero;
+    public float m_TurnRate = 40.0f;
 
     // Use this for initialization
     public virtual void Start()
@@ -175,7 +288,7 @@ public class AnimalAI : MonoBehaviour {
         m_Animator = GetComponent<Animator>();
         m_AnimManager = GetComponent<AnimManager>();
         m_PawnSensor = GetComponent<PawnSensor>();
-
+        m_AnimCtrl = GetComponent<anky_cs>();
 
     }
 
@@ -199,14 +312,26 @@ public class AnimalAI : MonoBehaviour {
     {
         Logger.Instance.LogInfoToScreen(IsAlert ? "alerting" : "", 200, 0.2f);
 
+
+        //驾驶状态不要清空
+        if(m_AINodeStates[1] != AINodeState.AINS_Doing)
+        {
+            m_AnimCtrl.m_PseudoInput.Init();
+        }
+
+
+        var TargetLocation_0 = GameObject.Find("TargetLocation_0");
+        bool DebugJ = true;
+        if(DebugJ)
+        {
+
+        }
+
+
+
         //第一树：有骑行
         if (m_DrivingPlayer != null)
         {
-            if(m_AINodeStates[1]== AINodeState.AINS_NotStarted)//首次进入某树某态
-            {
-                m_AnimManager.ChangeState(EAnimState.EAS_Run, 0);
-            }
-
             InitNodeStatesExceptXthTree(1);
 
             m_AINodeStates[1] = AITaskCallback_DrivenByPlayer();
@@ -246,7 +371,7 @@ public class AnimalAI : MonoBehaviour {
                 {
                     m_TargetLocation = transform.position + transform.forward * 5.0f;
                 }
-                m_AINodeStates[32] = AITask_MoveTo(m_TargetLocation);
+                m_AINodeStates[32] = AITask_MoveHorizontallyTo(m_TargetLocation);
             }
             //注：3.2已完成，即所有任务完成
         }
@@ -266,33 +391,42 @@ public class AnimalAI : MonoBehaviour {
 
     public AINodeState AITaskCallback_DrivenByPlayer()
     {
-        Debug.Log("被骑行中");
+        //Debug.Log("被骑行中");
         //AI树本身不做任何事情，只需要将控制权接口交由PlayerController即可
+
         return AINodeState.AINS_Doing;
     }
 
     public AINodeState AITask_FaceTo(Vector3 worldPositionToFaceTo)
     {
-        var localPosition = transform.worldToLocalMatrix * worldPositionToFaceTo * transform.localScale.x;
+        
+        var localPosition = gameObject.transform.InverseTransformPoint(worldPositionToFaceTo) * transform.localScale.x;
+        Debug.Log("" + localPosition.ToString());
+        Logger.Instance.LogInfoToScreen("W" + worldPositionToFaceTo.ToString(), 202, 0.6f);
+        Logger.Instance.LogInfoToScreen("L"+localPosition.ToString(), 201, 0.6f);
+
+
         localPosition.y = 0.0f;
         
         //已经在正前方了
-        if (localPosition.x == 0 && localPosition.y >= 0)
+        if (Mathf.Abs( localPosition.x ) <0.2f && localPosition.z >= 0)
         {
             return AINodeState.AINS_Finish;
         }
-        else if (localPosition.z > 0 && localPosition.z / localPosition.x < 0.3f)
+        else if (localPosition.z > 0 && Mathf.Abs( localPosition.x / localPosition.z) < 0.1f)
         {
             return AINodeState.AINS_Finish;
         }
         //在右侧
         else if (Vector3.Cross(Vector3.forward, localPosition).y > 0)
         {
-            m_Movement.TurnRight(1);
+            m_AnimCtrl.m_PseudoInput.D = true;
+            m_Movement.TurnRight(Time.deltaTime * m_TurnRate);
         }
         else
         {
-            m_Movement.TurnRight(-1);
+            m_AnimCtrl.m_PseudoInput.A = true;
+            m_Movement.TurnRight(-Time.deltaTime * m_TurnRate);
         }
         return AINodeState.AINS_Doing;
     }
@@ -364,7 +498,9 @@ public class AnimalAI : MonoBehaviour {
         m_LeftPadInput = leftPadInput;
 
         //恐龙没有平移走，只有前后走
-        m_Movement.MoveDirectionWithLimit(new Vector3(0, 0, leftPadInput.y));
+        //m_Movement.MoveDirectionWithLimit(new Vector3(0, 0, leftPadInput.y));
+        m_AnimCtrl.m_PseudoInput.LeftPad = leftPadInput;
+
         m_Movement.TurnRight(leftPadInput.x);
     }
 
@@ -374,9 +510,14 @@ public class AnimalAI : MonoBehaviour {
         m_RightPadInput = rightPadInput;
     }
 
-    public AINodeState AITask_MoveTo(Vector3 pos)
+    public AINodeState AITask_MoveHorizontallyTo(Vector3 pos)
     {
-        if((pos-transform.position).magnitude<0.3f)
+        var delHor = pos - gameObject.transform.position;
+        delHor.y = 0;
+        Debug.Log("pos" + pos + " transform.pos:" + transform.position );
+
+
+        if (delHor.magnitude<1.0f)
         {
             return AINodeState.AINS_Finish;
         }
@@ -384,11 +525,23 @@ public class AnimalAI : MonoBehaviour {
         if (AITask_FaceTo(pos)== AINodeState.AINS_Finish)
         {
             //目标位置减去当前位置
-            m_Movement.MoveDirectionWithLimit(pos - transform.position);
+            //m_Movement.MoveDirectionWithLimit(delHor);
+
+            m_AnimCtrl.m_PseudoInput.W = true;
         }
 
         return AINodeState.AINS_Doing;
     }
+
+
+    //
+
+
+
+
+
+
+
 
 
 

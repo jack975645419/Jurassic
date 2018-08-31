@@ -100,8 +100,22 @@ public class Commander : Singleton<Commander> {
                 }
             case "drive":
                 {
-                    var Anky = GameObject.Find("Anky");
+                    var Anky = GameManager.Instance.GOs[0];
                     GameManager.Instance.Player.GetComponent<PlayerController>().DriveAnimal(Anky);
+                    break;
+                }
+            case "moveto":
+                {
+                    Vector3 posInWolrd = BasicTools.ConvertToVector3(cmd[1]);
+                    var anky = GameObject.Find("Anky");
+                    anky.GetComponent<AnimalAI>().AITask_MoveHorizontallyTo(posInWolrd);
+                    break;
+                }
+            case "attack":
+                {
+                    var Anky = GameManager.Instance.GOs[0];
+                    var ai = Anky.GetComponent<AnimalAI>();
+                    ai.m_Attacker = GameManager.Instance.Player;
                     break;
                 }
         }
