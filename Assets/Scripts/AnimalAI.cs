@@ -35,6 +35,12 @@ public enum AINodeResultType
     AIResult_ConditionUnsatisfied,
 }*/
 
+public enum EWildState
+{
+    EWild,
+    ERebellous,
+    EOwned
+}
 
 /// <summary>
 /// 伪输入
@@ -46,23 +52,55 @@ public class PseudoInput
         Space = false;
         LeftPad = Vector2.zero;
         RightPad = Vector2.zero;
+        LeftShift = false;
         LeftCtrl = false;
         LeftClick = false;
         EForGrowl = false;
         AlphaX = 0;
         
     }
+    public PseudoInput GetCopy()
+    {
+        PseudoInput a = new PseudoInput();
+        a.Space = Space;
+        a.LeftPad = LeftPad;
+        a.RightPad = RightPad;
+        a.LeftShift = LeftShift;
+        a.LeftCtrl = LeftCtrl;
+        a.LeftClick = LeftClick;
+        a.EForGrowl = EForGrowl;
+        a.AlphaX = AlphaX;
+        return a;
+    }
+
 
     public bool Space = false;
     public Vector2 LeftPad;
     public Vector2 RightPad;
-    public bool LeftShift
+    public bool LeftShift = false;
+
+    public float Turn
     {
         get
         {
-            return  LeftPad.y > 0 && LeftPad.magnitude>0.7;
+            return RightPad.x;
         }
     }
+    public float Pitch
+    {
+        get
+        {
+            return RightPad.y;
+        }
+    }
+    public bool Mouse1
+    {
+        get
+        {
+            return !(Turn == 0 && Pitch == 0);
+        }
+    }
+
     public bool LeftCtrl = false;
     public bool LeftClick = false;//攻击
     public bool EForGrowl = false;
@@ -78,7 +116,7 @@ public class PseudoInput
             }
             else
             {
-                LeftPad = Vector2.zero;
+                if (LeftPad.y > 0) LeftPad.y = 0;
             }
         }
         get
@@ -96,7 +134,8 @@ public class PseudoInput
             }
             else
             {
-                LeftPad = Vector2.zero;
+                if (LeftPad.y < 0) LeftPad.y = 0;
+
             }
         }
         get
@@ -114,7 +153,8 @@ public class PseudoInput
             }
             else
             {
-                LeftPad = Vector2.zero;
+                if (LeftPad.x < 0) LeftPad.x = 0;
+
             }
         }
         get
@@ -132,7 +172,8 @@ public class PseudoInput
             }
             else
             {
-                LeftPad = Vector2.zero;
+                if (LeftPad.x> 0) LeftPad.x = 0;
+
             }
         }
         get
@@ -245,14 +286,21 @@ public class AnimalAI : MonoBehaviour {
     public GameObject m_SitPlace = null;
     public Movement m_Movement = null;
     public Animator m_Animator = null;
-    public AnimManager m_AnimManager = null;
+    public AnimManager_Dep m_AnimManager = null;
     public PawnSensor m_PawnSensor = null;
     public GameObject m_DrivingPlayer = null;
     public Vector2 m_LeftPadInput = Vector2.zero;
     public Vector2 m_RightPadInput = Vector2.zero;
     public GameObject m_Attacker = null;
+    public SitPlaceColliderListener m_SitPlaceColliderListener = null;
+    public AnimCtrl m_AnimCtrl = null;
+    public EWildState m_WildState = EWildState.EWild;
+    public float m_DrivenBeginningTime = 0;
+    public AnimationCurve m_RebellionCurveX;
+    public float m_OffsetAccumulation = 0;
+    //由策划调好
+    //public Vector2[] m_RebellousOffset = 
 
-    public anky_cs m_AnimCtrl = null;
 
     //变量自动延时关闭的实现方式
     public bool IsAlert
@@ -286,9 +334,10 @@ public class AnimalAI : MonoBehaviour {
     {
         m_Movement = GetComponent<Movement>();
         m_Animator = GetComponent<Animator>();
-        m_AnimManager = GetComponent<AnimManager>();
+        m_AnimManager = GetComponent<AnimManager_Dep>();
         m_PawnSensor = GetComponent<PawnSensor>();
-        m_AnimCtrl = GetComponent<anky_cs>();
+        m_AnimCtrl = GetComponent<AnimCtrl>();
+        m_SitPlaceColliderListener = m_SitPlace.GetComponent<SitPlaceColliderListener>();
 
     }
 
@@ -312,6 +361,7 @@ public class AnimalAI : MonoBehaviour {
     {
         Logger.Instance.LogInfoToScreen(IsAlert ? "alerting" : "", 200, 0.2f);
 
+        UpdatePadInput();
 
         //驾驶状态不要清空
         if(m_AINodeStates[1] != AINodeState.AINS_Doing)
@@ -386,8 +436,6 @@ public class AnimalAI : MonoBehaviour {
         //第六树：孤独状态
 
     }
-
-
 
     public AINodeState AITaskCallback_DrivenByPlayer()
     {
@@ -490,24 +538,68 @@ public class AnimalAI : MonoBehaviour {
     public void StartDrivenBy(GameObject Player)
     {
         m_DrivingPlayer = Player;
+
+        m_DrivenBeginningTime = Time.time;
+        if(m_WildState == EWildState.EWild)
+        {
+            Logger.Instance.LogInfoToScreen("请尽可能走直线(维持15s)", 210, 15);
+            m_WildState = EWildState.ERebellous;
+        }
     }
 
-    
-    public virtual void OnMove(Vector2 leftPadInput)
+    public void EndBeingDriven()
+    {
+        m_DrivingPlayer = null;
+        m_SitPlaceColliderListener.enabled = false;
+        gameObject.layer = LayerMask.NameToLayer("Undriven");
+        TimerManager.Instance.SetNewTimer(0.5f, RestartToBeDrivable);
+
+        if (m_WildState == EWildState.ERebellous) m_WildState = EWildState.EWild;
+    }
+    public void RestartToBeDrivable(params object [] p)
+    {
+        gameObject.layer = LayerMask.NameToLayer("Default");
+        m_SitPlaceColliderListener.enabled = true;
+    }
+
+    public virtual void InputLeftPad(Vector2 leftPadInput)
     {
         m_LeftPadInput = leftPadInput;
-
-        //恐龙没有平移走，只有前后走
-        //m_Movement.MoveDirectionWithLimit(new Vector3(0, 0, leftPadInput.y));
-        m_AnimCtrl.m_PseudoInput.LeftPad = leftPadInput;
-
-        m_Movement.TurnRight(leftPadInput.x);
     }
 
     
-    public virtual void OnViewChange(Vector2 rightPadInput)
+    public virtual void InputRightPad(Vector2 rightPadInput)
     {
         m_RightPadInput = rightPadInput;
+    }
+
+    public virtual void UpdatePadInput()
+    {
+        //不要轻易修改源数据
+        m_AnimCtrl.m_PseudoInput.LeftPad = m_LeftPadInput;
+        
+        if (m_WildState == EWildState.ERebellous)
+        {
+            if( Time.time - m_DrivenBeginningTime < m_RebellionCurveX.keys[m_RebellionCurveX.length-1].time )
+            {
+                //读源数据且修改后赋值到正式数据中
+                var result = m_LeftPadInput;
+                result.x += m_RebellionCurveX.Evaluate(Time.time - m_DrivenBeginningTime);
+                result.y = 1.0f;//全速奔跑~
+
+                Debug.Log("m_LeftPadInput"+ m_LeftPadInput.ToString());
+                Debug.Log("result" + result.ToString());
+                var _offset = Mathf.Abs(result.x);
+                if (_offset > 1.0f)
+                {
+                    m_DrivingPlayer.GetComponent<PlayerController>().Jump(10);
+                }
+                Logger.Instance.LogInfoToScreen("Offset:" + _offset, 211);
+
+                m_AnimCtrl.m_PseudoInput.LeftPad = result;
+            }
+        }
+
     }
 
     public AINodeState AITask_MoveHorizontallyTo(Vector3 pos)
@@ -524,25 +616,9 @@ public class AnimalAI : MonoBehaviour {
 
         if (AITask_FaceTo(pos)== AINodeState.AINS_Finish)
         {
-            //目标位置减去当前位置
-            //m_Movement.MoveDirectionWithLimit(delHor);
-
             m_AnimCtrl.m_PseudoInput.W = true;
         }
 
         return AINodeState.AINS_Doing;
     }
-
-
-    //
-
-
-
-
-
-
-
-
-
-
 }

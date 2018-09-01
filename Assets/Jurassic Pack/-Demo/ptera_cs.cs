@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ptera_cs : MonoBehaviour
+public class ptera_cs : AnimCtrl
 {
 	
 	Transform Root,WingR,WingL,Neck0,Neck1,Neck2,Neck3,Neck4,Neck5,Neck6,Head,Jaw,
@@ -17,11 +17,20 @@ public class ptera_cs : MonoBehaviour
 	SkinnedMeshRenderer[] rend;
 	public Texture[] skin;
 	public AudioClip Smallstep,Idlecarn,Ptera_Roar1,Ptera_Roar2,Bite,Sniff2,Wind,Bigstep;
-	
+    public ConstantForce m_ConstForce = null;
+    public GameObject m_CameraShakeRefObject = null;
 	
 	void Awake ()
 	{
-		Root = this.transform.Find ("Ptera/root");
+
+        //adjust speed to the model's scale
+        Scale = this.transform.localScale.x;
+        //adjust gravity to the model's scale
+        //Physics.gravity = new Vector3(0, -Scale*40.0f, 0);
+        //rg.mass = rg.mass * Scale;
+
+
+        Root = this.transform.Find ("Ptera/root");
 		WingR = this.transform.Find ("Ptera/root/spine0/spine1/spine2/right wing0");
 		WingL = this.transform.Find ("Ptera/root/spine0/spine1/spine2/left wing0");
 		Neck0 = this.transform.Find ("Ptera/root/spine0/spine1/spine2/neck0");
@@ -39,80 +48,11 @@ public class ptera_cs : MonoBehaviour
 		anim = GetComponent<Animator>();
 		lods = GetComponent<LODGroup>();
 		rend = GetComponentsInChildren <SkinnedMeshRenderer>();
+
+        m_ConstForce = GetComponent<ConstantForce>();
 	}
 	
-	
-	
-	void OnGUI ()
-	{
-		switch (skinselect)
-		{
-		case 0:
-			if (GUI.Button (new Rect (5,40,80,20), "Skin A"))
-			{
-				rend[0].material.mainTexture = skin[1];
-				rend[1].material.mainTexture = skin[1];
-				rend[2].material.mainTexture = skin[1];
-				skinselect=1;
-			}
-			break;
-		case 1:
-			if (GUI.Button (new Rect (5,40,80,20), "Skin B"))
-			{
-				rend[0].material.mainTexture = skin[2];
-				rend[1].material.mainTexture = skin[2];
-				rend[2].material.mainTexture = skin[2];
-				skinselect=2;
-			}
-			break;
-		case 2:
-			if (GUI.Button (new Rect (5,40,80,20), "Skin C"))
-			{
-				rend[0].material.mainTexture = skin[0];
-				rend[1].material.mainTexture = skin[0];
-				rend[2].material.mainTexture = skin[0];
-				skinselect=0;
-			}
-			break;
-		}
-		
-		if(rend[0].isVisible)infos = rend[0].sharedMesh.triangles.Length/3+" triangles";
-		else if (rend[1].isVisible)infos = rend[1].sharedMesh.triangles.Length/3+" triangles";
-		else if (rend[2].isVisible)infos = rend[2].sharedMesh.triangles.Length/3+" triangles";
-		
-		switch (lodselect)
-		{
-		case 0:
-			if (GUI.Button (new Rect (5,100,190,30), "LOD_Auto -> " + infos))
-			{
-				lods.ForceLOD(0);
-				lodselect=1;
-			}
-			break;
-		case 1:
-			if (GUI.Button (new Rect (5,100,190,30), "LOD_0 -> " + infos))
-			{
-				lods.ForceLOD(1);
-				lodselect=2;
-			}
-			
-			break;
-		case 2:
-			if (GUI.Button (new Rect (5,100,190,30), "LOD_1 -> " + infos))
-			{
-				lods.ForceLOD(2);
-				lodselect=3;
-			}
-			break;
-		case 3:
-			if (GUI.Button (new Rect (5,100,190,30), "LOD_2 -> " + infos))
-			{
-				lods.ForceLOD(-1);
-				lodselect=0;
-			}
-			break;
-		}
-		
+/*
 		GUI.Box (new Rect (0, 170, 200, 380), "Help");
 		GUI.Label(new Rect(5,200,Screen.width,Screen.height),"Middle Mouse = Camera/Zoom");
 		GUI.Label(new Rect(5,220,Screen.width,Screen.height),"Right Mouse = Spine move");
@@ -126,10 +66,7 @@ public class ptera_cs : MonoBehaviour
 		GUI.Label(new Rect(5,380,Screen.width,Screen.height),"num 3 = Eat");
 		GUI.Label(new Rect(5,400,Screen.width,Screen.height),"num 4 = Drink");
 		GUI.Label(new Rect(5,420,Screen.width,Screen.height),"num 5 = Sleep");
-		GUI.Label(new Rect(5,440,Screen.width,Screen.height),"num 6 = Die");
-	}
-	
-	
+		GUI.Label(new Rect(5,440,Screen.width,Screen.height),"num 6 = Die");*/
 	
 	void OnCollisionEnter(Collision collision )
 	{
@@ -139,407 +76,197 @@ public class ptera_cs : MonoBehaviour
 	{
 		if(collision.gameObject.name == "Ground") anim.SetBool("Onground", false);
 	}
-	
-	
-	
-	void Update ()
-	{
-		//***************************************************************************************
-		//Moves animation controller
-		
-		//Attack
-		if (Input.GetKey(KeyCode.Mouse0)) anim.SetBool ("Attack", true);
-		else anim.SetBool ("Attack", false);
-		
-		//Moves animation controller
-		if (Input.GetKey (KeyCode.Space)) anim.SetBool ("Fly", true);
-		else anim.SetBool ("Fly", false);
-		
-		if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W)) anim.SetInteger("State", 3); //Run animation controller
-		else if (Input.GetKey(KeyCode.LeftShift))anim.SetInteger("State", -3);
-		else if (Input.GetKey(KeyCode.W)) anim.SetInteger("State", 1); //Walk animation controller
-		else if (Input.GetKey(KeyCode.S)) anim.SetInteger("State", -1); //Walk backward animation controller
-		else if (Input.GetKey(KeyCode.A))anim.SetInteger("State", 10); // Strafe+ animation controller
-		else if (Input.GetKey(KeyCode.D))anim.SetInteger("State", -10); // Strafe- animation controller}
-		else anim.SetInteger("State", 0); //Idle
-		
-		//Growl animation controller
-		if (Input.GetKey (KeyCode.E)) anim.SetBool("Growl", true);
-		else anim.SetBool("Growl", false);
-		
-		if (Input.GetKey (KeyCode.Alpha1))
-			anim.SetInteger ("Idle", 1); //Idle 1
-		else if (Input.GetKey (KeyCode.Alpha2))
-			anim.SetInteger ("Idle", 2); //Idle 2
-		else if (Input.GetKey (KeyCode.Alpha3))
-			anim.SetInteger ("Idle", 3); //Eat
-		else if (Input.GetKey (KeyCode.Alpha4))
-			anim.SetInteger ("Idle", 4); //Drink
-		else if (Input.GetKey (KeyCode.Alpha5))
-			anim.SetInteger ("Idle", 5); //Sleep
-		else if (Input.GetKey (KeyCode.Alpha6))
-			anim.SetInteger ("Idle", 6); //Die
-		else
-			anim.SetInteger ("Idle", 0);
-		
-		
-		//***************************************************************************************
-		//Neck control
-		if (Input.GetKey(KeyCode.Mouse1) && reset == false)
-		{
-			turn += Input.GetAxis ("Mouse X") * 1.0F;
-			pitch += Input.GetAxis ("Mouse Y") * 1.0F;
-		}
-		else if(turn != 0.0F || pitch !=0.0F) // Reset neck
-		{
-			if(turn <0.0F)
-			{
-				if(turn <-0.25F) turn += 0.25F; else turn = 0.0F; 
-			}
-			else if(turn >0.0F)
-			{
-				if(turn >0.25F) turn -= 0.25F; else turn = 0.0F; 
-			}
-			if(pitch <0.0F)
-			{
-				if(pitch <-0.25F) pitch += 0.25F; else { pitch = 0.0F; reset =false; }
-			}
-			else if(pitch >0.0F)
-			{
-				if(pitch >0.25F) pitch -= 0.25F; else { pitch = 0.0F; reset =false; }
-			}
-		}
-		
-		//Root control
-		if (anim.GetBool("Onground")==false && (
-			Input.GetKey (KeyCode.A) ||
-			Input.GetKey (KeyCode.D) ||
-			Input.GetKey (KeyCode.LeftShift) ||
-			Input.GetKey (KeyCode.Space)))
-		{
-			if(Input.GetKey (KeyCode.A)) { roll -= 0.5F;  balance += 2.0F;  }
-			if(Input.GetKey (KeyCode.D)) { roll += 0.5F;  balance -= 2.0F;  }
-			if(Input.GetKey (KeyCode.LeftShift)) pitch2 += 0.5F;
-			if(Input.GetKey (KeyCode.Space)) pitch2 -= 0.5F;
-		}
-		else if(roll != 0.0F || pitch2 !=0.0F || balance !=0.0F) // Reset
-		{
-			if(roll <0.0F)
-			{
-				if(roll <-0.25F) roll += 0.25F; else roll = 0.0F; 
-			}
-			else if(roll >0.0F)
-			{
-				if(roll >0.25F) roll -= 0.25F; else roll = 0.0F; 
-			}
-			if(pitch2 <0.0F)
-			{
-				if(pitch2 <-0.25F) pitch2 += 0.25F; else pitch2 = 0.0F;
-			}
-			else if(pitch2 >0.0F)
-			{
-				if(pitch2 >0.25F) pitch2 -= 0.25F; else pitch2 = 0.0F;
-			}
-			if(balance <0.0F)
-			{
-				if(balance <-0.5F) balance += 0.5F; else balance = 0.0F;
-			}
-			else if(balance >0.0F)
-			{
-				if(balance >0.5F) balance -= 0.5F; else balance = 0.0F;
-			}
-		}
-		
-		
-		//Jaw control
-		if ((anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|StandA") ||
-		     anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Run") ||
-		     anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Walk") ||
-		     anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Walk-") ||
-		     anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Strafe+") ||
-		     anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Strafe-")) &&
-		    (Input.GetKey(KeyCode.Mouse0)) && (reset == false))
-			open-=2.0F; else open+=1.0F;
-		
-		
-		//Reset Neck
-		if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|StandB"))
-			reset = true; else reset = false;
-		
-		
-		
-		//***************************************************************************************
-		//Sound Fx code
-		
-		//Get current animation point
-		animcount = (anim.GetCurrentAnimatorStateInfo (0).normalizedTime) % 1.0F;
-		if(anim.GetAnimatorTransitionInfo(0).normalizedTime!=0.0F) animcount=0.0F;
-		animcount = Mathf.Round(animcount * 30);
-		
-		if (anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|Stationary") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Stationary") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|StationaryUp") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|StationaryUp") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|StationaryGrowl") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|StationaryGrowl") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|Landing") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Landing") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|Takeoff") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Takeoff")
-		    )
-		{
-			
-			if (anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|Landing") ||
-			    anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Landing"))
-			{
-				if(soundplayed==false &&(animcount==9))
-				{
-					source.pitch=Random.Range(0.9F, 1.0F);
-					source.PlayOneShot(Smallstep,Random.Range(0.4F, 0.6F));
-					soundplayed=true;
-				}
-				
-			}
-			else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|StationaryGrowl") ||
-			         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|StationaryGrowl"))
-			{
-				if(soundplayed==false &&(animcount==5))
-				{
-					source.pitch=Random.Range(1.0F, 1.1F);
-					source.PlayOneShot(Ptera_Roar2,Random.Range(0.75F, 1.0F));
-					soundplayed=true;
-				}
-			}
-			
-			if(soundplayed==false &&(animcount==10))
-			{
-				source.pitch=Random.Range(1.0F, 1.1F);
-				source.PlayOneShot(Sniff2,Random.Range(0.4F, 0.6F));
-				soundplayed=true;
-			}
-			else if(animcount!=5 && animcount!=9 && animcount!=10) soundplayed=false;
-		}
-		
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|Flight") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Flight") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|Glide") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Glide") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|GlideGrowl") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|GlideGrowl") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|FlightGrowl") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|FlightGrowl") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|Dive") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Dive"))
-		{
-			if (anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|Flight") ||
-			    anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Flight"))
-			{
-				if(soundplayed==false &&(animcount==10))
-				{
-					source.pitch=Random.Range(1.0F, 1.1F);
-					source.PlayOneShot(Sniff2,Random.Range(0.4F, 0.6F));
-					soundplayed=true;
-				}
-			}
-			
-			else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|GlideGrowl") ||
-			         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|GlideGrowl") ||
-			         anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|FlightGrowl") ||
-			         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|FlightGrowl"))
-			{
-				if(soundplayed==false &&(animcount==5))
-				{
-					source.pitch=Random.Range(0.9F, 1.1F);
-					source.PlayOneShot(Ptera_Roar2,Random.Range(0.75F, 1.0F));
-					soundplayed=true;
-				}
-			}
-			
-			if(soundplayed==false &&(animcount==1))
-			{
-				source.pitch=Random.Range(1.0F, 1.1F);
-				source.PlayOneShot(Wind,Random.Range(0.4F, 0.6F));
-				soundplayed=true;
-			}
-			else if(animcount!=1 && animcount!=5 && animcount!=10) soundplayed=false;
-		}
-		
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|Walk") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Walk") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|Strafe+") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Strafe+") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|Strafe-") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Strafe-") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|Walk-") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Walk-"))
-		{
-			if(soundplayed==false &&(animcount==10))
-			{
-				source.pitch=Random.Range(1.1F, 1.25F);
-				source.PlayOneShot(Smallstep,0.1F);
-				soundplayed=true;
-			}
-			else if(soundplayed==false &&(animcount==25))
-			{
-				source.pitch=Random.Range(1.1F, 1.25F);
-				source.PlayOneShot(Smallstep,Random.Range(0.4F, 0.6F));
-				soundplayed=true;
-			}
-			else if(animcount!=10 && animcount!=25) soundplayed=false;
-		}
-		
-		
-		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|Run") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Run") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|RunToFlight") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|RunToFlight") ||
-		         anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|FlightToRun") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|FlightToRun")
-		         
-		         
-		         )
-		{
-			if(soundplayed==false &&(animcount==20))
-			{
-				source.pitch=Random.Range(1.1F, 1.25F);
-				source.PlayOneShot(Smallstep,Random.Range(0.4F, 0.6F));
-				soundplayed=true;
-			}
-			else if(soundplayed==false &&(animcount==25))
-			{
-				source.pitch=Random.Range(1.1F, 1.25F);
-				source.PlayOneShot(Sniff2,Random.Range(0.4F, 0.6F));
-				soundplayed=true;
-			}
-			else if(animcount!=20 && animcount!=25) soundplayed=false;
-		}
-		
-		
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|StandGrowl"))
-		{
-			if(soundplayed==false &&(animcount==3))
-			{
-				source.pitch=Random.Range(0.9F, 1.25F);
-				source.PlayOneShot(Ptera_Roar1,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-			
-			if(animcount!=3) soundplayed=false;
-		}
-		
-		
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|AttackFly"))
-		{
-			if(soundplayed==false &&(animcount==10))
-			{
-				source.pitch=Random.Range(1.5F, 1.8F);
-				source.PlayOneShot(Bite,Random.Range(0.4F, 0.6F));
-				soundplayed=true;
-			}
-			
-			if(animcount !=10) soundplayed=false;
-		}
-		
-		
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|StandC"))
-		{
-			if(soundplayed==false &&(animcount==5))
-			{
-				source.pitch=Random.Range(0.9F, 1.25F);
-				source.PlayOneShot(Ptera_Roar1,Random.Range(0.4F, 0.6F));
-				soundplayed=true;
-			}
-			else if(soundplayed==false &&(animcount==8))
-			{
-				source.pitch=Random.Range(1.0F, 1.1F);
-				source.PlayOneShot(Sniff2,Random.Range(0.4F, 0.6F));
-				soundplayed=true;
-			}
-			
-			if(animcount!=5 && animcount!=8) soundplayed=false;
-		}
-		
-		
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|SleepLoop"))
-		{
-			if(soundplayed==false &&(animcount==15))
-			{
-				source.pitch=Random.Range(1.5F, 1.6F);
-				source.PlayOneShot(Idlecarn,Random.Range(0.4F, 0.6F));
-				soundplayed=true;
-			}
-			
-			if(animcount!=15) soundplayed=false;
-		}
-		
-		
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Fall"))
-		{
-			
-			if(soundplayed==false &&(animcount==3))
-			{
-				source.pitch=Random.Range(1.0F, 1.6F);
-				source.PlayOneShot(Ptera_Roar2,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-			
-			if(animcount!=3) soundplayed=false;
-		}
-		
-		
-		else if (!isdead && anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Die1"))
-		{
-			
-			if(soundplayed==false &&(animcount==3))
-			{
-				source.pitch=Random.Range(1.5F, 1.6F);
-				source.PlayOneShot(Ptera_Roar1,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-			
-			if(soundplayed==false &&(animcount==25))
-			{
-				source.pitch=Random.Range(1.5F, 1.6F);
-				source.PlayOneShot(Bigstep,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-				isdead = true;
-			}
-			
-			if(animcount!=3 && animcount!=25) soundplayed=false;
-		}
-		
-		
-		else if (!isdead && anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Die2"))
-		{
-			if(soundplayed==false &&(animcount==15))
-			{
-				source.pitch=Random.Range(1.5F, 1.6F);
-				source.PlayOneShot(Bigstep,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-				isdead = true;
-			}
-			
-			if(animcount!=15) soundplayed=false;
-		}
-		
-		
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Rise"))
-		{
-			isdead = false;
-			if(soundplayed==false &&(animcount==5))
-			{
-				source.pitch=Random.Range(1.0F, 1.1F);
-				source.PlayOneShot(Ptera_Roar1,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-			
-			if(animcount!=5) soundplayed=false;
-		}
-		
-	}
-	
-	
-	
+
+    public override void PreProcessPseudoInput()
+    {
+        base.PreProcessPseudoInput();
+        
+        m_ModifiedInput.Space = m_ModifiedInput.LeftPad.y > 0 && m_ModifiedInput.LeftPad.magnitude > 0.8;
+
+        Logger.Instance.LogInfoToScreen(m_ModifiedInput.Space ? "Space" : "", 203, 0.2f);
+
+
+        //在地上，小前行就是跑步
+        if (anim.GetBool("Onground"))
+        {
+            Logger.Instance.LogInfoToScreen("Grd", 208);
+
+            m_ModifiedInput.LeftShift = m_ModifiedInput.LeftPad.y > 0 && m_ModifiedInput.LeftPad.magnitude > 0.3 && m_ModifiedInput.LeftPad.magnitude < 0.8;
+
+            if (m_ModifiedInput.LeftShift)
+                Logger.Instance.LogInfoToScreen("on ground run", 205, 0.1f);
+
+            if(anim.GetCurrentAnimatorStateInfo(0).IsName("Ptera|Glide"))//在地上滑翔有S动作
+            {
+                if (m_PseudoInput.S)
+                {
+                    m_ModifiedInput.LeftShift = true;
+                    m_ModifiedInput.S = false;
+                }
+            }
+
+        }
+        else
+        {
+            if (m_PseudoInput.S)
+            {
+                m_ModifiedInput.LeftShift = true;
+                m_ModifiedInput.S = false;
+            }
+
+            Logger.Instance.LogInfoToScreen("sky", 208);
+        }
+        
+        //重载横方向
+        if( Mathf.Abs(m_PseudoInput.LeftPad.x)<0.5 )
+        {
+            m_ModifiedInput.LeftPad.x = 0;
+        }
+
+
+        Debug.Log("leftpad" + m_ModifiedInput.LeftPad.ToString());
+
+    }
+
+    public override void Update()
+    {
+        base.Update();
+        
+        //Moves animation controller
+
+        //Attack
+        if (m_ModifiedInput.LeftClick) anim.SetBool("Attack", true);
+        else anim.SetBool("Attack", false);
+
+        //Moves animation controller
+        if (m_ModifiedInput.Space) anim.SetBool("Fly", true);
+        else anim.SetBool("Fly", false);
+
+        if (m_ModifiedInput.LeftShift && m_ModifiedInput.W) anim.SetInteger("State", 3); //Run animation controller
+        else if (m_ModifiedInput.LeftShift) anim.SetInteger("State", -3);
+        else if (m_ModifiedInput.W) anim.SetInteger("State", 1); //Walk animation controller
+        else if (m_ModifiedInput.S) anim.SetInteger("State", -1); //Walk backward animation controller
+        else if (m_ModifiedInput.A) anim.SetInteger("State", 10); // Strafe+ animation controller
+        else if (m_ModifiedInput.D) anim.SetInteger("State", -10); // Strafe- animation controller}
+        else anim.SetInteger("State", 0); //Idle
+
+        //Growl animation controller
+        if (m_ModifiedInput.EForGrowl) anim.SetBool("Growl", true);
+        else anim.SetBool("Growl", false);
+
+        switch(m_ModifiedInput.AlphaX)
+        {
+            case 1:
+                {
+                    anim.SetInteger("Idle", 1); //Idle 1
+                    break;
+                    
+                }
+            case 2:
+                {
+                    anim.SetInteger("Idle", 2); //Idle 2
+                    break;
+                }
+            case 3:
+                {
+                    anim.SetInteger("Idle", 3); //Eat
+                    break;
+                }
+            case 4:
+                {
+                    anim.SetInteger("Idle", 4); //Drink
+                    break;
+                }
+            case 5:
+                {
+                    anim.SetInteger("Idle", 5); //Sleep
+                    break;
+                }
+            case 6:
+                {
+                    anim.SetInteger("Idle", 6); //Die
+                    break;
+                }
+            default:
+                {
+                    anim.SetInteger("Idle", 0);
+                    break;
+                }
+        }
+
+        //***************************************************************************************
+        //Neck control
+        turn = m_ModifiedInput.Turn;
+        pitch = m_ModifiedInput.Pitch;
+
+        
+
+        //Root control
+        if (anim.GetBool("Onground") == false && (
+            m_ModifiedInput.A ||
+            m_ModifiedInput.D ||
+            m_ModifiedInput.LeftShift ||
+            m_ModifiedInput.Space))
+        {
+            if (m_ModifiedInput.A)
+            {
+                roll -= 0.5F; balance += 2.0F;
+            }
+            if (m_ModifiedInput.D)
+            {
+                roll += 0.5F; balance -= 2.0F;
+            }
+            if (m_ModifiedInput.LeftShift) pitch2 += 0.5F;
+            if (m_ModifiedInput.Space) pitch2 -= 0.5F;
+        }
+
+        if (roll != 0.0F || pitch2 != 0.0F || balance != 0.0F) // Reset
+        {
+            if (roll < 0.0F)
+            {
+                if (roll < -0.25F) roll += 0.25F; else roll = 0.0F;
+            }
+            else if (roll > 0.0F)
+            {
+                if (roll > 0.25F) roll -= 0.25F; else roll = 0.0F;
+            }
+            if (pitch2 < 0.0F)
+            {
+                if (pitch2 < -0.25F) pitch2 += 0.25F; else pitch2 = 0.0F;
+            }
+            else if (pitch2 > 0.0F)
+            {
+                if (pitch2 > 0.25F) pitch2 -= 0.25F; else pitch2 = 0.0F;
+            }
+            if (balance < 0.0F)
+            {
+                if (balance < -0.5F) balance += 0.5F; else balance = 0.0F;
+            }
+            else if (balance > 0.0F)
+            {
+                if (balance > 0.5F) balance -= 0.5F; else balance = 0.0F;
+            }
+        }
+
+
+        //Jaw control
+        if ((anim.GetCurrentAnimatorStateInfo(0).IsName("Ptera|StandA") ||
+             anim.GetCurrentAnimatorStateInfo(0).IsName("Ptera|Run") ||
+             anim.GetCurrentAnimatorStateInfo(0).IsName("Ptera|Walk") ||
+             anim.GetCurrentAnimatorStateInfo(0).IsName("Ptera|Walk-") ||
+             anim.GetCurrentAnimatorStateInfo(0).IsName("Ptera|Strafe+") ||
+             anim.GetCurrentAnimatorStateInfo(0).IsName("Ptera|Strafe-")) &&
+            (m_ModifiedInput.LeftClick) && (reset == false))
+            open -= 2.0F;
+        else open += 1.0F;
+
+
+        //Reset Neck
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Ptera|StandB"))
+            reset = true;
+        else reset = false;
+    }
+
 	//***************************************************************************************
 	//Clamp and set bone rotations
 	void LateUpdate()
@@ -573,29 +300,24 @@ public class ptera_cs : MonoBehaviour
 		Jaw.transform.localRotation *= Quaternion.AngleAxis (open, new Vector3 (0, -1, 0));
 	}
 	
-	
-	
 	void FixedUpdate ()
 	{
-		//***************************************************************************************
-		//Model translations and rotations
-		//Walking
-		
-		//adjust speed to the model's scale
-		Scale = this.transform.localScale.x;
-		//adjust gravity to the model's scale
-		Physics.gravity = new Vector3(0, -Scale*40.0f, 0);
-		
+        m_ConstForce.enabled = false;
+
+        //***************************************************************************************
+        //Model translations and rotations
+        //Walking
+
 		if (anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|Walk") ||
 		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Walk"))
 		{
 			FlyZ=0.0F;
 			
-			if (Input.GetKey (KeyCode.A))
+			if (m_ModifiedInput.A)
 			{
 				this.transform.localRotation *= Quaternion.AngleAxis (1.0F, new Vector3 (0, -1, 0));
 			}
-			else if (Input.GetKey (KeyCode.D))
+			else if (m_ModifiedInput.D)
 			{
 				this.transform.localRotation *= Quaternion.AngleAxis (1.0F, new Vector3 (0, 1, 0));
 			}
@@ -616,11 +338,11 @@ public class ptera_cs : MonoBehaviour
 		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|Walk-") ||
 		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Walk-"))
 		{
-			if (Input.GetKey (KeyCode.A))
+			if (m_ModifiedInput.A)
 			{
 				this.transform.localRotation *= Quaternion.AngleAxis (1.0F, new Vector3 (0, -1, 0));
 			}
-			else if (Input.GetKey (KeyCode.D))
+			else if (m_ModifiedInput.D)
 			{
 				this.transform.localRotation *= Quaternion.AngleAxis (1.0F, new Vector3 (0, 1, 0));
 			}
@@ -639,7 +361,7 @@ public class ptera_cs : MonoBehaviour
 		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Strafe+"))
 		{
 			
-			if (Input.GetKey (KeyCode.Mouse1)) //turning
+			if (turn != 0) //turning
 			{
 				this.transform.localRotation *= Quaternion.AngleAxis (turn /8, new Vector3 (0, 1, 0));
 			}
@@ -658,7 +380,7 @@ public class ptera_cs : MonoBehaviour
 		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Strafe-"))
 		{
 			
-			if (Input.GetKey (KeyCode.Mouse1)) //turning
+			if (turn != 0) //turning
 			{
 				this.transform.localRotation *= Quaternion.AngleAxis (turn /8, new Vector3 (0, 1, 0));
 			}
@@ -676,11 +398,11 @@ public class ptera_cs : MonoBehaviour
 		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|Run") ||
 		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|Run"))
 		{
-			if (Input.GetKey (KeyCode.A))
+			if (m_ModifiedInput.A)
 			{
 				this.transform.localRotation *= Quaternion.AngleAxis (1.0F, new Vector3 (0, -1, 0));
 			}
-			else if (Input.GetKey (KeyCode.D))
+			else if (m_ModifiedInput.D)
 			{
 				this.transform.localRotation *= Quaternion.AngleAxis (1.0F, new Vector3 (0, 1, 0));
 			}
@@ -755,16 +477,17 @@ public class ptera_cs : MonoBehaviour
 		         anim.GetNextAnimatorStateInfo (0).IsName ("Ptera|AttackFly") ||
 		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|AttackFly"))
 		{
-			rg.useGravity = false;
+            rg.useGravity = false;
+            m_ConstForce.enabled = true;
 			
-			if (Input.GetKey (KeyCode.Space))
+			if (m_ModifiedInput.Space)
 			{ 
 				if (FlyY < 1.0F)
 				{
 					FlyY = FlyY + (Time.deltaTime * 0.5F); //Up
 				}
 			}
-			else if (Input.GetKey (KeyCode.LeftShift) && anim.GetBool("Onground")==false)
+			else if (m_ModifiedInput.LeftShift && anim.GetBool("Onground")==false)
 			{ 
 				if (FlyY > -1.0F)
 				{
@@ -776,7 +499,7 @@ public class ptera_cs : MonoBehaviour
 			
 			
 			
-			if (Input.GetKey (KeyCode.W))
+			if (m_ModifiedInput.W)
 			{
 				if (FlyY < 1.0F)
 				{
@@ -788,7 +511,7 @@ public class ptera_cs : MonoBehaviour
 					FlyZ = FlyZ + (Time.deltaTime * 1.0F); //Forward
 				}
 			}
-			else if (Input.GetKey (KeyCode.S))
+			else if (m_ModifiedInput.S)
 			{
 				if (FlyZ > -0.5F)
 				{
@@ -799,12 +522,12 @@ public class ptera_cs : MonoBehaviour
 			else if (FlyZ < 0.0F) FlyZ = FlyZ + (Time.deltaTime * 0.25F); //Backward Deceleration
 			else FlyZ =0.0F;
 			
-			if (Input.GetKey (KeyCode.A) && Input.GetKey (KeyCode.Mouse1))
+			if (m_ModifiedInput.A && m_ModifiedInput.Mouse1)
 			{
 				if(FlyX > -0.5F) FlyX = FlyX - (Time.deltaTime * 0.5F); //Strafe
 				
 			}
-			else if (Input.GetKey (KeyCode.D) && Input.GetKey (KeyCode.Mouse1))
+			else if (m_ModifiedInput.D && m_ModifiedInput.Mouse1)
 			{
 				if(FlyX < 0.5F) FlyX = FlyX + (Time.deltaTime * 0.5F); //Strafe
 			}
@@ -829,8 +552,9 @@ public class ptera_cs : MonoBehaviour
 		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Ptera|GlideGrowl"))
 		{
 			rg.useGravity = false;
-			
-			if (Input.GetKey (KeyCode.LeftShift) && anim.GetBool("Onground") == false)
+            m_ConstForce.enabled = true;
+
+            if (m_ModifiedInput.LeftShift && anim.GetBool("Onground") == false)
 			{
 				if (FlyY > -1.0F)
 				{
@@ -842,7 +566,7 @@ public class ptera_cs : MonoBehaviour
 					FlyZ = FlyZ + (Time.deltaTime * 0.25F); //forward
 				}
 			}
-			else if (Input.GetKey (KeyCode.Space))
+			else if (m_ModifiedInput.Space)
 			{
 				if (FlyY < 1.0F)
 				{

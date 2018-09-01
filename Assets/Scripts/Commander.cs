@@ -82,7 +82,7 @@ public class Commander : Singleton<Commander> {
                     {
                         var a = Convert.ToInt32(cmd[1]);
                         var b = Convert.ToInt32(cmd[2]);
-                        GameObject.FindGameObjectWithTag("Anky").GetComponent<AnimManager>().ChangeState(a, b);
+                        GameObject.FindGameObjectWithTag("Anky").GetComponent<AnimManager_Dep>().ChangeState(a, b);
 
                     }
                     break;
@@ -100,8 +100,13 @@ public class Commander : Singleton<Commander> {
                 }
             case "drive":
                 {
-                    var Anky = GameManager.Instance.GOs[0];
-                    GameManager.Instance.Player.GetComponent<PlayerController>().DriveAnimal(Anky);
+                    string s0 = "Anky";
+                    if (cmd.Length >= 2)
+                        s0 = cmd[1];
+
+                    var dr = GameObject.Find(s0);
+                    //var Anky = GameManager.Instance.GOs[0];
+                    GameManager.Instance.Player.GetComponent<PlayerController>().DriveAnimal(dr);
                     break;
                 }
             case "moveto":
@@ -118,6 +123,24 @@ public class Commander : Singleton<Commander> {
                     ai.m_Attacker = GameManager.Instance.Player;
                     break;
                 }
+            case "jump":
+                {
+                    var f = System.Convert.ToDouble(cmd[1]);
+                    GameManager.Instance.Player.GetComponent<PlayerController>().Jump((float)f);
+                    break;
+                }
+            case "changecamera":
+                {
+                    if(GameManager.Instance.Player.GetComponent<PlayerController>().m_MainCamera.enabled)
+                    GameManager.Instance.Player.GetComponent<PlayerController>().ChangeToBackCamera();
+                    else
+                    {
+                        GameManager.Instance.Player.GetComponent<PlayerController>().ChangeToMainCamera();
+
+                    }
+                    break;
+                }
+                
         }
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections;
 
 
-public class anky_cs : MonoBehaviour
+public class anky_cs : AnimCtrl
 {
 	Transform Spine0,Spine1,Spine2,Neck0, Neck1,Neck2,Neck3,Head,Jaw, Tail0,Tail1,Tail2,Tail3,Tail4,Tail5;
 	float turn,pitch,open,balance,temp,velocity,animcount,Scale = 0.0F;
@@ -15,8 +15,7 @@ public class anky_cs : MonoBehaviour
 	SkinnedMeshRenderer[] rend;
 	public Texture[] skin;
 	public AudioClip Medstep,Idleherb,Anky_Roar1,Anky_Roar2,Anky_Call1,Anky_Call2,Sniff1,Chew,Largestep;
-
-    public PseudoInput m_PseudoInput = new PseudoInput();
+    public Movement m_Movement = null;
 
 	void Awake ()
 	{
@@ -44,147 +43,81 @@ public class anky_cs : MonoBehaviour
 		rend = GetComponentsInChildren <SkinnedMeshRenderer>();
 	}
 
+    /*
+            GUI.Label(new Rect(5,200,Screen.width,Screen.height),"Middle Mouse = Camera/Zoom");
+            GUI.Label(new Rect(5,220,Screen.width,Screen.height),"Right Mouse = Spine move");
+            GUI.Label(new Rect(5,240,Screen.width,Screen.height),"Left Mouse = Attack");
+            GUI.Label(new Rect(5,260,Screen.width,Screen.height),"W,A,S,D = Moves");
+            GUI.Label(new Rect(5,280,Screen.width,Screen.height),"LeftShift = Run");
+            GUI.Label(new Rect(5,300,Screen.width,Screen.height),"LeftCtrl = Attack Pose");
+            GUI.Label(new Rect(5,320,Screen.width,Screen.height),"Space = Steps");
+            GUI.Label(new Rect(5,340,Screen.width,Screen.height),"E = Growl");
+            GUI.Label(new Rect(5,360,Screen.width,Screen.height),"num 1 = IdleA");
+            GUI.Label(new Rect(5,380,Screen.width,Screen.height),"num 2 = IdleB");
+            GUI.Label(new Rect(5,400,Screen.width,Screen.height),"num 3 = Eat");
+            GUI.Label(new Rect(5,420,Screen.width,Screen.height),"num 4 = Drink");
+            GUI.Label(new Rect(5,440,Screen.width,Screen.height),"num 5 = Sit/Sleep");
+            GUI.Label(new Rect(5,460,Screen.width,Screen.height),"num 6 = Die");*/
 
-
-	void OnGUI ()
-	{
-        return;
-		switch (skinselect)
-		{
-		case 0:
-			if (GUI.Button (new Rect (5,40,80,20), "Skin A"))
-			{
-				rend[0].material.mainTexture = skin[1];
-				rend[1].material.mainTexture = skin[1];
-				rend[2].material.mainTexture = skin[1];
-				skinselect=1;
-			}
-			break;
-		case 1:
-			if (GUI.Button (new Rect (5,40,80,20), "Skin B"))
-			{
-				rend[0].material.mainTexture = skin[2];
-				rend[1].material.mainTexture = skin[2];
-				rend[2].material.mainTexture = skin[2];
-				skinselect=2;
-			}
-			break;
-		case 2:
-			if (GUI.Button (new Rect (5,40,80,20), "Skin C"))
-			{
-				rend[0].material.mainTexture = skin[0];
-				rend[1].material.mainTexture = skin[0];
-				rend[2].material.mainTexture = skin[0];
-				skinselect=0;
-			}
-			break;
-		}
-		
-		if(rend[0].isVisible)infos = rend[0].sharedMesh.triangles.Length/3+" triangles";
-		else if (rend[1].isVisible)infos = rend[1].sharedMesh.triangles.Length/3+" triangles";
-		else if (rend[2].isVisible)infos = rend[2].sharedMesh.triangles.Length/3+" triangles";
-		
-		switch (lodselect)
-		{
-		case 0:
-			if (GUI.Button (new Rect (5,100,190,30), "LOD_Auto -> " + infos))
-			{
-				lods.ForceLOD(0);
-				lodselect=1;
-			}
-			break;
-		case 1:
-			if (GUI.Button (new Rect (5,100,190,30), "LOD_0 -> " + infos))
-			{
-				lods.ForceLOD(1);
-				lodselect=2;
-			}
-			
-			break;
-		case 2:
-			if (GUI.Button (new Rect (5,100,190,30), "LOD_1 -> " + infos))
-			{
-				lods.ForceLOD(2);
-				lodselect=3;
-			}
-			break;
-		case 3:
-			if (GUI.Button (new Rect (5,100,190,30), "LOD_2 -> " + infos))
-			{
-				lods.ForceLOD(-1);
-				lodselect=0;
-			}
-			break;
-		}
-
-
-		GUI.Box (new Rect (0, 170, 200, 380), "Help");
-		GUI.Label(new Rect(5,200,Screen.width,Screen.height),"Middle Mouse = Camera/Zoom");
-		GUI.Label(new Rect(5,220,Screen.width,Screen.height),"Right Mouse = Spine move");
-		GUI.Label(new Rect(5,240,Screen.width,Screen.height),"Left Mouse = Attack");
-		GUI.Label(new Rect(5,260,Screen.width,Screen.height),"W,A,S,D = Moves");
-		GUI.Label(new Rect(5,280,Screen.width,Screen.height),"LeftShift = Run");
-		GUI.Label(new Rect(5,300,Screen.width,Screen.height),"LeftCtrl = Attack Pose");
-		GUI.Label(new Rect(5,320,Screen.width,Screen.height),"Space = Steps");
-		GUI.Label(new Rect(5,340,Screen.width,Screen.height),"E = Growl");
-		GUI.Label(new Rect(5,360,Screen.width,Screen.height),"num 1 = IdleA");
-		GUI.Label(new Rect(5,380,Screen.width,Screen.height),"num 2 = IdleB");
-		GUI.Label(new Rect(5,400,Screen.width,Screen.height),"num 3 = Eat");
-		GUI.Label(new Rect(5,420,Screen.width,Screen.height),"num 4 = Drink");
-		GUI.Label(new Rect(5,440,Screen.width,Screen.height),"num 5 = Sit/Sleep");
-		GUI.Label(new Rect(5,460,Screen.width,Screen.height),"num 6 = Die");
-	}
-
-
-    private void Start()
+    public override void PreProcessPseudoInput()
     {
-        
+        base.PreProcessPseudoInput();
+        m_ModifiedInput.LeftShift = m_ModifiedInput.LeftPad.y > 0 && m_ModifiedInput.LeftPad.magnitude > 0.7;
+
     }
 
-    private void Update()
+    public override void Start()
     {
+        m_Movement = GetComponent<Movement>();
+    }
 
+
+    public override void Update()
+    {
+        base.Update();
+
+        m_Movement.TurnRight(m_ModifiedInput.LeftPad.x);
 
         //***************************************************************************************
         //Moves animation controller
-        if (m_PseudoInput.W && m_PseudoInput.Space) anim.SetInteger("State", 2); //Steps forward
-        else if ( m_PseudoInput.LeftShift && m_PseudoInput.W ) anim.SetInteger("State", 3); //Run
-        else if ( m_PseudoInput.W ) anim.SetInteger("State", 1); //Walk
-        else if ( m_PseudoInput.Space && m_PseudoInput.S ) anim.SetInteger("State", -2); //Steps backward
-        else if (m_PseudoInput.S) anim.SetInteger("State", -1); //Walk backward
-        else if (m_PseudoInput.A) anim.SetInteger("State", 10); //Strafe+
-        else if (m_PseudoInput.D) anim.SetInteger("State", -10); //Strafe-
-        else if (m_PseudoInput.Space) anim.SetInteger("State", 100); //Steps
-        else if (m_PseudoInput.LeftCtrl) anim.SetInteger("State", -100); //Attack  pose
+        if (m_ModifiedInput.W && m_ModifiedInput.Space) anim.SetInteger("State", 2); //Steps forward
+        else if ( m_ModifiedInput.LeftShift && m_ModifiedInput.W ) anim.SetInteger("State", 3); //Run
+        else if ( m_ModifiedInput.W ) anim.SetInteger("State", 1); //Walk
+        else if ( m_ModifiedInput.Space && m_ModifiedInput.S ) anim.SetInteger("State", -2); //Steps backward
+        else if (m_ModifiedInput.S) anim.SetInteger("State", -1); //Walk backward
+        else if (m_ModifiedInput.A) anim.SetInteger("State", 10); //Strafe+
+        else if (m_ModifiedInput.D) anim.SetInteger("State", -10); //Strafe-
+        else if (m_ModifiedInput.Space) anim.SetInteger("State", 100); //Steps
+        else if (m_ModifiedInput.LeftCtrl) anim.SetInteger("State", -100); //Attack  pose
         else anim.SetInteger("State", 0); //back to loop
 
 
         //Attack animation controller
-        if (m_PseudoInput.LeftClick)
+        if (m_ModifiedInput.LeftClick)
             anim.SetBool("Attack", true);
         else
             anim.SetBool("Attack", false);
 
 
         //Growl animation controller
-        if (Input.GetKey(KeyCode.E))
+        if ( m_ModifiedInput.EForGrowl )
             anim.SetBool("Growl", true);
         else
             anim.SetBool("Growl", false);
 
 
         //Idles animation controller
-        if (m_PseudoInput.AlphaX == 1)
+        if (m_ModifiedInput.AlphaX == 1)
             anim.SetInteger("Idle", 1); //Idle 1
-        else if (m_PseudoInput.AlphaX == 2)
+        else if (m_ModifiedInput.AlphaX == 2)
             anim.SetInteger("Idle", 2); //Idle 2
-        else if (m_PseudoInput.AlphaX == 3)
+        else if (m_ModifiedInput.AlphaX == 3)
             anim.SetInteger("Idle", 3); //Eat
-        else if (m_PseudoInput.AlphaX == 4)
+        else if (m_ModifiedInput.AlphaX == 4)
             anim.SetInteger("Idle", 4); //Drink
-        else if (m_PseudoInput.AlphaX == 5)
+        else if (m_ModifiedInput.AlphaX == 5)
             anim.SetInteger("Idle", 5); //Sleep
-        else if (m_PseudoInput.AlphaX == 6)
+        else if (m_ModifiedInput.AlphaX == 6)
             anim.SetInteger("Idle", 6); //Die
         else
             anim.SetInteger("Idle", 0);
@@ -192,56 +125,11 @@ public class anky_cs : MonoBehaviour
 
         //***************************************************************************************
         //Spine control
-        turn = m_PseudoInput.RightPad.x;
-        pitch = m_PseudoInput.RightPad.y;
-/*
-
-        if (m_PseudoInput.righ && reset == false)
-        {
-            turn += Input.GetAxis("Mouse X") * 1.0F;
-            pitch += Input.GetAxis("Mouse Y") * 1.0F;
-        }
-        else if (turn != 0.0F || pitch != 0.0F)
-        {
-            if (turn < 0.0F)
-            {
-                if (turn < -0.25F)
-                    turn += 0.25F;
-                else
-                    turn = 0.0F;
-            }
-            else if (turn > 0.0F)
-            {
-                if (turn > 0.25F)
-                    turn -= 0.25F;
-                else
-                    turn = 0.0F;
-            }
-            if (pitch < 0.0F)
-            {
-                if (pitch < -0.5F)
-                    pitch += 0.5F;
-                else
-                {
-                    pitch = 0.0F;
-                    reset = false;
-                }
-            }
-            else if (pitch > 0.0F)
-            {
-                if (pitch > 0.5F)
-                    pitch -= 0.5F;
-                else
-                {
-                    pitch = 0.0F;
-                    reset = false;
-                }
-            }
-        }*/
-
+        turn = m_ModifiedInput.Turn;
+        pitch = m_ModifiedInput.Pitch;
 
         //Jaw control
-        if (m_PseudoInput.LeftClick &&
+        if (m_ModifiedInput.LeftClick &&
             (reset == false) &&
             (!anim.GetCurrentAnimatorStateInfo(0).IsName("Anky|Stand1A")) &&
             (!anim.GetCurrentAnimatorStateInfo(0).IsName("Anky|Stand2A")) &&
@@ -290,146 +178,6 @@ public class anky_cs : MonoBehaviour
         //soundfx
 
     }
-
-
-    void Update1 ()
-	{
-
-
-
-		//***************************************************************************************
-		//Moves animation controller
-		if (Input.GetKey (KeyCode.Space) && Input.GetKey (KeyCode.W)) anim.SetInteger ("State", 2); //Steps forward
-		else if (Input.GetKey (KeyCode.LeftShift) && Input.GetKey (KeyCode.W)) anim.SetInteger ("State", 3); //Run
-		else if (Input.GetKey (KeyCode.W))anim.SetInteger ("State", 1); //Walk
-		else if (Input.GetKey (KeyCode.Space) && Input.GetKey (KeyCode.S)) anim.SetInteger ("State", -2); //Steps backward
-		else if (Input.GetKey (KeyCode.S)) anim.SetInteger ("State", -1); //Walk backward
-		else if (Input.GetKey (KeyCode.A)) anim.SetInteger ("State", 10); //Strafe+
-		else if (Input.GetKey (KeyCode.D)) anim.SetInteger ("State", -10); //Strafe-
-		else if (Input.GetKey (KeyCode.Space)) anim.SetInteger ("State", 100); //Steps
-		else if (Input.GetKey (KeyCode.LeftControl)) anim.SetInteger ("State", -100); //Attack  pose
-		else anim.SetInteger ("State", 0); //back to loop
-
-
-		//Attack animation controller
-		if (Input.GetKey (KeyCode.Mouse0))
-			anim.SetBool ("Attack", true);
-		else
-			anim.SetBool ("Attack", false);
-
-
-		//Growl animation controller
-		if (Input.GetKey (KeyCode.E))
-			anim.SetBool ("Growl", true);
-		else
-			anim.SetBool ("Growl", false);
-
-
-		//Idles animation controller
-		if (Input.GetKey (KeyCode.Alpha1))
-			anim.SetInteger ("Idle", 1); //Idle 1
-		else if (Input.GetKey (KeyCode.Alpha2))
-			anim.SetInteger ("Idle", 2); //Idle 2
-		else if (Input.GetKey (KeyCode.Alpha3))
-			anim.SetInteger ("Idle", 3); //Eat
-		else if (Input.GetKey (KeyCode.Alpha4))
-			anim.SetInteger ("Idle", 4); //Drink
-		else if (Input.GetKey (KeyCode.Alpha5))
-			anim.SetInteger ("Idle", 5); //Sleep
-		else if (Input.GetKey (KeyCode.Alpha6))
-			anim.SetInteger ("Idle", 6); //Die
-		else
-			anim.SetInteger ("Idle", 0);
-
-
-		//***************************************************************************************
-		//Spine control
-		if (Input.GetKey (KeyCode.Mouse1) && reset == false) {
-			turn += Input.GetAxis ("Mouse X") * 1.0F;
-			pitch += Input.GetAxis ("Mouse Y") * 1.0F;
-		} else if (turn != 0.0F || pitch != 0.0F) {
-			if (turn < 0.0F) {
-				if (turn < -0.25F)
-					turn += 0.25F;
-				else
-					turn = 0.0F; 
-			} else if (turn > 0.0F) {
-				if (turn > 0.25F)
-					turn -= 0.25F;
-				else
-					turn = 0.0F; 
-			}
-			if (pitch < 0.0F)
-			{
-				if (pitch < -0.5F)
-					pitch += 0.5F;
-				else
-				{
-					pitch = 0.0F;
-					reset = false;
-				}
-			}
-			else if (pitch > 0.0F)
-			{
-				if (pitch > 0.5F)
-					pitch -= 0.5F;
-				else {
-					pitch = 0.0F;
-					reset = false;
-				}
-			}
-		}
-
-
-		//Jaw control
-		if ((Input.GetKey (KeyCode.Mouse0)) &&
-			(reset == false) &&
-			(!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1A")) &&
-			(!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand2A")) &&
-			(!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1B")) &&
-			(!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand2C")) &&
-			(!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1Attack")) &&
-			(!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand2Attack")) &&
-			(!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step1Attack")) &&
-			(!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2Attack")) &&
-			(!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|WalkGrowl")) &&
-			(!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|RunGrowl")) &&
-			(!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|RunAttackA")) &&
-			(!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|RunAttackB")) &&
-			(!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|WalkShake"))
-			)
-			open -= 4.0F;
-		else
-			open += 1.0F;
-
-
-		//Reset spine position during specific animation
-		if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|EatC"))
-			reset = true; else reset = false;
-		
-		
-		//Reset tail and spine position
-		if (((anim.GetInteger ("State") != 1) || (anim.GetInteger ("State") != 3)) && (balance != 0.0F))
-		{
-			if (balance < 0.0F)
-			{
-				if (balance < -0.1F)
-					balance += 0.1F;
-				else
-					balance = 0.0F; 
-			}
-			else if (balance > 0.0F)
-			{
-				if (balance > 0.1F)
-					balance -= 0.1F;
-				else
-					balance = 0.0F; 
-			}
-		}
-	
-        //soundfx
-
-	}
 
 	//***************************************************************************************
 	//Clamp and set bone rotations
@@ -493,7 +241,7 @@ public class anky_cs : MonoBehaviour
 			if( anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step1") ||
 			    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2"))
 			{
-				if (Input.GetKey (KeyCode.A)) //turning
+				if (m_ModifiedInput.A) //turning
 				{
 					if (anim.GetCurrentAnimatorStateInfo (0).normalizedTime < 0.8)
 					{
@@ -501,7 +249,7 @@ public class anky_cs : MonoBehaviour
 					}
 					balance += 0.2F;
 				} 
-				else if (Input.GetKey (KeyCode.D))
+				else if (m_ModifiedInput.D)
 				{
 					if (anim.GetCurrentAnimatorStateInfo (0).normalizedTime < 0.8)
 					{
@@ -512,12 +260,12 @@ public class anky_cs : MonoBehaviour
 			}
 			else
 			{
-				if (Input.GetKey (KeyCode.A))
+				if (m_ModifiedInput.A)
 				{
 					this.transform.localRotation *= Quaternion.AngleAxis (0.4F, new Vector3 (0, -1, 0));
 					balance += 0.2F;
 				}
-				else if (Input.GetKey (KeyCode.D))
+				else if (m_ModifiedInput.D)
 				{
 					this.transform.localRotation *= Quaternion.AngleAxis (0.4F, new Vector3 (0, 1, 0));
 					balance -= 0.2F;
@@ -561,7 +309,7 @@ public class anky_cs : MonoBehaviour
 			if( anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step1-") ||
 			   anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2-"))
 			{
-				if (Input.GetKey (KeyCode.A)) //turning
+				if (m_ModifiedInput.A) //turning
 				{
 					if (anim.GetCurrentAnimatorStateInfo (0).normalizedTime < 0.8)
 					{
@@ -569,7 +317,7 @@ public class anky_cs : MonoBehaviour
 					}
 					balance += 0.25F;
 				}
-				else if (Input.GetKey (KeyCode.D))
+				else if (m_ModifiedInput.D)
 				{
 					if (anim.GetCurrentAnimatorStateInfo (0).normalizedTime < 0.8)
 					{
@@ -580,12 +328,12 @@ public class anky_cs : MonoBehaviour
 			}
 			else
 			{
-				if (Input.GetKey (KeyCode.A)) //turning
+				if (m_ModifiedInput.A) //turning
 				{
 					this.transform.localRotation *= Quaternion.AngleAxis (0.4F, new Vector3 (0, 1, 0));
 					balance += 0.25F;
 				}
-				else if (Input.GetKey (KeyCode.D))
+				else if (m_ModifiedInput.D)
 				{
 					this.transform.localRotation *= Quaternion.AngleAxis (0.2F, new Vector3 (0, -1, 0));
 					balance -= 0.25F;
@@ -605,8 +353,7 @@ public class anky_cs : MonoBehaviour
 			
 			this.transform.Translate (0, 0, velocity*Scale);
 		}
-
-
+        
 		//Strafe-
 		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Strafe1+") ||
 				 anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Strafe1+") ||
@@ -614,7 +361,7 @@ public class anky_cs : MonoBehaviour
 		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Strafe2-")
 		         )
 		{
-			if (Input.GetKey (KeyCode.Mouse1)) //turning
+			if (m_ModifiedInput.Mouse1) //turning
 			{
 				this.transform.localRotation *= Quaternion.AngleAxis (turn /32, new Vector3 (0, 1, 0));
 				if (turn < 0) balance += 0.1F;
@@ -628,15 +375,14 @@ public class anky_cs : MonoBehaviour
 
 			this.transform.Translate (-velocity*Scale,0,0);
 		}
-
-
+        
 		//Strafe+
 		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Strafe1-") ||
 		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Strafe1-")||
 		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Strafe2+") ||
 		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Strafe2+"))
 		{
-			if (Input.GetKey (KeyCode.Mouse1)) //turning
+			if (m_ModifiedInput.Mouse1) //turning
 			{
 				this.transform.localRotation *= Quaternion.AngleAxis (turn /32, new Vector3 (0, 1, 0));
 				if (turn < 0) balance += 0.1F;
@@ -651,7 +397,6 @@ public class anky_cs : MonoBehaviour
 			this.transform.Translate (velocity*Scale,0,0);
 		}
 
-
 		//Running
 		else if (anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Run") ||
 		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Run") ||
@@ -660,12 +405,12 @@ public class anky_cs : MonoBehaviour
 		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|RunGrowl") ||
 		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|RunGrowl"))
 		{
-			if (Input.GetKey (KeyCode.A)) //turning
+			if (m_ModifiedInput.A) //turning
 			{
 				this.transform.localRotation *= Quaternion.AngleAxis (1.0F, new Vector3 (0, -1, 0));
 				balance += 0.25F;
 			}
-			else if (Input.GetKey (KeyCode.D))
+			else if (m_ModifiedInput.D)
 			{
 				this.transform.localRotation *= Quaternion.AngleAxis (1.0F, new Vector3 (0, 1, 0));
 				balance -= 0.25F;
@@ -678,7 +423,6 @@ public class anky_cs : MonoBehaviour
 			
 			this.transform.Translate (0, 0, velocity*Scale);
 		}
-
 
 		//Attack
 		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1ToAttackA") ||
@@ -695,7 +439,6 @@ public class anky_cs : MonoBehaviour
 			this.transform.Translate (0, 0, velocity*Scale);
 		}
 
-
 		//Stop
 		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1A") ||
 		         anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Stand2A") ||
@@ -705,486 +448,6 @@ public class anky_cs : MonoBehaviour
 			
 			this.transform.Translate (0, 0, velocity*Scale);
 		}
-	
 	}
-
 }
-
-
-
-
-
-/*
-
-		// ***************************************************************************************
-		//Sound Fx code
-		
-		//Get current animation point
-		animcount = (anim.GetCurrentAnimatorStateInfo (0).normalizedTime) % 1.0F;
-		if(anim.GetAnimatorTransitionInfo(0).normalizedTime!=0.0F) animcount=0.0F;
-		animcount = Mathf.Round(animcount * 30);
-
-
-		if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Walk") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Walk") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Walk-") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Walk-") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2ToWalk") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step2ToWalk") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step1ToWalk-") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step1ToWalk-") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Strafe1+") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Strafe1+") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Strafe1-") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Strafe1-") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Strafe2+") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Strafe2+") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Strafe2-") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Strafe2-"))
-		{
-			if(soundplayed==false &&(animcount==10 || animcount==25))
-			{
-				source.pitch=Random.Range(0.8F, 1.0F);
-				source.PlayOneShot(Medstep,Random.Range(0.4F, 0.6F));
-				soundplayed=true;
-			}
-			else if(animcount!=10 && animcount!=25) soundplayed=false;
-		}
-
-
-		else if(anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|WalkGrowl") ||
-		   		anim.GetNextAnimatorStateInfo (0).IsName ("Anky|WalkGrowl"))
-		{
-			if(animcount==4 && soundplayed==false)
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Anky_Roar2,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-			else if(animcount!=4) soundplayed=false;
-		}
-
-
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step1") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step1") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step1-") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step1-") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step2") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2-") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step2-") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2ToAttackB") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step2ToAttackB") ||
-		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2-ToSit") ||
-		    anim.GetNextAnimatorStateInfo (0).IsName ("Anky|Step2-ToSit"))
-		{
-			if(animcount==10 && soundplayed==false)
-			{
-				source.pitch=Random.Range(0.75F, 1.0F);
-				source.PlayOneShot(Medstep,Random.Range(0.4F, 0.6F));
-				soundplayed=true;
-			}
-			
-			else if( animcount!=10) soundplayed=false;
-			
-		}
-
-
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Run"))
-		{
-			if(animcount==3 && soundplayed==false)
-			{
-				source.pitch=Random.Range(0.8F, 1.0F);
-				source.PlayOneShot(Sniff1,Random.Range(0.4F, 0.6F));
-				soundplayed=true;
-			}
-			
-			if(soundplayed==false &&(animcount==8 || animcount==22))
-			{
-				source.pitch=Random.Range(0.8F, 1.0F);
-				source.PlayOneShot(Medstep,Random.Range(0.4F, 0.6F));
-				soundplayed=true;
-			}
-			else if(animcount!=3 && animcount!=8 && animcount!=22) soundplayed=false;
-	
-		}
-
-
-		else if(anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|RunGrowl"))
-		{
-			if(animcount==4 && soundplayed==false)
-			{
-				source.pitch=Random.Range(0.8F, 1.25F);
-				source.PlayOneShot(Anky_Roar1,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-			else if(animcount!=4) soundplayed=false;
-		}
-
-
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1A") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand2A") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|SitLoop") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|SleepLoop") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|EatA") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|AttackLoop"))
-		{
-
-			if(anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|EatA") &&
-			   animcount==20 && soundplayed==false)
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Chew,Random.Range(0.1F, 0.4F));
-				soundplayed=true;
-			}
-
-			if(animcount==15 && soundplayed==false)
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Idleherb,Random.Range(0.1F, 0.4F));
-				soundplayed=true;
-			}
-			else if(animcount!=15 && animcount!=20) soundplayed=false;
-		}
-
-
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|EatB"))
-		{
-			
-			if(soundplayed==false &&
-			   (animcount==0 || animcount==10 || animcount==20) )
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Chew,Random.Range(0.4F, 0.6F));
-				soundplayed=true;
-			}
-			else if(animcount!=0 && animcount!=10 && animcount!=20) soundplayed=false;
-		}
-
-
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1B") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand2B"))
-		{
-			
-			if(animcount==5 && soundplayed==false)
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Anky_Call1,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-			else if(animcount!=5) soundplayed=false;
-		}
-
-
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1C"))
-		{
-			
-			if(animcount==5 && soundplayed==false)
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Anky_Roar1,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-			else if(animcount!=5) soundplayed=false;
-		}
-
-
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand2C"))
-		{
-			
-			if(animcount==5 && soundplayed==false)
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Sniff1,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-			else if(animcount!=5) soundplayed=false;
-		}
-
-	
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1Call") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand2Call") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|SitCall"))
-		{
-			
-			if(animcount==5 && soundplayed==false)
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Anky_Roar2,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-			else if(animcount!=5) soundplayed=false;
-		}
-
-
-		else if ( anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|SitGrowl"))
-		{
-			
-			if(animcount==1 && soundplayed==false)
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Anky_Call1,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-			else if(animcount!=1) soundplayed=false;
-		}
-
-
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Attack"))
-		{
-			if(animcount==3 && soundplayed==false)
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Anky_Call2,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-			else if(animcount==5 && soundplayed==false)
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Sniff1,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-			else if(animcount!=3 && animcount!=5) soundplayed=false;
-		}
-
-
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1ToAttackA")||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand2ToAttack"))
-		{
-			
-			if(animcount==4 && soundplayed==false)
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Anky_Call2,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-			else if(animcount!=4) soundplayed=false;
-		}
-
-
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1ToAttackB"))
-		{
-			if(animcount==3 && soundplayed==false)
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Anky_Roar2,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-			else if(animcount==5 && soundplayed==false)
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Sniff1,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-			else if(animcount!=3 && animcount!=5) soundplayed=false;
-		}
-
-
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|AttackLoopGrowl"))
-		{
-			
-			if(animcount==3 && soundplayed==false)
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Anky_Roar1,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-			else if(animcount==10 && soundplayed==false)
-			{
-				source.pitch=Random.Range(1.0F, 1.25F);
-				source.PlayOneShot(Largestep,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-			else if(animcount!=3 && animcount!=10) soundplayed=false;
-		}
-
-
-		else if (!isdead && (
-				 anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Die1") ||
-		         anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Die2")))
-		{
-			
-			if(animcount==5 && soundplayed==false)
-			{
-				source.pitch=Random.Range(0.5F, 0.75F);
-				source.PlayOneShot(Anky_Roar1,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-			else if(animcount==25 && soundplayed==false)
-			{
-				source.pitch=Random.Range(0.5F, 0.75F);
-				source.PlayOneShot(Largestep,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-			else if(animcount!=5 && animcount!=25) soundplayed=false;
-
-			if(animcount>25) isdead=true;
-		}
-
-
-		else if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Rise1") ||
-			anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Rise2"))
-		{
-			if(animcount==5 && soundplayed==false)
-			{
-				source.pitch=Random.Range(0.75F,1.25F);
-				source.PlayOneShot(Anky_Call1,Random.Range(0.75F, 1.0F));
-				soundplayed=true;
-			}
-
-			else if(animcount!=5) soundplayed=false;
-			isdead=false;
-		}
-
-*/
-
-
-
-
-
-
-
-
-
-
-/*备份
- * 	void Update ()
-{
-
-
-
-    //***************************************************************************************
-    //Moves animation controller
-    if (Input.GetKey (KeyCode.Space) && Input.GetKey (KeyCode.W)) anim.SetInteger ("State", 2); //Steps forward
-    else if (Input.GetKey (KeyCode.LeftShift) && Input.GetKey (KeyCode.W)) anim.SetInteger ("State", 3); //Run
-    else if (Input.GetKey (KeyCode.W))anim.SetInteger ("State", 1); //Walk
-    else if (Input.GetKey (KeyCode.Space) && Input.GetKey (KeyCode.S)) anim.SetInteger ("State", -2); //Steps backward
-    else if (Input.GetKey (KeyCode.S)) anim.SetInteger ("State", -1); //Walk backward
-    else if (Input.GetKey (KeyCode.A)) anim.SetInteger ("State", 10); //Strafe+
-    else if (Input.GetKey (KeyCode.D)) anim.SetInteger ("State", -10); //Strafe-
-    else if (Input.GetKey (KeyCode.Space)) anim.SetInteger ("State", 100); //Steps
-    else if (Input.GetKey (KeyCode.LeftControl)) anim.SetInteger ("State", -100); //Attack  pose
-    else anim.SetInteger ("State", 0); //back to loop
-
-
-    //Attack animation controller
-    if (Input.GetKey (KeyCode.Mouse0))
-        anim.SetBool ("Attack", true);
-    else
-        anim.SetBool ("Attack", false);
-
-
-    //Growl animation controller
-    if (Input.GetKey (KeyCode.E))
-        anim.SetBool ("Growl", true);
-    else
-        anim.SetBool ("Growl", false);
-
-
-    //Idles animation controller
-    if (Input.GetKey (KeyCode.Alpha1))
-        anim.SetInteger ("Idle", 1); //Idle 1
-    else if (Input.GetKey (KeyCode.Alpha2))
-        anim.SetInteger ("Idle", 2); //Idle 2
-    else if (Input.GetKey (KeyCode.Alpha3))
-        anim.SetInteger ("Idle", 3); //Eat
-    else if (Input.GetKey (KeyCode.Alpha4))
-        anim.SetInteger ("Idle", 4); //Drink
-    else if (Input.GetKey (KeyCode.Alpha5))
-        anim.SetInteger ("Idle", 5); //Sleep
-    else if (Input.GetKey (KeyCode.Alpha6))
-        anim.SetInteger ("Idle", 6); //Die
-    else
-        anim.SetInteger ("Idle", 0);
-
-
-    //***************************************************************************************
-    //Spine control
-    if (Input.GetKey (KeyCode.Mouse1) && reset == false) {
-        turn += Input.GetAxis ("Mouse X") * 1.0F;
-        pitch += Input.GetAxis ("Mouse Y") * 1.0F;
-    } else if (turn != 0.0F || pitch != 0.0F) {
-        if (turn < 0.0F) {
-            if (turn < -0.25F)
-                turn += 0.25F;
-            else
-                turn = 0.0F; 
-        } else if (turn > 0.0F) {
-            if (turn > 0.25F)
-                turn -= 0.25F;
-            else
-                turn = 0.0F; 
-        }
-        if (pitch < 0.0F)
-        {
-            if (pitch < -0.5F)
-                pitch += 0.5F;
-            else
-            {
-                pitch = 0.0F;
-                reset = false;
-            }
-        }
-        else if (pitch > 0.0F)
-        {
-            if (pitch > 0.5F)
-                pitch -= 0.5F;
-            else {
-                pitch = 0.0F;
-                reset = false;
-            }
-        }
-    }
-
-
-    //Jaw control
-    if ((Input.GetKey (KeyCode.Mouse0)) &&
-        (reset == false) &&
-        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1A")) &&
-        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand2A")) &&
-        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1B")) &&
-        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand2C")) &&
-        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand1Attack")) &&
-        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Stand2Attack")) &&
-        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step1Attack")) &&
-        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|Step2Attack")) &&
-        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|WalkGrowl")) &&
-        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|RunGrowl")) &&
-        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|RunAttackA")) &&
-        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|RunAttackB")) &&
-        (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|WalkShake"))
-        )
-        open -= 4.0F;
-    else
-        open += 1.0F;
-
-
-    //Reset spine position during specific animation
-    if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anky|EatC"))
-        reset = true; else reset = false;
-
-
-    //Reset tail and spine position
-    if (((anim.GetInteger ("State") != 1) || (anim.GetInteger ("State") != 3)) && (balance != 0.0F))
-    {
-        if (balance < 0.0F)
-        {
-            if (balance < -0.1F)
-                balance += 0.1F;
-            else
-                balance = 0.0F; 
-        }
-        else if (balance > 0.0F)
-        {
-            if (balance > 0.1F)
-                balance -= 0.1F;
-            else
-                balance = 0.0F; 
-        }
-    }
-
-    //soundfx
-
-}
-*/
 
