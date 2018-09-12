@@ -6,7 +6,7 @@ public class ptera_cs : AnimCtrl
 	
 	Transform Root,WingR,WingL,Neck0,Neck1,Neck2,Neck3,Neck4,Neck5,Neck6,Head,Jaw,
 	Tail0,Tail1,Tail2,Tail3,Tail4,Tail5,Tail6,Tail7,Tail8,Tail9,Tail10,Tail11,Arm1,Arm2;
-	float turn,pitch,open,balance,roll,pitch2,velocity,FlyX,FlyY,FlyZ,animcount,Scale = 0.0F;
+	float turn,pitch,open,balance,roll,pitch2,FlyX,FlyY,FlyZ,animcount,Scale = 0.0F;
 	bool reset,soundplayed,isdead =false;
 	int lodselect=0, skinselect =0;
 	string infos;
@@ -19,8 +19,16 @@ public class ptera_cs : AnimCtrl
 	public AudioClip Smallstep,Idlecarn,Ptera_Roar1,Ptera_Roar2,Bite,Sniff2,Wind,Bigstep;
     public ConstantForce m_ConstForce = null;
     public GameObject m_CameraShakeRefObject = null;
-	
-	void Awake ()
+    public bool IsGround
+    {
+        get
+        {
+            return anim.GetBool("Onground");
+        }
+    }
+
+
+    void Awake ()
 	{
 
         //adjust speed to the model's scale
@@ -77,6 +85,8 @@ public class ptera_cs : AnimCtrl
 		if(collision.gameObject.name == "Ground") anim.SetBool("Onground", false);
 	}
 
+    
+
     public override void PreProcessPseudoInput()
     {
         base.PreProcessPseudoInput();
@@ -124,7 +134,7 @@ public class ptera_cs : AnimCtrl
         }
 
 
-        Debug.Log("leftpad" + m_ModifiedInput.LeftPad.ToString());
+        
 
     }
 
@@ -625,6 +635,18 @@ public class ptera_cs : AnimCtrl
 		
 		
 	}
+
+    float m_time_637 = 0;
+    public override void UpdateBackCameraShake()
+    {
+        base.UpdateBackCameraShake();
+        if(m_ModifiedInput.Space)
+        {
+            m_time_637 += Time.deltaTime;
+            m_BackCameraTargetPosition.y = Mathf.Sin(m_time_637 * 2 * 3.1415f * 1) * 0.2f;
+        }
+    }
+
 }
 
 

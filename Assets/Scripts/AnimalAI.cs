@@ -2,39 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/*
-public class Names
-{
-    public const string DrivingPlayer = "DrivingPlayer";
-    public const string LeftPadInput = "LeftPadInput";
-    public const string RightPadInput = "RightPadInput";
-    public const string Attacker = "Attacker";
-    public const string AlertAsBool = "Alert";
-    public const string LastAlertTimeAsFloat = "LastAlertTime";
-    public const string GameObjectToAlert = "GameObjectToAlert";
-    public const string PositionToAlert = "PositionToAlert";
-    public const string PositionToFaceTo = "PositionToFaceTo";
-    public const string TerminalTimeAsFloat = "TerminalTimeAsFloat";
-    public const string Waiting = "Waiting";
-    public const string TargetLocation = "TargetLocation";
-}*/
-/*
-
-public enum AINodeType
-{
-    AINode_DoUntilWrong,
-    AINode_DoUntilRight,
-}
-
-public enum AINodeResultType
-{
-    AIResult_Unknown,
-    AIResult_Fail,
-    AIResult_Doing,
-    AIResult_Finish,
-    AIResult_ConditionUnsatisfied,
-}*/
-
 public enum EWildState
 {
     EWild,
@@ -57,8 +24,8 @@ public class PseudoInput
         LeftClick = false;
         EForGrowl = false;
         AlphaX = 0;
-        
     }
+
     public PseudoInput GetCopy()
     {
         PseudoInput a = new PseudoInput();
@@ -72,7 +39,6 @@ public class PseudoInput
         a.AlphaX = AlphaX;
         return a;
     }
-
 
     public bool Space = false;
     public Vector2 LeftPad;
@@ -182,7 +148,6 @@ public class PseudoInput
         }
 
     }
-
 }
 
 
@@ -191,92 +156,9 @@ public enum AINodeState
 {
     AINS_NotStarted,
     AINS_Doing,
-    //AINS_End,//失败结尾或成功结尾都用End
     AINS_Finish,
     AINS_Fail,
 }
-
-/*
-
-/// <summary>
-/// 废弃不使用这么复杂的行为树
-/// </summary>
-public class AINode
-{
-    public delegate AINodeResultType AITask();
-    public delegate bool Precondition();
-
-    public AITask m_Task;
-    public Precondition m_Precondition;
-    public List<AINode> m_SubNodes = new List<AINode>();
-    public AINodeType m_AINodeType;
-    public AINodeState m_AINodeState = AINodeState.AINS_NotStarted;
-    public AINodeResultType Exec()
-    {
-        m_AINodeState = AINodeState.AINS_Doing;
-
-        //未通过条件
-        if (m_Precondition != null && !m_Precondition()) return SafelyEnd(AINodeResultType.AIResult_ConditionUnsatisfied);
-        //前序遍历
-        if (m_Task!=null && m_Task()== AINodeResultType.AIResult_Fail) return SafelyEnd(AINodeResultType.AIResult_Fail);
-        if (m_Task != null && m_Task() == AINodeResultType.AIResult_Finish) return SafelyEnd(AINodeResultType.AIResult_Finish);
-
-        //只有本身条件通过且不是执行成功也不是执行失败，才可以执行子节点
-        //全部子节点执行成功后，自身的Doing也认定为成功
-        if (m_AINodeType==AINodeType.AINode_DoUntilWrong)
-        {
-            for (int k = 0; k < m_SubNodes.Count; k++)
-            {
-                if (m_SubNodes[k] != null && m_SubNodes[k].Exec() == AINodeResultType.AIResult_Doing)
-                    return SafelyEnd(AINodeResultType.AIResult_Doing);
-                if (m_SubNodes[k] != null && m_SubNodes[k].Exec() == AINodeResultType.AIResult_Fail)
-                    return SafelyEnd(AINodeResultType.AIResult_Fail);
-            }
-            return SafelyEnd(AINodeResultType.AIResult_Finish);
-        }
-        else// if(m_AINodeType==AINodeType.AINode_DoUntilRight)
-        //全部子节点失败后，自身的Doing也认定为失败
-        {
-            for (int k = 0; k < m_SubNodes.Count; k++)
-            {
-                if (m_SubNodes[k] != null && m_SubNodes[k].Exec() == AINodeResultType.AIResult_Doing)
-                    return SafelyEnd(AINodeResultType.AIResult_Doing);
-                if (m_SubNodes[k] != null && m_SubNodes[k].Exec() == AINodeResultType.AIResult_Finish)
-                    return SafelyEnd(AINodeResultType.AIResult_Finish);
-            }
-            return SafelyEnd(AINodeResultType.AIResult_Fail);
-        }
-
-        //绝不会到达这里
-        //return AINodeResultType.AIResult_Unknown;
-    }
-
-    public AINode(AITask aiTask = null, Precondition pre = null, AINodeType aiNodeType = AINodeType.AINode_DoUntilWrong)
-    {
-        m_Task = aiTask; m_Precondition = pre; m_AINodeType = aiNodeType;
-    }
-    public void AddSubNode(AINode node)
-    {
-        m_SubNodes.Add(node);
-    }
-    private void End()
-    {
-        for(int k = 0; k<m_SubNodes.Count; k++)
-        {
-            m_SubNodes[k].m_AINodeState = AINodeState.AINS_NotStarted;
-        }
-        //将自己的状态设置为已完结，将子孙节点设置为未开始
-        this.m_AINodeState = AINodeState.AINS_End;
-    }
-    public AINodeResultType SafelyEnd(AINodeResultType r)
-    {
-        if (r == AINodeResultType.AIResult_Doing) return r;
-
-        End();
-        return r;
-    }
-}
-*/
 
 /// <summary>
 /// 一棵行为树
@@ -298,10 +180,8 @@ public class AnimalAI : MonoBehaviour {
     public float m_DrivenBeginningTime = 0;
     public AnimationCurve m_RebellionCurveX;
     public float m_OffsetAccumulation = 0;
-    //由策划调好
-    //public Vector2[] m_RebellousOffset = 
-
-
+    public GameObject m_SensedHumanPlayer = null;
+    public float m_SafeFeelingAreaRadius = 50.0f;
     //变量自动延时关闭的实现方式
     public bool IsAlert
     {
@@ -328,6 +208,47 @@ public class AnimalAI : MonoBehaviour {
     public float m_TimeToWait = 0;
     public Vector3 m_TargetLocation = Vector3.zero;
     public float m_TurnRate = 40.0f;
+    public const float THRESHOLD_TURNUPSIDEDOWN_UP_Y = 0.3f;
+    public HPComponent m_HPComponent = null;
+    public float m_Hurt = 10;
+
+/*
+    private float m_WAccumulatingTime = 0;
+    public bool m_HuntingMode
+    {
+        get
+        {
+            return m_WAccumulatingTime > 5.0f && m_PawnSensor.m_SensitiveObjectWithAutoClear!=null;
+        }
+        set
+        {
+            if(value)
+            {
+                //重新计时
+                if(m_PawnSensor.m_SensitiveObjectWithAutoClear!=null && 
+                    !m_PawnSensor.m_SensitiveObjectWithAutoClear.CompareTag("Player"))
+                {
+                    m_PawnSensor.m_SensitiveObjectWithAutoClear = m_PawnSensor.m_SensitiveObjectWithAutoClear;
+                }
+                else
+                {
+                    m_PawnSensor.m_SensitiveObjectWithAutoClear = m_PawnSensor.MainSensedDinosaur;
+                }
+            }
+            else
+            {
+                m_PawnSensor.m_SensitiveObjectWithAutoClear = null;
+                m_WAccumulatingTime = 0;
+            }
+        }
+    }*/
+    public bool IsDriven
+    {
+        get
+        {
+            return m_DrivingPlayer != null;
+        }
+    }
 
     // Use this for initialization
     public virtual void Start()
@@ -338,105 +259,172 @@ public class AnimalAI : MonoBehaviour {
         m_PawnSensor = GetComponent<PawnSensor>();
         m_AnimCtrl = GetComponent<AnimCtrl>();
         m_SitPlaceColliderListener = m_SitPlace.GetComponent<SitPlaceColliderListener>();
+        m_HPComponent = gameObject.AddComponent<HPComponent>();
 
+        //倒地检测
+        TimerManager.Instance.SetNewTimer(2.0f, (o) => {
+            if(transform.up.y<THRESHOLD_TURNUPSIDEDOWN_UP_Y)
+            {
+                this.transform.SetPositionAndRotation(this.transform.position + new Vector3(0, 1.8f, 0), Quaternion.identity);
+            }
+        }, true);
     }
 
-    //第几树就对应第几个，10表示第1组树里的第0个任务的状态
-    public AINodeState[] m_AINodeStates = new AINodeState[80];
-    public void InitNodeStatesExceptXthTree(int X)
+    //第几树就对应第几个，10表示第1组树里的第0个任务的状态，100以后作保留用
+    public AINodeState[] m_AINodeStates = new AINodeState[120];
+    public void InitNodeStatesWhenExecXthTree(int X)
     {
-        for(int k = 0; k<m_AINodeStates.Length; k++)
+        if (m_AINodeStates[X] == AINodeState.AINS_NotStarted)
+        {
+            m_AINodeStates[X] = AINodeState.AINS_Doing;
+        }
+        for (int k = 0; k < m_AINodeStates.Length; k++)
         {
             if (k == X || k / 10 == X) continue;
             m_AINodeStates[k] = AINodeState.AINS_NotStarted;
         }
     }
 
-
-
-
-
     // Update is called once per frame
     public virtual void Update()
     {
-        Logger.Instance.LogInfoToScreen(IsAlert ? "alerting" : "", 200, 0.2f);
-
         UpdatePadInput();
 
-        //驾驶状态不要清空
-        if(m_AINodeStates[1] != AINodeState.AINS_Doing)
+        //驾驶状态不要清空输入，其它状态要清空输入
+        if (m_AINodeStates[1] != AINodeState.AINS_Doing)
         {
             m_AnimCtrl.m_PseudoInput.Init();
         }
 
-
+        //此处仅为了测试
+/*
         var TargetLocation_0 = GameObject.Find("TargetLocation_0");
         bool DebugJ = true;
-        if(DebugJ)
+        if (DebugJ)
         {
 
-        }
+        }*/
 
+        if (m_HPComponent.HP <= 0) return;
 
+        var bShouldReturn = true;
 
         //第一树：有骑行
         if (m_DrivingPlayer != null)
         {
-            InitNodeStatesExceptXthTree(1);
-
-            m_AINodeStates[1] = AITaskCallback_DrivenByPlayer();
-            return;
+            bShouldReturn = AITreeNode_BeDriven();
+            if (bShouldReturn) return;
         }
         //第二树：受攻击 处于已知攻击者的状态
-        else if (m_Attacker != null)
+        if (m_Attacker != null)
         {
-            InitNodeStatesExceptXthTree(2);
-
+            bShouldReturn = AITreeNode_Attacked();
+            if (bShouldReturn) return;
         }
         //第三树：警惕
-        else if (IsAlert)
+        if (IsAlert)
         {
-            InitNodeStatesExceptXthTree(3);
-
-            //3.0. 朝向警惕方向
-            if (m_AINodeStates[30] != AINodeState.AINS_Finish)
-            {
-                m_AINodeStates[30] = AITask_FaceTo(m_PositionToAlert);
-            }
-            //注：3.0已完成
-            //3.1. 静候两秒
-            else if (m_AINodeStates[31] != AINodeState.AINS_Finish)
-            {
-                if (m_AINodeStates[31] == AINodeState.AINS_NotStarted)
-                {
-                    m_TimeToWait = Time.time + 2.0f;
-                }
-                m_AINodeStates[31] = AITask_WaitUntil(m_TimeToWait);
-            }
-            //注：3.1已完成
-            //3.2. 前进一段距离
-            else if (m_AINodeStates[32] != AINodeState.AINS_Finish)
-            {
-                if (m_AINodeStates[32] == AINodeState.AINS_NotStarted) 
-                {
-                    m_TargetLocation = transform.position + transform.forward * 5.0f;
-                }
-                m_AINodeStates[32] = AITask_MoveHorizontallyTo(m_TargetLocation);
-            }
-            //注：3.2已完成，即所有任务完成
+            bShouldReturn = AITreeNode_Alert();
+            if (bShouldReturn) return;
         }
-        //第四树：探知有人
-        /*else if ()
-        {
-            InitNodeStatesExceptXthTree(4);
 
-        }*/
+        m_SensedHumanPlayer = m_PawnSensor.SensedHuman;
+        //第四树：探知有人
+        if (m_SensedHumanPlayer != null)
+        {
+            bShouldReturn = AITreeNode_SenseHumans();
+            if (bShouldReturn) return;
+        }
         //第五树：探知有龙
-        //else if()
+        if (m_PawnSensor.MainSensedDinosaur)
+        {
+            bShouldReturn = AITreeNode_SenseDinosaurs();
+            if (bShouldReturn) return;
+        }
         //第六树：孤独状态
+        if(m_PawnSensor.PawnsSensed.Count==0)
+        {
+            bShouldReturn = AITreeNode_Alone();
+            if (bShouldReturn) return;
+        }
 
     }
+    
+    public virtual bool AITreeNode_BeDriven()
+    {
+        InitNodeStatesWhenExecXthTree(1);
+        m_AINodeStates[1] = AITaskCallback_DrivenByPlayer();
+        return true;
+    }
 
+    //攻击态：通用逻辑 走到攻击者面前播放攻击动画
+    public float m_CancelAttackDistance = 60.0f;
+    HPComponent m_AttackerHP = null;
+    public float m_AttackAllowedDistance = 5.5f;
+    public virtual bool AITreeNode_Attacked()
+    {
+        InitNodeStatesWhenExecXthTree(2);
+
+        if (m_Attacker != null)
+        {
+            if (m_AttackerHP == null)
+            {
+                m_AttackerHP = m_Attacker.GetComponent<HPComponent>();
+            }
+            else
+            {
+                var d = BasicTools.GetHorizontalDistance(this.transform.position, m_Attacker.transform.position);
+
+                //因为攻击者太远或者是攻击者死亡而取消攻击者
+                if (m_AttackerHP.HP <= 0 || d >= m_CancelAttackDistance)
+                {
+                    AITask_MoveHorizontallyTo(m_Attacker.transform.forward * 50.0f);
+                    //m_Attacker = null;
+                    //m_AttackerHP = null;
+                }
+                else if (d < m_AttackAllowedDistance)
+                {
+                    m_AnimCtrl.m_PseudoInput.LeftClick = true;
+                }
+                else
+                {
+                    AITask_MoveHorizontallyTo(m_Attacker.transform.position);
+                }
+
+            }
+        }
+        return true;
+    }
+
+    public virtual bool AITreeNode_Alert()
+    {
+        InitNodeStatesWhenExecXthTree(3);
+        return true;
+    }
+
+    public virtual bool AITreeNode_SenseHumans()
+    {
+        InitNodeStatesWhenExecXthTree(4);
+        return true;
+    }
+
+    public virtual bool AITreeNode_SenseDinosaurs()
+    {
+        InitNodeStatesWhenExecXthTree(5);
+        return true;
+    }
+
+
+    protected float m_NextDesideTimeForAloneState = 2;
+    protected Vector3 m_RandomDestinationForAlone;
+    protected int m_ContinuouslyInputAlphaX = 0;
+    public virtual bool AITreeNode_Alone()
+    {
+        InitNodeStatesWhenExecXthTree(6);
+        return true;
+    }
+
+    //状态编号 1
     public AINodeState AITaskCallback_DrivenByPlayer()
     {
         //Debug.Log("被骑行中");
@@ -445,14 +433,13 @@ public class AnimalAI : MonoBehaviour {
         return AINodeState.AINS_Doing;
     }
 
+    //状态编号 30
     public AINodeState AITask_FaceTo(Vector3 worldPositionToFaceTo)
     {
-        
         var localPosition = gameObject.transform.InverseTransformPoint(worldPositionToFaceTo) * transform.localScale.x;
-        Debug.Log("" + localPosition.ToString());
+        //Debug.Log("" + localPosition.ToString());
         Logger.Instance.LogInfoToScreen("W" + worldPositionToFaceTo.ToString(), 202, 0.6f);
         Logger.Instance.LogInfoToScreen("L"+localPosition.ToString(), 201, 0.6f);
-
 
         localPosition.y = 0.0f;
         
@@ -479,6 +466,7 @@ public class AnimalAI : MonoBehaviour {
         return AINodeState.AINS_Doing;
     }
 
+    //状态编号 31
     public AINodeState AITask_WaitUntil(float TerminalTime)
     {
         if (Time.time < TerminalTime) return AINodeState.AINS_Doing;
@@ -538,6 +526,8 @@ public class AnimalAI : MonoBehaviour {
     public void StartDrivenBy(GameObject Player)
     {
         m_DrivingPlayer = Player;
+        m_Attacker = null;
+        m_AttackerHP = null;
 
         m_DrivenBeginningTime = Time.time;
         if(m_WildState == EWildState.EWild)
@@ -545,6 +535,9 @@ public class AnimalAI : MonoBehaviour {
             Logger.Instance.LogInfoToScreen("请尽可能走直线(维持15s)", 210, 15);
             m_WildState = EWildState.ERebellous;
         }
+        m_PawnSensor.m_SensitiveObjectWithAutoClear = null;
+        m_SitPlaceColliderListener.enabled = false;
+        m_AnimCtrl.m_PhysicalPower = m_AnimCtrl.m_MaxPhysicalPower;
     }
 
     public void EndBeingDriven()
@@ -552,14 +545,14 @@ public class AnimalAI : MonoBehaviour {
         m_DrivingPlayer = null;
         m_SitPlaceColliderListener.enabled = false;
         gameObject.layer = LayerMask.NameToLayer("Undriven");
-        TimerManager.Instance.SetNewTimer(0.5f, RestartToBeDrivable);
+        m_SitPlace.layer = LayerMask.NameToLayer("Undriven");
+        TimerManager.Instance.SetNewTimer(1f, (o)=> {
+            gameObject.layer = LayerMask.NameToLayer("Default");
+            m_SitPlace.layer = LayerMask.NameToLayer("Default");
+            m_SitPlaceColliderListener.enabled = true;
+        });
 
         if (m_WildState == EWildState.ERebellous) m_WildState = EWildState.EWild;
-    }
-    public void RestartToBeDrivable(params object [] p)
-    {
-        gameObject.layer = LayerMask.NameToLayer("Default");
-        m_SitPlaceColliderListener.enabled = true;
     }
 
     public virtual void InputLeftPad(Vector2 leftPadInput)
@@ -575,12 +568,17 @@ public class AnimalAI : MonoBehaviour {
 
     public virtual void UpdatePadInput()
     {
-        //不要轻易修改源数据
         m_AnimCtrl.m_PseudoInput.LeftPad = m_LeftPadInput;
         
+        //驯服玩法
         if (m_WildState == EWildState.ERebellous)
         {
-            if( Time.time - m_DrivenBeginningTime < m_RebellionCurveX.keys[m_RebellionCurveX.length-1].time )
+            if(m_RebellionCurveX.length == 0 || Time.time - m_DrivenBeginningTime >= m_RebellionCurveX.keys[m_RebellionCurveX.length - 1].time)
+            {
+                m_WildState = EWildState.EOwned;
+            }
+
+            if( m_RebellionCurveX.length>0 && Time.time - m_DrivenBeginningTime < m_RebellionCurveX.keys[m_RebellionCurveX.length-1].time )
             {
                 //读源数据且修改后赋值到正式数据中
                 var result = m_LeftPadInput;
@@ -592,7 +590,7 @@ public class AnimalAI : MonoBehaviour {
                 var _offset = Mathf.Abs(result.x);
                 if (_offset > 1.0f)
                 {
-                    m_DrivingPlayer.GetComponent<PlayerController>().Jump(10);
+                    GetRidOfDriver(result.x);
                 }
                 Logger.Instance.LogInfoToScreen("Offset:" + _offset, 211);
 
@@ -600,16 +598,40 @@ public class AnimalAI : MonoBehaviour {
             }
         }
 
+#region 取消Hunting玩法
+/*
+                if(m_DrivingPlayer!=null && m_WildState== EWildState.EOwned)
+                {
+                    if (m_AnimCtrl.m_PseudoInput.W)
+                    {
+                        m_WAccumulatingTime += Time.deltaTime;
+                    }
+
+                    //切换为狩猎模式
+                    if(m_WAccumulatingTime>=5.0f)
+                    {
+                        m_HuntingMode = true;
+                        Debug.Log("开始狩猎，猎物为：" + m_PawnSensor.m_SensitiveObjectWithAutoClear);
+                    }
+                    if (m_AnimCtrl.m_PseudoInput.S)
+                    {
+                        m_HuntingMode = false;
+                    }
+                }*/
+                #endregion
+        
     }
 
+    public virtual void GetRidOfDriver(float xOffset)
+    {
+        m_DrivingPlayer.GetComponent<PlayerController>().FellDownFromAnimal(xOffset);
+    }
+    
     public AINodeState AITask_MoveHorizontallyTo(Vector3 pos)
     {
-        var delHor = pos - gameObject.transform.position;
-        delHor.y = 0;
-        Debug.Log("pos" + pos + " transform.pos:" + transform.position );
+        var delHor = BasicTools.GetHorizontalDistance(pos, gameObject.transform.position);
 
-
-        if (delHor.magnitude<1.0f)
+        if (delHor<1.0f)
         {
             return AINodeState.AINS_Finish;
         }
@@ -620,5 +642,63 @@ public class AnimalAI : MonoBehaviour {
         }
 
         return AINodeState.AINS_Doing;
+    }
+
+    //占用状态编号 a（自身）/b（占用） 用变量体现编号
+    Vector3 lastDeltaPos;
+    Vector3 directionToEscape;
+    public AINodeState AITask_EscapeFrom(GameObject hunter, ref AINodeState nodeState_a, ref AINodeState nodeState_b)
+    {
+        if (hunter == null) return AINodeState.AINS_Fail;
+
+        var curDeltaPos = transform.position - hunter.transform.position;
+        if (curDeltaPos.magnitude > m_SafeFeelingAreaRadius)
+        {
+            return AINodeState.AINS_Finish;
+        }
+
+        //刚开始逃跑定一个方向，范围级别变化也重新调整逃跑方向
+        if (nodeState_a == AINodeState.AINS_NotStarted || (int)(lastDeltaPos.magnitude/10) != (int)(curDeltaPos.magnitude/10) )
+        {
+            directionToEscape.x = Random.Range(0, curDeltaPos.x);
+            directionToEscape.y = Random.Range(0, curDeltaPos.y);
+            directionToEscape.z = Random.Range(0, curDeltaPos.z);
+            nodeState_b = AINodeState.AINS_NotStarted;
+
+            Debug.Log("重新定逃跑方向" + directionToEscape.ToString());
+        }
+
+        if(nodeState_b != AINodeState.AINS_Finish) nodeState_b = AITask_FaceTo(directionToEscape + transform.position);
+
+        m_AnimCtrl.m_PseudoInput.W = true;
+
+        lastDeltaPos = curDeltaPos;
+        return AINodeState.AINS_Doing;
+    }
+
+/*取消猎杀玩法
+    //状态编号 11自动猎杀
+    public AINodeState AITask_Hunt(GameObject prey)
+    {
+        if (prey == null) return AINodeState.AINS_Fail;
+        
+        AITask_MoveHorizontallyTo(transform.position + prey.transform.forward * 2.0f/ * * prey.GetComponent<AnimCtrl>().velocity* / );
+        return AINodeState.AINS_Doing;
+    }
+
+ */
+
+
+    public void SingleAttack(float multiplier = 1.0f)
+    {
+        if(m_AttackerHP!=null)
+        {
+            m_AttackerHP.HP -= m_Hurt * multiplier;
+            var PC = m_Attacker.GetComponent<PlayerController>();
+            if(PC!=null)
+            {
+                PC.SetMainCameraShake(0.5f);
+            }
+        }
     }
 }

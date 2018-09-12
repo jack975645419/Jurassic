@@ -110,6 +110,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4969669566666544}
+  - component: {fileID: 65715147217721092}
+  - component: {fileID: 114500323648552816}
   m_Layer: 0
   m_Name: SitPlace
   m_TagString: Untagged
@@ -734,9 +736,10 @@ GameObject:
   - component: {fileID: 114373369771890164}
   - component: {fileID: 135696735593997860}
   - component: {fileID: 75556020441798402}
-  - component: {fileID: 114693306913392034}
   - component: {fileID: 114317187837377720}
   - component: {fileID: 114780210050574112}
+  - component: {fileID: 114981941003738766}
+  - component: {fileID: 65971169237513594}
   m_Layer: 0
   m_Name: Anky
   m_TagString: Untagged
@@ -1217,8 +1220,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1917450749210484}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 2.09, z: 0}
+  m_LocalRotation: {x: -0, y: 0.28374058, z: -0, w: 0.95890105}
+  m_LocalPosition: {x: 180.98, y: 2.67, z: -163.58}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 4999554660451516}
@@ -1227,7 +1230,7 @@ Transform:
   - {fileID: 4400720148000202}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 32.967003, z: 0}
 --- !u!4 &4569903151239352
 Transform:
   m_ObjectHideFlags: 1
@@ -1541,7 +1544,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1917450749210484}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1556,13 +1559,37 @@ MeshCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1917450749210484}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
+  m_IsTrigger: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: c3633ed157ad70b4daba0326c9e5d0da, type: 3}
+--- !u!65 &65715147217721092
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1103146035867450}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.2, y: 6.21, z: 25.83}
+  m_Center: {x: 0, y: -4.07, z: 0}
+--- !u!65 &65971169237513594
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1917450749210484}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8, y: 4, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!75 &75556020441798402
 ConstantForce:
   m_ObjectHideFlags: 1
@@ -1570,7 +1597,7 @@ ConstantForce:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1917450749210484}
   m_Enabled: 1
-  m_Force: {x: 0, y: -1, z: 0}
+  m_Force: {x: 0, y: -15, z: 0}
   m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
@@ -1603,7 +1630,7 @@ Light:
   m_Type: 0
   m_Color: {r: 1, g: 0, b: 0.04843235, a: 1}
   m_Intensity: 80
-  m_Range: 9
+  m_Range: 15
   m_SpotAngle: 50
   m_CookieSize: 10
   m_Shadows:
@@ -1653,6 +1680,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71ecfd790b42f0745985ce666287fa4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_AnimalAI: {fileID: 0}
+  velocity: 0
+  m_MaxPhysicalPower: 30
+  m_PhysicalPower: 30
+  m_RunConsumePhysicalPowerRate: 1
+  m_RecoverPhysicalPowerRate: 0.5
+  m_MaxSpeedPhysicalPowerThreshold: 25
+  m_TakeRestTime: 15
+  m_GetDownOffset: {x: -6, y: 0, z: 0}
+  m_BackCameraTargetPosition: {x: 0, y: 0, z: 0}
+  m_VisualBodyInertiaTargetLocEuler: {x: 0, y: 0, z: 0}
   skin:
   - {fileID: 0}
   Medstep: {fileID: 0}
@@ -1664,33 +1702,19 @@ MonoBehaviour:
   Sniff1: {fileID: 0}
   Chew: {fileID: 0}
   Largestep: {fileID: 0}
---- !u!114 &114693306913392034
+  m_Movement: {fileID: 0}
+--- !u!114 &114500323648552816
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1917450749210484}
+  m_GameObject: {fileID: 1103146035867450}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1282a3be195f99041b263d4e011f949e, type: 3}
+  m_Script: {fileID: 11500000, guid: 1bdc4ceb086605d44ab36fa6387eecb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SitPlace: {fileID: 1103146035867450}
-  m_Movement: {fileID: 0}
-  m_Animator: {fileID: 0}
-  m_AnimManager: {fileID: 0}
-  m_PawnSensor: {fileID: 0}
-  m_DrivingPlayer: {fileID: 0}
-  m_LeftPadInput: {x: 0, y: 0}
-  m_RightPadInput: {x: 0, y: 0}
-  m_Attacker: {fileID: 0}
-  m_AnimCtrl: {fileID: 0}
-  m_LastStartAlertTime: -210001
-  m_PositionToAlert: {x: 0, y: 0, z: 0}
-  m_TimeToWait: 0
-  m_TargetLocation: {x: 0, y: 0, z: 0}
-  m_TurnRate: 40
-  m_AINodeStates: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_BoxCollider: {fileID: 0}
 --- !u!114 &114780210050574112
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1704,12 +1728,75 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Head: {fileID: 1979102459769940}
   m_Light: {fileID: 108023105043709672}
-  m_SenseArea: {fileID: 0}
+  m_SenseArea: {fileID: 135696735593997860}
   m_VisionRange: 10
   m_VisionAngle: 80
   PawnsSensed: []
   m_MeshCollider: {fileID: 0}
   m_AnimalAI: {fileID: 0}
+  m_SensitiveColdingDownTime: 5
+  m_SensitiveMaxDistance: 50
+--- !u!114 &114981941003738766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1917450749210484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d615417ebca1714a9114eb95fd90f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SitPlace: {fileID: 1103146035867450}
+  m_Movement: {fileID: 0}
+  m_Animator: {fileID: 0}
+  m_AnimManager: {fileID: 0}
+  m_PawnSensor: {fileID: 0}
+  m_DrivingPlayer: {fileID: 0}
+  m_LeftPadInput: {x: 0, y: 0}
+  m_RightPadInput: {x: 0, y: 0}
+  m_Attacker: {fileID: 0}
+  m_SitPlaceColliderListener: {fileID: 0}
+  m_AnimCtrl: {fileID: 0}
+  m_WildState: 0
+  m_DrivenBeginningTime: 0
+  m_RebellionCurveX:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_OffsetAccumulation: 0
+  m_SensedHumanPlayer: {fileID: 0}
+  m_SafeFeelingAreaRadius: 50
+  m_LastStartAlertTime: -210001
+  m_PositionToAlert: {x: 0, y: 0, z: 0}
+  m_TimeToWait: 0
+  m_TargetLocation: {x: 0, y: 0, z: 0}
+  m_TurnRate: 40
+  m_HPComponent: {fileID: 0}
+  m_Hurt: 10
+  m_AINodeStates: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_CancelAttackDistance: 60
+  m_AttackAllowedDistance: 5.5
 --- !u!135 &135696735593997860
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -1718,7 +1805,7 @@ SphereCollider:
   m_GameObject: {fileID: 1917450749210484}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 40
   m_Center: {x: 0, y: 0, z: 0}

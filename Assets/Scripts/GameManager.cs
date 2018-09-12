@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BasicTools
 {
@@ -35,6 +36,12 @@ public class BasicTools
         else return a >= 0 ? (a + 180) % 360 - 180 : (a - 180) % 360 + 180;
     }
 
+    public static  float GetHorizontalDistance(Vector3 a, Vector3 b)
+    {
+        var c = a - b;
+        c.y = 0;
+        return c.magnitude;
+    }
 
 }
 
@@ -42,6 +49,8 @@ public class GameManager : Singleton<GameManager> {
     public GameObject Player = null;
     public GameObject Ground = null;
     public GameObject[] GOs = new GameObject[10];
+    public Text HPLabel = null;
+    public Animator BloodAnim = null;
 
     public override void Start()
     {

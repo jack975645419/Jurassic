@@ -220,7 +220,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.38325
+        functionName: SingleAttack
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 1
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
@@ -492,7 +499,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.47512498
+        functionName: SingleAttack
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 1.8
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
@@ -2804,7 +2818,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.63525
+        functionName: SingleAttack
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 1.7
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1

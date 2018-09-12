@@ -121,6 +121,7 @@ public class Commander : Singleton<Commander> {
                     var Anky = GameManager.Instance.GOs[0];
                     var ai = Anky.GetComponent<AnimalAI>();
                     ai.m_Attacker = GameManager.Instance.Player;
+
                     break;
                 }
             case "jump":

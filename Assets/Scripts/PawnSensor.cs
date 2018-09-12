@@ -25,6 +25,27 @@ public class PawnSensor : MonoBehaviour {
     public MeshCollider m_MeshCollider = null;
     public AnimalAI m_AnimalAI = null;
 
+    public float m_SensitiveColdingDownTime = 5.0f;
+    private GameObject m_SensitiveObjectPrivate = null;
+    private float m_LastSetSensitiveObjectTime = -210001;
+    public GameObject m_SensitiveObjectWithAutoClear
+    {
+        get
+        {
+            if (Time.time - m_LastSetSensitiveObjectTime > m_SensitiveColdingDownTime)
+                m_SensitiveObjectPrivate = null;
+            return m_SensitiveObjectPrivate;
+        }
+        set
+        {
+            m_SensitiveObjectPrivate = value;
+            m_LastSetSensitiveObjectTime = Time.time;
+        }
+    }
+    //敏感最大距离：当存在敏感对象的时候，保持察觉得到的距离
+    public float m_SensitiveMaxDistance = 50.0f;
+
+
 	// Use this for initialization
 	void Start () {
         m_Light = m_Head.GetComponentInChildren<Light>();
@@ -34,17 +55,30 @@ public class PawnSensor : MonoBehaviour {
         m_SenseArea = GetComponent<SphereCollider>();
         m_MeshCollider = GetComponent<MeshCollider>();
         m_AnimalAI = GetComponent<AnimalAI>();
-
-
+        
         EventManager.Register(EMessageID.Msg_Noise, OnSenseNoise);
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        TimerManager.Instance.SetNewTimer(0.25f, UpdateSensedPawns, true, true);
+    }
 
+    public void UpdateSensedPawns(params object [] Params)
+    {
         Watch();
-	}
+
+        if (m_SensitiveObjectWithAutoClear != null && Vector3.Distance(m_SensitiveObjectWithAutoClear.transform.position, transform.position) < m_SensitiveMaxDistance)
+        {
+            if (!PawnsSensed.Contains(m_SensitiveObjectWithAutoClear))
+            {
+                PawnsSensed.Add(m_SensitiveObjectWithAutoClear);
+            }
+        }
+        
+    }
+
+	// Update is called once per frame
+	void Update ()
+    {
+    }
 
     public void Watch()
     {
@@ -54,9 +88,6 @@ public class PawnSensor : MonoBehaviour {
         Collider[] cols = Physics.OverlapSphere(transform.position, senseAreaRaius);
         foreach(var c in cols)
         {
-            //在视线范围内的加入
-            Vector3 _localPosition = m_Light.transform.worldToLocalMatrix * c.transform.position;
-
             //将自己排除
             if (c == m_SenseArea) continue;
             if (c == m_MeshCollider) continue;
@@ -71,7 +102,10 @@ public class PawnSensor : MonoBehaviour {
                 PawnsSensed.Add(c.gameObject);
                 continue;
             }
-            
+
+            //在视线范围内的加入
+            Vector3 _localPosition = m_Light.transform.InverseTransformPoint(c.transform.position) * m_Light.transform.lossyScale.x;
+
             if (_localPosition.z>0 
                 && _localPosition.z<m_VisionRange 
                 && Mathf.Tan(m_VisionAngle/2.0f * Mathf.Deg2Rad)>Mathf.Abs(_localPosition.x/_localPosition.z))
@@ -121,5 +155,40 @@ public class PawnSensor : MonoBehaviour {
     public void OnSenseNoise(Msg msg)
     {
 
+    }
+
+    private GameObject m_CacheSensedHuman = null;
+    public GameObject SensedHuman
+    {
+        get
+        {
+            if (m_CacheSensedHuman != null && PawnsSensed.Contains(m_CacheSensedHuman)) return m_CacheSensedHuman;
+            for (var i = 0; i < PawnsSensed.Count; i++)
+            {
+                if (PawnsSensed[i].CompareTag("Player"))
+                { m_CacheSensedHuman = PawnsSensed[i]; return m_CacheSensedHuman; }
+            }
+            m_CacheSensedHuman = null;
+            return null;
+        }
+    }
+
+    private GameObject m_CacheMainSensedDinosaur = null;
+    public GameObject MainSensedDinosaur
+    {
+        get
+        {
+            if (m_CacheMainSensedDinosaur != null && PawnsSensed.Contains(m_CacheMainSensedDinosaur)) return m_CacheMainSensedDinosaur;
+            for (var i = 0; i < PawnsSensed.Count; i++)
+            {
+                if (!PawnsSensed[i].CompareTag("Player") && PawnsSensed[i].GetComponent<AnimalAI>() != null)
+                {
+                    m_CacheMainSensedDinosaur = PawnsSensed[i];
+                    return m_CacheMainSensedDinosaur;
+                }
+            }
+            m_CacheMainSensedDinosaur = null;
+            return m_CacheMainSensedDinosaur;
+        }
     }
 }

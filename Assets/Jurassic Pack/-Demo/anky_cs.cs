@@ -5,7 +5,7 @@ using System.Collections;
 public class anky_cs : AnimCtrl
 {
 	Transform Spine0,Spine1,Spine2,Neck0, Neck1,Neck2,Neck3,Head,Jaw, Tail0,Tail1,Tail2,Tail3,Tail4,Tail5;
-	float turn,pitch,open,balance,temp,velocity,animcount,Scale = 0.0F;
+	float turn,pitch,open,balance,temp,animcount,Scale = 0.0F;
 	bool reset,soundplayed,isdead =false;
 	int lodselect=0, skinselect =0;
 	string infos;
@@ -41,7 +41,10 @@ public class anky_cs : AnimCtrl
 		anim = GetComponent<Animator>();
 		lods = GetComponent<LODGroup>();
 		rend = GetComponentsInChildren <SkinnedMeshRenderer>();
-	}
+
+        m_Movement = GetComponent<Movement>();
+
+    }
 
     /*
             GUI.Label(new Rect(5,200,Screen.width,Screen.height),"Middle Mouse = Camera/Zoom");
@@ -59,16 +62,28 @@ public class anky_cs : AnimCtrl
             GUI.Label(new Rect(5,440,Screen.width,Screen.height),"num 5 = Sit/Sleep");
             GUI.Label(new Rect(5,460,Screen.width,Screen.height),"num 6 = Die");*/
 
+    /// <summary>
+    /// 伪输入的预处理
+    /// </summary>
     public override void PreProcessPseudoInput()
     {
         base.PreProcessPseudoInput();
+
+        Logger.Instance.LogInfoToScreen("power" + m_PhysicalPower, GetHashCode() -72);
+        //跑步能力的限制
+        
+        if(m_PhysicalPower<=0)
+        {
+            m_ModifiedInput.LeftPad = Vector2.zero;
+        }
+
         m_ModifiedInput.LeftShift = m_ModifiedInput.LeftPad.y > 0 && m_ModifiedInput.LeftPad.magnitude > 0.7;
 
     }
 
     public override void Start()
     {
-        m_Movement = GetComponent<Movement>();
+        base.Start();
     }
 
 
@@ -76,8 +91,9 @@ public class anky_cs : AnimCtrl
     {
         base.Update();
 
-        m_Movement.TurnRight(m_ModifiedInput.LeftPad.x);
+        anim.SetFloat(PARANAME_RunSpeedScale, m_RunSpeedScale);
 
+        #region 恐龙动画状态机
         //***************************************************************************************
         //Moves animation controller
         if (m_ModifiedInput.W && m_ModifiedInput.Space) anim.SetInteger("State", 2); //Steps forward
@@ -176,14 +192,44 @@ public class anky_cs : AnimCtrl
         }
 
         //soundfx
+        #endregion
 
     }
 
-	//***************************************************************************************
-	//Clamp and set bone rotations
-	void LateUpdate()
+    public void MyLateUpdateForMovement()
+    {
+        m_Movement.TurnRight(m_ModifiedInput.LeftPad.x);
+        
+        
+        if(m_ModifiedInput.LeftShift && m_ModifiedInput.W && !m_AnimalAI.IsDriven)
+        {
+            m_PhysicalPower -= m_RunConsumePhysicalPowerRate * Time.deltaTime;
+            
+            //体力消耗殆尽的沿事件
+            if (m_PhysicalPower<=0)
+            {
+                m_PhysicalPower = -m_TakeRestTime * m_RecoverPhysicalPowerRate;
+                //一段时间后突然恢复体力值
+                TimerManager.Instance.SetNewTimer(m_TakeRestTime, 
+                    (o) => { m_PhysicalPower = m_TakeRestTime * m_RunConsumePhysicalPowerRate; });
+            }
+        }
+        else
+        {
+            m_PhysicalPower = Mathf.Min(m_MaxPhysicalPower, m_PhysicalPower + m_RecoverPhysicalPowerRate * Time.deltaTime);
+        }
+
+    }
+
+
+    #region 动画状态机决定运动
+    //***************************************************************************************
+    //Clamp and set bone rotations
+    void LateUpdate()
 	{
-		
+
+        MyLateUpdateForMovement();
+
 		balance = Mathf.Clamp(balance, -8.0F, 8.0F);
 		open = Mathf.Clamp(open, -20.0F, 0.0F);
 		turn = Mathf.Clamp (turn, -30.0F, 30.0F);
@@ -289,7 +335,7 @@ public class anky_cs : AnimCtrl
 				velocity = velocity - (Time.deltaTime * 0.6F);
 			}
 
-			this.transform.Translate (0, 0, velocity*Scale);
+			this.transform.Translate (0, 0, velocity*Scale );
 		}
 
 
@@ -421,7 +467,7 @@ public class anky_cs : AnimCtrl
 				velocity = velocity + (Time.deltaTime * 1.5F); //acceleration
 			}
 			
-			this.transform.Translate (0, 0, velocity*Scale);
+			this.transform.Translate (0, 0, velocity*Scale * m_RunSpeedScale);
 		}
 
 		//Attack
@@ -449,5 +495,12 @@ public class anky_cs : AnimCtrl
 			this.transform.Translate (0, 0, velocity*Scale);
 		}
 	}
+    #endregion
+
+    public override void UpdateBackCameraShake()
+    {
+        base.UpdateBackCameraShake();
+    }
+
 }
 

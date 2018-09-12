@@ -30,6 +30,7 @@ public class SitPlaceColliderListener : MonoBehaviour {
             if (pc != null)
             {
                 pc.DriveAnimal(transform.root.gameObject);
+                enabled = false;
             }
         }
     }
